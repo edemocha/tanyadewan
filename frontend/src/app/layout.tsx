@@ -31,6 +31,26 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               Sumber: Penyata Rasmi Dewan Rakyat © Parlimen Malaysia. Setiap jawapan dipautkan ke PDF rasmi. TanyaDewan
               boleh tersilap: semak petikan dengan PDF.
             </p>
+            <p className="mx-auto mt-2 max-w-3xl px-4">
+              Dibina oleh{" "}
+              <a
+                href="https://github.com/edemocha"
+                target="_blank"
+                rel="noopener"
+                className="font-medium text-muted-foreground underline-offset-2 hover:underline"
+              >
+                Danial Adam
+              </a>
+              {" · "}
+              <a
+                href="https://github.com/edemocha/tanyadewan"
+                target="_blank"
+                rel="noopener"
+                className="underline-offset-2 hover:underline"
+              >
+                kod sumber
+              </a>
+            </p>
           </footer>
         </TooltipProvider>
       </body>
