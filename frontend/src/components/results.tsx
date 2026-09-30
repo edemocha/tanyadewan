@@ -11,6 +11,11 @@ import { coverage, isPartial, LOADING } from "@/lib/copy";
 
 type Phase = "searching" | "answering" | "done" | "error";
 
+// A hosted backend can be slow to wake (it loads about 1.2 GB of models on a cold start): say so after this long,
+// and give up rather than show a spinner forever.
+const SLOW_AFTER_MS = 20_000;
+const GIVE_UP_AFTER_MS = 120_000;
+
 /**
  * One search: streams /api/ask and shows the answer, the "based on N sittings" line and the source cards.
  * The parent keys this component by question + filters, so every new search starts from a clean state.
@@ -23,6 +28,7 @@ export function Results({ question, filters, status }: { question: string; filte
   const [error, setError] = useState("");
   const [meta, setMeta] = useState("");
   const [loadingLine, setLoadingLine] = useState(0);
+  const [slow, setSlow] = useState(false);
   const [flashN, setFlashN] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
   const cardRefs = useRef(new Map<number, HTMLLIElement>());
@@ -31,9 +37,17 @@ export function Results({ question, filters, status }: { question: string; filte
     const ctl = new AbortController();
     let engine = "";
     let text = "";
+    let sawDone = false;
+    const slowTimer = setTimeout(() => setSlow(true), SLOW_AFTER_MS);
+    const giveUpTimer = setTimeout(() => {
+      ctl.abort();
+      setError("pelayan tidak menjawab dalam 2 minit");
+      setPhase("error");
+    }, GIVE_UP_AFTER_MS);
     (async () => {
       try {
         for await (const ev of ask(question, filters, ctl.signal)) {
+          if (ev.event === "done") sawDone = true;
           if (ev.event === "sources") setSources(ev.data);
           else if (ev.event === "engine") engine = ev.data;
           else if (ev.event === "token") {
@@ -47,14 +61,26 @@ export function Results({ question, filters, status }: { question: string; filte
             setMeta(`${engine || "tiada model"} · carian ${ev.data.retrieve_ms} ms · jawapan ${secs} s`);
           }
         }
-        setPhase("done");
+        if (!sawDone) {
+          setError("sambungan terputus sebelum jawapan selesai");
+          setPhase("error");
+        } else {
+          setPhase("done");
+        }
       } catch (e) {
         if (ctl.signal.aborted) return;
         setError(e instanceof Error ? e.message : String(e));
         setPhase("error");
+      } finally {
+        clearTimeout(slowTimer);
+        clearTimeout(giveUpTimer);
       }
     })();
-    return () => ctl.abort();
+    return () => {
+      clearTimeout(slowTimer);
+      clearTimeout(giveUpTimer);
+      ctl.abort();
+    };
     // filters is rebuilt from the URL on every render; the parent's key already covers its values
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [question]);
@@ -101,6 +127,12 @@ export function Results({ question, filters, status }: { question: string; filte
             <Skeleton className="h-4 w-[84%]" />
             <Skeleton className="h-4 w-[70%]" />
           </div>
+          {slow ? (
+            <p className="text-[13px] text-subtle">
+              Ambil masa lebih lama daripada biasa. Pelayan mungkin baru bangun dan sedang memuatkan model; tunggu
+              sekejap.
+            </p>
+          ) : null}
         </div>
       ) : null}
 
