@@ -1,0 +1,13 @@
+# Public deployment overlay (Hugging Face Space, CPU only). Merged over config.yaml by
+# TANYADEWAN_OVERRIDE=config.prod.yaml. Qdrant Cloud comes from QDRANT_URL / QDRANT_API_KEY env vars.
+index:
+  embedder_provider: "onnx"           # int8 bge-m3 on CPU; top-1 matched the Ollama vectors on 9 of 9 real probe queries
+  query_keep_alive: ""
+rerank:
+  model_path: "models/bge-reranker-v2-m3/model_int8.onnx"
+  device: "cpu"
+  max_tokens: 192                     # shorter passages: about 2x faster than 512 on CPU, measured locally
+  batch_size: 5
+retrieve:
+  rerank_pool: 5                      # small pool: the reranker is the slow part on CPU (5 passages ~1.5 s on 12 local cores)
+  log: "/tmp/retrieval.jsonl"

@@ -1,0 +1,5 @@
+note: "M2 baseline: bge-m3 dense only."
+mode: dense
+rerank: false
+translate_query: false
+top_k: 8

@@ -1,0 +1,34 @@
+# Curated name aliases: hand-checked merges the automatic matching refuses to make.
+#
+# Format:
+#   aliases:
+#     "<canonical name as printed in an attendance list>":
+#       - "<variant as printed in a speaker label>"
+#
+# Only add an entry after checking the variant against the source PDF (scripts/spot_check.py).
+# Names here are copied from the Hansard, never typed from memory.
+#
+# Approved 2026-09-27. Evidence: the variant's labelled seat (or labelled ministerial role) is held by the
+# canonical person in the same sittings' attendance lists.
+aliases:
+  "Datuk Seri Panglima Gapari Bin Katingan @ Geoffrey Kitingan":   # Keningau
+    - "Datuk Seri Panglima Dr. Jeffrey G. Kitingan"
+  "Puan Hannah Yeoh":                                              # Segambut; Menteri Belia dan Sukan
+    - "Puan Yeoh Tseow Suan"
+  "Dato' Tuan Ibharim Bin Tuan Man":                               # Kubang Kerian (attendance spells "Ibharim")
+    - "Dato' Sri Tuan Ibrahim bin Tuan Man"
+  "Datuk Seri Panglima Bung Moktar Bin Radin":                     # Kinabatangan, before the by-election
+    - "Datuk Seri Panglima Moktar bin Raden"
+
+# Added 2026-09-30 (registry duplicate fix). Both checked against the source PDFs, not memory.
+#  - Sepang deputy minister: the same sitting prints her two ways. DR-2024-11-25's attendance list has
+#    "24. Timbalan Menteri Perumahan dan Kerajaan Tempatan, Datuk Hajah Aiman Athirah Binti Sabu (Sepang)" while that
+#    sitting's speech labels read "Timbalan Menteri Perumahan dan Kerajaan Tempatan [Datuk Hajah Raj Munni binti Sabu]";
+#    DR-2024-07-11's attendance list prints "... Datuk Hajah Raj Munni binti Sabu (Sepang)" for the same post and seat.
+#    One seat and one ministerial post: one person, printed under two names by the Hansard itself.
+#  - Menteri Pelaburan, Perdagangan dan Industri: one minister at a time; the label on 2025-02-03 only puts
+#    "Tengku" and the title in a different order ("Tengku Datuk Seri Utama Zafrul" / "Datuk Seri Utama Tengku Zafrul").
+  "Datuk Hajah Aiman Athirah Binti Sabu":                          # Sepang
+    - "Datuk Hajah Raj Munni binti Sabu"
+  "Senator Datuk Seri Utama Tengku Zafrul Bin Tengku Abdul Aziz":  # Menteri Pelaburan, Perdagangan dan Industri
+    - "Senator Tengku Datuk Seri Utama Zafrul bin Tengku Abdul Aziz."

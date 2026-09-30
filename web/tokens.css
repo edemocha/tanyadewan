@@ -1,0 +1,187 @@
+/* Design tokens from Ramps Studio (https://www.ramps.studio/?b=3d7dff&m=full&s=split&c=AAA).
+   Generated from the palette JSON; hex values copied verbatim (OKLCH-derived: do not re-derive).
+   Every paired foreground clears WCAG AAA 7:1 against its background: don't substitute colours into pairs. */
+:root {
+  --primary-50: #f1f6ff;
+  --primary-100: #e1ecff;
+  --primary-200: #c6daff;
+  --primary-300: #9fc1ff;
+  --primary-400: #6ea0ff;
+  --primary-500: #4784ff;
+  --primary-600: #2d6ae7;
+  --primary-700: #1a51c4;
+  --primary-800: #0c3c9f;
+  --primary-900: #042a7b;
+  --primary-950: #001652;
+  --accent-50: #fff3eb;
+  --accent-100: #ffe6d4;
+  --accent-200: #ffceaa;
+  --accent-300: #fdab6b;
+  --accent-400: #e58836;
+  --accent-500: #ce6f00;
+  --accent-600: #ac5c00;
+  --accent-700: #8a4900;
+  --accent-800: #6c3700;
+  --accent-900: #502700;
+  --accent-950: #311600;
+  --accent-2-50: #f8f8db;
+  --accent-2-100: #efefc2;
+  --accent-2-200: #dfde9c;
+  --accent-2-300: #c8c66c;
+  --accent-2-400: #aba737;
+  --accent-2-500: #959000;
+  --accent-2-600: #7c7800;
+  --accent-2-700: #635f00;
+  --accent-2-800: #4c4900;
+  --accent-2-900: #373500;
+  --accent-2-950: #211f00;
+  --neutral-50: #f4f6fa;
+  --neutral-100: #e9ebf0;
+  --neutral-200: #d6d9de;
+  --neutral-300: #bdc0c6;
+  --neutral-400: #9fa2a9;
+  --neutral-500: #888b92;
+  --neutral-600: #71747a;
+  --neutral-700: #595c62;
+  --neutral-800: #44474c;
+  --neutral-900: #313338;
+  --neutral-950: #1c1e22;
+  --success-50: #e1ffe6;
+  --success-100: #c9fad1;
+  --success-200: #a4eeb3;
+  --success-300: #75da8d;
+  --success-400: #3ebe66;
+  --success-500: #01a74c;
+  --success-600: #008c3e;
+  --success-700: #007030;
+  --success-800: #005624;
+  --success-900: #003f18;
+  --success-950: #00260c;
+  --warning-50: #fff5e0;
+  --warning-100: #fce9c2;
+  --warning-200: #f1d69b;
+  --warning-300: #e0bb6c;
+  --warning-400: #c59b37;
+  --warning-500: #af8400;
+  --warning-600: #926e00;
+  --warning-700: #755700;
+  --warning-800: #5b4300;
+  --warning-900: #423000;
+  --warning-950: #281c00;
+  --error-50: #fff3f1;
+  --error-100: #ffe4e0;
+  --error-200: #ffcbc4;
+  --error-300: #ffa59a;
+  --error-400: #fc7064;
+  --error-500: #e4544b;
+  --error-600: #c73b35;
+  --error-700: #a62422;
+  --error-800: #851213;
+  --error-900: #650508;
+  --error-950: #410002;
+  --info-50: #eef7ff;
+  --info-100: #dbeeff;
+  --info-200: #b8deff;
+  --info-300: #85c8ff;
+  --info-400: #3baaf9;
+  --info-500: #0192e3;
+  --info-600: #007abe;
+  --info-700: #006199;
+  --info-800: #004b78;
+  --info-900: #003659;
+  --info-950: #002037;
+
+  --bg-canvas: #e9ebf0;  /* Page background */
+  --bg-surface: #f4f6fa;  /* Card, panel */
+  --bg-surface-raised: #f4f6fa;  /* Dropdown menu */
+  --bg-muted: #d6d9de;  /* Table row hover */
+  --bg-brand: #0c3c9f;  /* Primary button */
+  --bg-brand-hover: #042a7b;  /* Cursor over that button */
+  --bg-brand-active: #001652;  /* Button while pressed */
+  --bg-accent: #6c3700;  /* Secondary button */
+  --bg-accent-hover: #502700;  /* Cursor over secondary */
+  --bg-accent-active: #311600;  /* Secondary while pressed */
+  --bg-tertiary: #4c4900;  /* Tertiary button */
+  --bg-tertiary-hover: #373500;  /* Cursor over tertiary */
+  --bg-success: #005624;  /* Success badge */
+  --bg-success-subtle: #c9fad1;  /* Success banner */
+  --bg-warning: #5b4300;  /* Warning badge */
+  --bg-warning-subtle: #fce9c2;  /* Warning banner */
+  --bg-error: #851213;  /* Destructive button */
+  --bg-error-subtle: #ffe4e0;  /* Error banner */
+  --bg-info: #004b78;  /* Info badge */
+  --bg-info-subtle: #dbeeff;  /* Info banner */
+  --text-primary: #313338;  /* Body copy */
+  --text-secondary: #44474c;  /* Helper text */
+  --text-tertiary: #44474c;  /* Timestamps, captions */
+  --text-disabled: #9fa2a9;  /* Greyed-out label */
+  --text-link: #0c3c9f;  /* Inline link */
+  --text-on-brand: #f1f6ff;  /* Label on a primary button */
+  --text-on-accent: #fff3eb;  /* Label on a secondary button */
+  --text-on-tertiary: #f8f8db;  /* Label on a tertiary button */
+  --text-on-success: #e1ffe6;  /* Label on a success badge */
+  --text-on-warning: #fff5e0;  /* Label on a warning badge */
+  --text-on-error: #fff3f1;  /* Label on a destructive button */
+  --text-on-info: #eef7ff;  /* Label on an info badge */
+  --text-success: #005624;  /* Saved confirmation */
+  --text-error: #851213;  /* Field error message */
+  --text-warning: #5b4300;  /* Quota running low */
+  --text-info: #004b78;  /* Inline tip */
+  --border-subtle: #d6d9de;  /* Divider between rows */
+  --border-default: #bdc0c6;  /* Input outline */
+  --border-strong: #9fa2a9;  /* Emphasised card edge */
+  --border-active: #2d6ae7;  /* Selected tab */
+  --border-error: #e4544b;  /* Outline on a bad field */
+  --bg-inverse: #313338;  /* Tooltip, toast */
+  --text-inverse: #f4f6fa;  /* Text on a tooltip */
+  --ring-focus: #4784ff;  /* Keyboard focus ring */
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg-canvas: #1c1e22;
+  --bg-surface: #313338;
+  --bg-surface-raised: #44474c;
+  --bg-muted: #595c62;
+  --bg-brand: #9fc1ff;
+  --bg-brand-hover: #c6daff;
+  --bg-brand-active: #e1ecff;
+  --bg-accent: #fdab6b;
+  --bg-accent-hover: #ffceaa;
+  --bg-accent-active: #ffe6d4;
+  --bg-tertiary: #c8c66c;
+  --bg-tertiary-hover: #dfde9c;
+  --bg-success: #75da8d;
+  --bg-success-subtle: #003f18;
+  --bg-warning: #e0bb6c;
+  --bg-warning-subtle: #423000;
+  --bg-error: #ffa59a;
+  --bg-error-subtle: #650508;
+  --bg-info: #85c8ff;
+  --bg-info-subtle: #003659;
+  --text-primary: #e9ebf0;
+  --text-secondary: #bdc0c6;
+  --text-tertiary: #bdc0c6;
+  --text-disabled: #71747a;
+  --text-link: #9fc1ff;
+  --text-on-brand: #001652;
+  --text-on-accent: #311600;
+  --text-on-tertiary: #211f00;
+  --text-on-success: #00260c;
+  --text-on-warning: #281c00;
+  --text-on-error: #410002;
+  --text-on-info: #002037;
+  --text-success: #75da8d;
+  --text-error: #ffa59a;
+  --text-warning: #e0bb6c;
+  --text-info: #85c8ff;
+  --border-subtle: #44474c;
+  --border-default: #595c62;
+  --border-strong: #71747a;
+  --border-active: #4784ff;
+  --border-error: #e4544b;
+  --bg-inverse: #e9ebf0;
+  --text-inverse: #313338;
+  --ring-focus: #6ea0ff;
+  color-scheme: dark;
+}

@@ -1,0 +1,5 @@
+note: "Hybrid + reranker, and English/mixed questions also searched in BM (the current default)."
+mode: hybrid
+rerank: true
+translate_query: true
+top_k: 8

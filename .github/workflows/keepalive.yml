@@ -1,0 +1,14 @@
+name: keepalive
+# Free tiers pause idle projects (Hugging Face Space after ~2 days, Qdrant Cloud free cluster after ~1 week).
+# /api/status queries Qdrant, so one request keeps both awake. Set the repo variable SPACE_URL
+# (Settings > Secrets and variables > Actions > Variables), e.g. https://YOURNAME-tanyadewan.hf.space
+on:
+  schedule:
+    - cron: "17 3 */2 * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the API
+        run: curl -fsS --retry 3 --retry-delay 30 --max-time 120 "${{ vars.SPACE_URL }}/api/status"

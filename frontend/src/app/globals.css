@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "./tokens.css";
+
+/* Theme is the Ramps Studio palette (tokens.css, shared with the old web/ page). shadcn's variables below are
+   only aliases onto those semantic tokens: never put a raw colour here. Dark mode is [data-theme="dark"]. */
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-instrument), "Helvetica Neue", Arial, sans-serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  /* extra semantic colours from Ramps, for badges and notices */
+  --color-subtle: var(--text-tertiary);
+  --color-strong-border: var(--border-strong);
+  --color-warning: var(--bg-warning);
+  --color-warning-foreground: var(--text-on-warning);
+  --color-warning-subtle: var(--bg-warning-subtle);
+  --color-info: var(--bg-info);
+  --color-info-foreground: var(--text-on-info);
+  --color-error: var(--bg-error);
+  --color-error-foreground: var(--text-on-error);
+  --color-error-subtle: var(--bg-error-subtle);
+  --color-error-border: var(--border-error);
+  --color-link: var(--text-link);
+  --color-success: var(--bg-success);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: var(--bg-canvas);
+  --foreground: var(--text-primary);
+  --card: var(--bg-surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--bg-surface-raised);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--bg-brand);
+  --primary-foreground: var(--text-on-brand);
+  --secondary: var(--bg-muted);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--bg-muted);
+  --muted-foreground: var(--text-secondary);
+  --accent: var(--bg-muted);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--text-error);
+  --border: var(--border-subtle);
+  --input: var(--border-default);
+  --ring: var(--ring-focus);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    font-feature-settings: "cv11", "ss01", "ss03"; /* Inter: single-storey a, open digits, curved quotes */
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--bg-brand);
+    color: var(--text-on-brand);
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .tabular { font-variant-numeric: tabular-nums; }
+}
+
+/* A source card briefly outlined after its citation number is tapped */
+@keyframes flash-ring { from { box-shadow: 0 0 0 2px var(--border-active); } to { box-shadow: 0 0 0 2px transparent; } }
+.flash { animation: flash-ring 1.6s ease-out; }

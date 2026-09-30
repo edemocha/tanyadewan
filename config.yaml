@@ -1,0 +1,124 @@
+# TanyaDewan tunables. Everything adjustable lives here (CLAUDE.md: no magic numbers).
+# Override the file with TANYADEWAN_CONFIG=/path/to/other.yaml.
+
+fetch:
+  # Descriptive, no personal contact details.
+  user_agent: "TanyaDewan/0.1 (non-commercial portfolio research on Dewan Rakyat Hansard; polite crawler)"
+  delay_seconds: 4.0          # minimum gap between any two requests, across all hosts
+  timeout_seconds: 60
+  max_retries: 3
+  retry_backoff_seconds: 15   # multiplied by the attempt number
+  min_text_page_share: 0.9    # a copy with text on fewer pages is broken: use the other source's copy
+
+  # Two official sources. When both list a sitting, the repository wins (it carries amended
+  # transcripts); the website fills the gaps (it has 2025 onward). See docs/parsing-notes.md.
+  repositori:
+    base_url: "https://repositori.parlimen.gov.my"
+    hansard_roots:             # "Penyata Rasmi Dewan Rakyat" collection handle per Parlimen
+      15: "123456789/1662"
+  laman_web:
+    base_url: "https://www.parlimen.gov.my"
+    tree_url: "https://www.parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr&lang=bm&arkib=yes"
+    current_url: "https://www.parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr&lang=bm"   # current meeting
+    members_url: "https://www.parlimen.gov.my/ahli-dewan.html?uweb=dr&lang=bm"            # official member list with photos
+
+paths:
+  cache_dir: "data/raw/listings"        # every fetched listing page, keyed by URL (gitignored)
+  pdf_dir: "data/raw/pdf"               # Hansard PDFs (gitignored, never redistributed)
+  superseded_dir: "data/raw/pdf/superseded"   # earlier versions kept when a transcript is revised
+  documents: "data/processed/documents.jsonl" # one metadata record per sitting
+
+parse:
+  turns_dir: "data/processed/turns"          # one JSONL of speaker turns per sitting
+  speakers: "data/processed/speakers.json"   # speaker registry
+  report: "data/processed/parse_report.json" # per-sitting counts and warnings
+  header_scan_lines: 4          # running header / page number are within the first N lines of a page
+  interjection_max_chars: 240   # a short turn between two turns of one speaker counts as an interjection
+  label_max_chars: 220          # longer bold runs ending in ':' are not speaker labels
+  heading_min_upper_ratio: 0.7  # a bold line is a section heading if at least this share of letters is upper case
+  lang_min_stopwords: 3         # below this many stopwords, a turn's language is "unknown"
+  lang_mixed_share: 0.25        # minority language share above this makes a turn "mixed"
+
+index:
+  qdrant_path: "data/index/qdrant"    # embedded Qdrant (no Docker needed)
+  qdrant_url: "http://127.0.0.1:6333"  # local server (tools/qdrant); "" = embedded mode in qdrant_path
+  collection: "turns_hybrid_v1"       # named vectors: "dense" (bge-m3) + sparse "bm25"
+  state: "data/index/turns_hybrid_v1.json"  # which sittings are indexed (resumable)
+  migrate_from: "turns_bge_m3_v1"     # dense-only M2 collection; `--migrate` copies its vectors, adds BM25
+  embedder_provider: "ollama"         # behind an interface so other models can be benchmarked
+  embedder_model: "bge-m3"
+  embedder_url: "http://127.0.0.1:11434"
+  embed_batch_size: 32
+  query_keep_alive: "0"               # chat questions: unload the embedding model right after (frees the GPU)
+  chunk_max_chars: 2000               # baseline: one chunk per turn; longer turns split into windows
+  chunk_overlap_chars: 200
+  chunk_min_chars: 20                 # shorter turns ("Terima kasih.") aren't indexed
+  bm25_k1: 1.2                        # term-frequency saturation (index/sparse.py)
+  bm25_b: 0.75                        # length normalisation
+  bm25_avg_len: 93.7                  # mean tokens per chunk over all 266 parsed sittings (2026-09-29)
+
+retrieve:
+  mode: "hybrid"                      # dense | sparse | hybrid (RRF of both); experiments switch this
+  candidates: 40                      # hits taken from each branch before fusion
+  rerank: true                        # cross-encoder rescoring of the fused hits
+  rerank_pool: 30                     # how many fused hits the reranker rescores
+  translate_query: true               # English/mixed questions also search as their BM version (1 LLM call)
+  # Below this best reranker score the result is "not found". Deliberately low and NOT calibrated: on
+  # probe questions (2026-09-29) no threshold separated answerable from off-topic ones. Calibrate on the
+  # golden set's unanswerable questions once they exist.
+  min_relevance: 0.02
+  top_k: 8
+  log: "data/logs/retrieval.jsonl"    # every query: retrieved turn IDs, speakers, scores
+
+generate:
+  # Free hosted providers, tried in order. If one is rate-limited or down before it has written anything,
+  # the next answers (and the UI says so). kind: "openai_compatible" or "ollama" (local).
+  # Source for free tiers: github.com/mnfst/awesome-free-llm-apis (limits checked 27 Sep 2026).
+  providers:
+    - name: "Groq"
+      kind: "openai_compatible"
+      base_url: "https://api.groq.com/openai/v1"
+      model: "qwen/qwen3.8-27b"          # free: 8,000 tokens/min, 1,000 requests/day
+      api_key_env: "LLM_API_KEY"         # in .env
+      reasoning_effort: "none"           # answer directly, no hidden thinking tokens
+    - name: "Kilo"
+      kind: "openai_compatible"
+      base_url: "https://api.kilo.ai/api/gateway"
+      model: "nvidia/nemotron-3-ultra-550b-a55b:free"   # free, no key needed: ~200 requests/hour
+      api_key_env: ""
+      reasoning_effort: ""
+  temperature: 0.1
+  max_tokens: 900
+  context_chars_per_source: 1400      # how much of each retrieved chunk the model sees
+  min_quote_words: 4                  # quoted spans at least this long must appear verbatim in a source
+
+api:
+  host: "127.0.0.1"
+  port: 8766
+
+ocr:
+  enabled: true
+  page_min_chars: 200            # pages with less extractable text than this are OCR'd (broken Feb-Mar 2023 copies)
+  dpi: 200
+  retry_dpis: [150, 250, 300, 400]   # low-confidence lines are re-read from crops at these resolutions
+  min_score: 0.85                # OCR confidence below this = low confidence
+  cache_dir: "data/processed/ocr"   # per-page OCR results (gitignored), so re-parsing doesn't redo OCR
+
+rerank:
+  # BAAI/bge-reranker-v2-m3 ONNX export (onnx-community), run with onnxruntime-directml. Gitignored.
+  # fp16 on the GPU matches the model card's scores and reranks 20 passages in ~0.65 s (RTX 3050);
+  # int8 on CPU (model_int8.onnx, device "cpu") takes ~9 s.
+  model_path: "models/bge-reranker-v2-m3/model_fp16.onnx"
+  tokenizer_path: "models/bge-reranker-v2-m3/tokenizer.json"   # from BAAI/bge-reranker-v2-m3 (Apache-2.0)
+  device: "dml"                       # dml (DirectML GPU, falls back to CPU) | cpu
+  max_tokens: 512                     # query + passage, truncated
+  batch_size: 8
+  threads: 0                          # CPU threads; 0 = onnxruntime default
+
+photos:
+  # Official portraits from the Parlimen member list (speakers/photos.py). The originals are ~1.7 MB each, so
+  # each is downloaded once, politely, and kept only as a small avatar thumbnail (gitignored, never committed).
+  file: "data/processed/photos.json"        # speaker_id -> seat, name on the list, official profile URL
+  thumb_dir: "data/processed/photos"        # <speaker_id>.jpg thumbnails served by the API
+  thumb_px: 128                             # longest side; avatars show at 20-36px, 2x-3x for sharp screens
+  jpeg_quality: 82

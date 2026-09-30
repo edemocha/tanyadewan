@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ms" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TanyaDewan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/tokens.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='29' font-family='Arial' font-weight='700' font-size='17' fill='%23fff' text-anchor='middle'%3ETanya%3C/text%3E%3Ctext x='32' y='48' font-family='Arial' font-weight='400' font-size='17' fill='%23fff' text-anchor='middle'%3EDewan.%3C/text%3E%3C/svg%3E">
+  <script>try{var t=localStorage.getItem("td_theme");if(t)document.documentElement.dataset.theme=t;else if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}catch(e){}</script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Sembang">
+      <div class="side-top">
+        <a class="logo" href="/" aria-label="TanyaDewan"><span class="l1">Tanya</span><span class="l2">Dewan.</span></a>
+        <button class="icon-btn" id="hide-sidebar" type="button" aria-label="Sembunyikan panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/></svg>
+        </button>
+      </div>
+      <button class="new-chat" id="new-chat" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Soalan baru
+      </button>
+
+      <details class="side-section" id="filters">
+        <summary>Penapis</summary>
+        <form class="filter-form" id="filter-form" autocomplete="off">
+          <label>Dari <input type="date" name="date_from" min="2022-12-19"></label>
+          <label>Hingga <input type="date" name="date_to" min="2022-12-19"></label>
+          <label>Ahli Parlimen <input name="speaker" list="speakers" placeholder="Nama atau kawasan"></label>
+          <datalist id="speakers"></datalist>
+          <button type="reset" class="link-btn">Kosongkan penapis</button>
+        </form>
+      </details>
+
+      <p class="side-label">Sembang terdahulu</p>
+      <nav class="chat-list" id="chat-list" aria-label="Sembang terdahulu"></nav>
+
+      <div class="side-foot">
+        <p class="status" id="status">Membuka almari fail…</p>
+        <button class="theme" id="theme" type="button" aria-label="Tukar tema">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" class="fill"/></svg>
+          <span>Tema</span>
+        </button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="show-sidebar" type="button" aria-label="Tunjuk panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/></svg>
+        </button>
+        <a class="logo small" href="/" aria-label="TanyaDewan"><span class="l1">Tanya</span><span class="l2">Dewan.</span></a>
+        <button class="icon-btn right" id="new-chat-top" type="button" aria-label="Soalan baru">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+      </header>
+
+      <section class="empty" id="empty">
+        <div class="empty-inner">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span><span id="eyebrow-text">Penyata Rasmi Dewan Rakyat · Parlimen ke-15</span></p>
+          <h1>Tanya apa sahaja tentang Dewan Rakyat.</h1>
+          <p class="tagline">Kami dah baca setiap Penyata Rasmi supaya anda tak perlu. Pustakawan, bukan pengulas politik.</p>
+          <div id="composer-home"></div>
+          <p class="kbd-hint"><kbd>Enter</kbd> hantar <span aria-hidden="true">·</span> <kbd>Shift</kbd> + <kbd>Enter</kbd> baris baru</p>
+          <div class="suggestions" id="suggestions">
+            <button type="button">Apa yang MP cakap pasal PTPTN?</button>
+            <button type="button">Which MPs raised flood mitigation in Kelantan?</button>
+            <button type="button">Minister cakap apa bila ditanya pasal harga telur?</button>
+            <button type="button">Siapa betul pasal isu subsidi diesel?</button>
+          </div>
+          <p class="fine">Sumber: Penyata Rasmi Dewan Rakyat © Parlimen Malaysia. Setiap jawapan dipautkan ke PDF rasmi.</p>
+        </div>
+      </section>
+
+      <section class="conversation" id="conversation" hidden>
+        <div class="thread" id="thread" aria-live="polite"></div>
+      </section>
+
+      <footer class="dock" id="dock" hidden>
+        <div id="composer-dock"></div>
+        <p class="fine">TanyaDewan boleh tersilap. Semak petikan dengan PDF rasmi.</p>
+      </footer>
+    </main>
+
+    <aside class="source-panel" id="source-panel" aria-label="Sumber" hidden>
+      <header class="panel-head">
+        <div>
+          <p class="panel-title">Sumber</p>
+          <p class="panel-q" id="panel-q"></p>
+        </div>
+        <button class="icon-btn" id="close-panel" type="button" aria-label="Tutup sumber">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </header>
+      <ol class="cards" id="panel-cards"></ol>
+    </aside>
+    <div class="panel-scrim" id="panel-scrim"></div>
+  </div>
+
+  <template id="tpl-composer">
+    <form class="composer" autocomplete="off">
+      <label class="sr" for="q">Soalan</label>
+      <textarea id="q" rows="1" maxlength="500" placeholder="Tanya tentang perbahasan Dewan Rakyat…"></textarea>
+      <button type="submit" class="send" aria-label="Hantar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </button>
+    </form>
+  </template>
+
+  <template id="tpl-turn">
+    <article class="turn">
+      <div class="q-row"><p class="q"></p></div>
+      <div class="a">
+        <div class="thinking" data-state="searching"><span class="dots"><i></i><i></i><i></i></span><span class="msg"></span></div>
+        <div class="answer"></div>
+        <p class="error" hidden></p>
+        <div class="checks" hidden></div>
+        <div class="actions">
+          <button type="button" class="src-btn" hidden>
+            <span class="av-slot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M4 12h16M4 19h9"/></svg>
+            <span class="count"></span> sumber
+          </button>
+          <button type="button" class="copy-btn" hidden aria-label="Salin jawapan">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8"/></svg>
+            <span class="copy-label">Salin</span>
+          </button>
+        </div>
+        <p class="meta"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="/static/app.js"></script>
+  <!-- Metal effect (metal-fx) on two buttons and thinking orbs (thinking-orbs), both by Jakub Antalik, MIT. React + metal-fx load as pinned ES modules;
+       if they can't load, or WebGL2 is missing, the plain buttons stay. -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.2.0",
+        "react/jsx-runtime": "https://esm.sh/react@19.2.0/jsx-runtime",
+        "react-dom": "https://esm.sh/react-dom@19.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@19.2.0/client",
+        "metal-fx": "https://esm.sh/metal-fx@2.0.11?external=react,react-dom",
+        "thinking-orbs": "https://esm.sh/thinking-orbs@0.3.2?external=react"
+      }
+    }
+  </script>
+  <script type="module" src="/static/metal.js"></script>
+  <script type="module" src="/static/orbs.js"></script>
+</body>
+</html>

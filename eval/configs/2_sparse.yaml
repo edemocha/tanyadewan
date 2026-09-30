@@ -1,0 +1,5 @@
+note: "BM25 keyword only."
+mode: sparse
+rerank: false
+translate_query: false
+top_k: 8

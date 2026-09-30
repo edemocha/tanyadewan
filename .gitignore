@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Data: Hansard PDFs are copyrighted (Parlimen Malaysia). Never commit raw PDFs or derived text.
+data/
+
+# Secrets
+.env
+
+# Local tools (Qdrant binary)
+tools/
+
+# Downloaded model weights (reranker ONNX), never committed
+models/
+
+# Space bundle output
+deploy/space/

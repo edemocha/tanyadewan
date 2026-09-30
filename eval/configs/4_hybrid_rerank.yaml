@@ -1,0 +1,5 @@
+note: "Hybrid, then bge-reranker-v2-m3 over the top 30."
+mode: hybrid
+rerank: true
+translate_query: false
+top_k: 8
