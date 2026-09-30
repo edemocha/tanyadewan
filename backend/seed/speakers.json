@@ -1,0 +1,7634 @@
+[
+ {
+  "speaker_id": "aaron-ago-dagang",
+  "name": "Datuk Aaron Ago Dagang",
+  "core_name": "aaron ago dagang",
+  "name_variants": [
+   "Datuk Aaron Ago Dagang",
+   "Datuk Aaron Ago Dagang, Pjn.",
+   "Datuk Aaron Ago anak Dagang"
+  ],
+  "label_variants": [
+   "Datuk Aaron Ago anak Dagang"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kanowit",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Perpaduan Negara",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "abdul-ghani-ahmad",
+  "name": "Dr. Haji Abd Ghani Bin Haji Ahmad",
+  "core_name": "abdul ghani ahmad",
+  "name_variants": [
+   "Dr. Haji Abd Ghani Bin Haji Ahmad",
+   "Dr. Haji Abd Ghani Bin Haji Ahmad, S.M.K., J.P.",
+   "Dr. Haji Abd Ghani bin Haji Ahmad"
+  ],
+  "label_variants": [
+   "Dr. Abd Ghani bin Ahmad",
+   "Dr. Abdul Ghani bin Ahmad",
+   "Dr. Haji Abd Ghani bin Ahmad",
+   "Dr.Haji Abd Ghani bin Ahmad",
+   "Haji Abd Ghani bin Ahmad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jerlun",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-hadi-awang",
+  "name": "Tan Sri Haji Abdul Hadi Bin Haji Awang",
+  "core_name": "abdul hadi awang",
+  "name_variants": [
+   "Tan Sri Dato' Seri Haji Abdul Hadi bin Haji Awang",
+   "Tan Sri Haji Abdul Hadi Bin Haji Awang",
+   "Tan Sri Haji Abdul Hadi Bin Haji Awang, S.S.M.T.",
+   "Tan Sri Haji Abdul Hadi bin Haji Awang"
+  ],
+  "label_variants": [
+   "Tan Sri Dato' Seri Haji Abdul Hadi bin Awang",
+   "Tan Sri Haji Abdul Hadi bin Awang"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Marang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-halim-suleiman",
+  "name": "Senator Dato' Abdul Halim bin Suleiman",
+  "core_name": "abdul halim suleiman",
+  "name_variants": [
+   "Senator Dato' Abdul Halim bin Suleiman",
+   "Senator Dato' Haji Abdul Halim bin Haji Suleiman",
+   "Senator Dato' Haji Abdul Halim bin Haji Suleiman."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-khalib-abdullah",
+  "name": "Dato' Haji Abdul Khalib Bin Abdullah",
+  "core_name": "abdul khalib abdullah",
+  "name_variants": [
+   "Dato' Haji Abdul Khalib Bin Abdullah",
+   "Dato' Haji Abdul Khalib Bin Abdullah, D.I.M.P., A.M.P., P.P.N.",
+   "Dato' Haji Abdul Khalib bin Abdullah"
+  ],
+  "label_variants": [
+   "Dato' Abdul Khalib bin Abdullah",
+   "Dato' Haji Abdul Khalib bin Abdullah",
+   "Haji Abdul Khalib bin Abdullah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Rompin",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-latiff-abdul-rahman",
+  "name": "Tuan Haji Abdul Latiff Bin Abdul Rahman",
+  "core_name": "abdul latiff abdul rahman",
+  "name_variants": [
+   "Tuan Haji Abdul Latiff Bin Abdul Rahman",
+   "Tuan Haji Abdul Latiff bbn Abdul Rahman",
+   "Tuan Haji Abdul Latiff bin Abdul Rahman"
+  ],
+  "label_variants": [
+   "Haji Abdul Latiff bin Abdul Rahman",
+   "Tuan Abdul Haji Latiff bin Abdul Rahman",
+   "Tuan Abdul Latiff bin Abdul Rahman",
+   "Tuan Haji Abdul Latiff bin Abdul Rahman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Krai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-nasir-idris",
+  "name": "Senator Tuan Haji Abdul Nasir bin Haji Idris",
+  "core_name": "abdul nasir idris",
+  "name_variants": [
+   "Senator Tuan Haji Abdul Nasir bin Haji Idris"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "abdul-rahman-mohamad",
+  "name": "Dato' Sri Haji Abdul Rahman Bin Mohamad",
+  "core_name": "abdul rahman mohamad",
+  "name_variants": [
+   "Dato' Sri Abdul Rahman bin Haji Mohamad",
+   "Dato' Sri Haji Abdul Rahman Bin Mohamad",
+   "Dato' Sri Haji Abdul Rahman bin Mohamad"
+  ],
+  "label_variants": [
+   "Dato' Sri Abdul Rahman bin Haji Mohamad",
+   "Dato' Sri Abdul Rahman bin Mohamad",
+   "Dato' Sri Haji Abdul Rahman bin Haji Mohamad",
+   "Dato' Sri Haji Abdul Rahman bin Mohamad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lipis",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kerja Raya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Peralihan Tenaga dan Tranformasi Air",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Manusia",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   }
+  ]
+ },
+ {
+  "speaker_id": "abun-sui-anyit",
+  "name": "Senator Tuan Abun Sui Anyit",
+  "core_name": "abun sui anyit",
+  "name_variants": [
+   "Senator Tuan Abun Sui Anyit",
+   "Senator Tuan Abun Sui Anyit."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "adam-adli-abdul-halim",
+  "name": "Tuan Adam Adli Bin Abd Halim",
+  "core_name": "adam adli abdul halim",
+  "name_variants": [
+   "Adam Adli Bin Abd Halim",
+   "Adam Adli Bin Àbd Halim",
+   "Tuan Adam Adli Bin Abd Halim",
+   "Tuan Adam Adli bin Abd Halim"
+  ],
+  "label_variants": [
+   "Tuan Adam Adli Abd Halim",
+   "Tuan Adam Adli Abdul Halim",
+   "Tuan Adam Adli bin Abd Halim",
+   "Tuan Adam Ali bin Abd Halim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Hang Tuah Jaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Belia Dan Sukan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Belia dan Sukan",
+    "first_seen": "2023-02-24",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Beliadan Sukan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Timbalan Menteri Pendidikan Tinggi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "adam-adli-abdul-halim-ii-06-03-2023",
+  "name": "Tuan Adam Adli Bin Abd Halim (Hang Tuah Jaya) ii DR.06.03.2023",
+  "core_name": "adam adli abdul halim ii 06 03 2023",
+  "name_variants": [
+   "Tuan Adam Adli Bin Abd Halim (Hang Tuah Jaya) ii DR.06.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Belia Dan Sukan",
+    "first_seen": "2023-03-06",
+    "last_seen": "2023-03-06"
+   }
+  ]
+ },
+ {
+  "speaker_id": "adly-zahari",
+  "name": "Tuan Haji Adly Bin Zahari",
+  "core_name": "adly zahari",
+  "name_variants": [
+   "Haji Adly Bin Zahari",
+   "Tuan Haji Adly Bin Zahari",
+   "Tuan Haji Adly bin Zahari"
+  ],
+  "label_variants": [
+   "Tuan Adly bin Zahari",
+   "Tuan Haji Adly bin Zahari"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Alor Gajah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pertahanan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "adly-zahari-ii-13-02-2023",
+  "name": "Haji Adly Bin Zahari (Alor Gajah) ii DR.13.02.2023",
+  "core_name": "adly zahari ii 13 02 2023",
+  "name_variants": [
+   "Haji Adly Bin Zahari (Alor Gajah) ii DR.13.02.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pertahanan",
+    "first_seen": "2023-02-13",
+    "last_seen": "2023-02-13"
+   }
+  ]
+ },
+ {
+  "speaker_id": "adnan-abu-hassan",
+  "name": "Dato' Haji Adnan Bin Abu Hassan",
+  "core_name": "adnan abu hassan",
+  "name_variants": [
+   "Dato' Haji Adnan Bin Abu Hassan",
+   "Dato' Haji Adnan bin Abu Hassan"
+  ],
+  "label_variants": [
+   "Dato' Adnan bin Abu Hassan",
+   "Dato' Adnan bin Haji Abu Hassan",
+   "Dato' Haji Adnan bin Abu Hassan",
+   "Dato' Haji Adnan bin Haji Abu Hassan",
+   "Haji Abu Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Pilah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "afnan-hamimi-taib-azamudden",
+  "name": "Tuan Afnan Hamimi Bin Dato' Haji Taib Azamudden",
+  "core_name": "afnan hamimi taib azamudden",
+  "name_variants": [
+   "Tuan Afnan Hamimi Bin Dato' Haji Taib Azamudden",
+   "Tuan Afnan Hamimi bin Dato' Haji Taib Azamudden"
+  ],
+  "label_variants": [
+   "Tuan Afnan Hamimi bin Dato' Haji Azamudden",
+   "Tuan Afnan Hamimi bin Dato' Haji Taib Azamudden",
+   "Tuan Afnan Hamimi bin Dato'Haji Taib Azamudden",
+   "Tuan Afnan Hamimi bin Taib Azamudden"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Alor Setar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-amzad-mohamed",
+  "name": "Datuk Haji Ahmad Amzad Bin Mohamed @ Hashim",
+  "core_name": "ahmad amzad mohamed",
+  "name_variants": [
+   "Datuk Haji Ahmad Amzad Bin Mohamed @ Hashim",
+   "Datuk Haji Ahmad Amzad bin Mohamed @ Hashim",
+   "Datuk Haji Ahmad Amzad bin Mohamed @Hashim"
+  ],
+  "label_variants": [
+   "Datuk Ahmad Amzad bin Mohamed",
+   "Datuk Ahmad Amzad bin Mohamed @ Hashim",
+   "Datuk Ahmad Amzad bin Mohamed @Hashim",
+   "Datuk Haji Ahmad Amzad bin Mohamed @ Hashim",
+   "Tuan Haji Ahmad Amzad bin Mohamed @ Hashim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Terengganu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-azam-hamzah",
+  "name": "Senator Dato' Dr. Ahmad Azam bin Hamzah",
+  "core_name": "ahmad azam hamzah",
+  "name_variants": [
+   "Senator Dato' Dr. Ahmad Azam bin Hamzah",
+   "Senator Dato' Dr. Ahmad Azam bin Hamzah."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-fadhli-shaari",
+  "name": "Tuan Ahmad Fadhli Bin Shaari",
+  "core_name": "ahmad fadhli shaari",
+  "name_variants": [
+   "Tuan Ahmad Fadhli Bin Shaari",
+   "Tuan Ahmad Fadhli bin Shaari",
+   "Tuan Haji Ahmad Fadhli bin Shaari"
+  ],
+  "label_variants": [
+   "Haji Ahmad Fadhli bin Shaari",
+   "Tuan Ahmad Fadhli bin Shaari",
+   "Tuan Haji Ahmad Fadhli bin Shaari"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pasir Mas",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-fahmi-mohamed-fadzil",
+  "name": "Tuan Ahmad Fahmi Bin Mohamed Fadzil",
+  "core_name": "ahmad fahmi mohamed fadzil",
+  "name_variants": [
+   "Dato' Seri Ahmad Fahmi bin Mohamed Fadzil",
+   "Datuk Ahmad Fahmi bin Mohamed Fadzil",
+   "Tuan Ahmad Fahmi Bin Mohamed Fadzil",
+   "Tuan Ahmad Fahmi bin Mohamed Fadzil"
+  ],
+  "label_variants": [
+   "Datuk Ahmad Fahmi bin Mohamed Fadzil",
+   "Tuan Ahmad Fahmi bin Mohamed Fadzil"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lembah Pantai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Komunikasi",
+    "first_seen": "2024-03-13",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Komunikasi Dan Digital",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-03-12"
+   },
+   {
+    "role": "Menteri Komunikasi dan Digital",
+    "first_seen": "2023-10-10",
+    "last_seen": "2024-02-29"
+   },
+   {
+    "role": "Menteri Komunikasi, YB.",
+    "first_seen": "2024-07-02",
+    "last_seen": "2024-07-02"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ahmad-fakhruddin-fakhrurazi",
+  "name": "Dr. Ahmad Fakhruddin Bin Fakhrurazi",
+  "core_name": "ahmad fakhruddin fakhrurazi",
+  "name_variants": [
+   "Dr. Ahmad Fakhruddin Bin Fakhrurazi",
+   "Dr. Ahmad Fakhruddin bin Fakhrurazi",
+   "Dr. Ahmad Fakhruddin bn Fakhrurazi"
+  ],
+  "label_variants": [
+   "Dr. Ahmad Fakhruddin bin Fakhrurazi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Kedah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-johnie-zawawi",
+  "name": "Tuan Haji Ahmad Johnie Bin Zawawi",
+  "core_name": "ahmad johnie zawawi",
+  "name_variants": [
+   "Tuan Haji Ahmad Johnie Bin Zawawi",
+   "Tuan Haji Ahmad Johnie bin Zawawi"
+  ],
+  "label_variants": [
+   "Tuan Haji Ahmad Johnie bin Zawawi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Igan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-marzuk-shaary",
+  "name": "Datuk Dr. Ahmad Marzuk bin Shaary",
+  "core_name": "ahmad marzuk shaary",
+  "name_variants": [
+   "Datuk Dr. Ahmad Marzuk Bin Shaary",
+   "Datuk Dr. Ahmad Marzuk bin Shaary",
+   "Datuk Dr. Haji Ahmad Marzuk Bin Shaary",
+   "Datuk Dr. Haji Ahmad Marzuk bin Shaary",
+   "Datuk Haji Ahmad Marzuk Bin Shaary"
+  ],
+  "label_variants": [
+   "Datuk Ahmad Marzuk bin Shaary",
+   "Datuk Dr. Ahmad Marzuk bin Shaary",
+   "Datuk Dr. Haji Ahmad Marzuk bin Shaary",
+   "Datuk Haji Ahmad Marzuk bin Shaary",
+   "Dr. Ahmad Marzuk bin Shaary"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pengkalan Chepa",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-maslan",
+  "name": "Datuk Seri Haji Ahmad Bin Haji Maslan",
+  "core_name": "ahmad maslan",
+  "name_variants": [
+   "Datuk Seri Dr. Haji Ahmad bin Haji Maslan",
+   "Datuk Seri Haji Ahmad Bin Haji Maslan",
+   "Datuk Seri Haji Ahmad bin Haji Maslan"
+  ],
+  "label_variants": [
+   "Datuk Seri Ahmad bin Haji Maslan",
+   "Datuk Seri Dr. Haji Ahmad bin Haji Maslan",
+   "Datuk Seri Haji Ahmad bin Haji Maslan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pontian",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kerja Raya",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Kewangan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ahmad-saad",
+  "name": "Dato' Haji Ahmad Bin Saad @ Yahaya",
+  "core_name": "ahmad saad",
+  "name_variants": [
+   "Dato' Haji Ahmad Bin Saad @ Yahaya",
+   "Dato' Haji Ahmad bin Saad @ Yahaya"
+  ],
+  "label_variants": [
+   "Dato' Ahmad bin Saad @ Yahaya",
+   "Dato' Haji Ahmad bin Saad @ Yahaya",
+   "Dato' Haji Ahmad bin Saad @Yahaya",
+   "Haji Ahmad bin Saad @ Yahaya"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pokok Sena",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-samsuri-mokhtar",
+  "name": "Dato' Seri Dr. Ahmad Samsuri bin Mokhtar",
+  "core_name": "ahmad samsuri mokhtar",
+  "name_variants": [
+   "Dato' Seri Dr. Ahmad Samsuri Bin Mokhtar",
+   "Dato' Seri Dr. Ahmad Samsuri bin Mokhtar",
+   "Dato' Seri Ir. Dr. Ahmad Samsuri Bin Mokhtar",
+   "Dato' Seri Ir. Dr. Ahmad Samsuri bin Mokhtar"
+  ],
+  "label_variants": [
+   "Dato' Seri Dr. Ahmad Samsuri bin Mokhtar",
+   "Dato' Seri Ir. Dr. Ahmad Samsuri bin Mokhtar",
+   "Dr. Ahmad Samsuri bin Mokhtar"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kemaman",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-sri-ibrahim",
+  "name": "Senator Dato' Ahmad bin Dato' Sri Haji Ibrahim",
+  "core_name": "ahmad sri ibrahim",
+  "name_variants": [
+   "Senator Dato' Ahmad bin Dato' Sri Haji Ibrahim",
+   "Senator Dato' Ahmad bin Dato' Sri Haji Ibrahim., Dimp.",
+   "Senator Dato' Ahmad bin Dato' Sri Hj. Ibrahim"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-tarmizi-sulaiman",
+  "name": "Tuan Ahmad Tarmizi Bin Sulaiman",
+  "core_name": "ahmad tarmizi sulaiman",
+  "name_variants": [
+   "Tuan Ahmad Tarmizi Bin Sulaiman",
+   "Tuan Ahmad Tarmizi bin Sulaiman"
+  ],
+  "label_variants": [
+   "Tuan Ahmad Tamizi bin Sulaiman",
+   "Tuan Ahmad Tarmizi bin Sulaiman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sik",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-tarmizi-sulaiman-13-02-2023-v",
+  "name": "Tuan Ahmad Tarmizi Bin Sulaiman (Sik) DR.13.02.2023 V",
+  "core_name": "ahmad tarmizi sulaiman 13 02 2023 v",
+  "name_variants": [
+   "Tuan Ahmad Tarmizi Bin Sulaiman (Sik) DR.13.02.2023 V"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-yunus-hairi",
+  "name": "Dato' Dr Ahmad Yunus Bin Hairi",
+  "core_name": "ahmad yunus hairi",
+  "name_variants": [
+   "Dato' Dr Ahmad Yunus Bin Hairi",
+   "Dato' Dr Ahmad Yunus bin Hairi",
+   "Dato' Dr. Ahmad Yunus bin Hairi"
+  ],
+  "label_variants": [
+   "Dato Dr. Ahmad Yunus bin Hairi",
+   "Dato' Dr. Ahmad Yunus bin Hairi",
+   "Dato'Dr. Ahmad Yunus bin Hairi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Langat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ahmad-zahid-hamidi",
+  "name": "Dato' Seri Dr. Ahmad Zahid Bin Hamidi",
+  "core_name": "ahmad zahid hamidi",
+  "name_variants": [
+   "Dato' Seri Dr. Ahmad Zahid Bin Hamidi",
+   "Dato' Seri Dr. Ahmad Zahid bin Hamidi",
+   "Timbalan Perdana Menteridan Menteri Kemajuan Desadan Wilayah, Dato' Seri Dr. Ahmad Zahid Bin Hamidi"
+  ],
+  "label_variants": [
+   "Dato' Seri Dr. Ahmad Zahid bin Hamid",
+   "Dato' Seri Dr. Ahmad Zahid bin Hamidi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bagan Datuk",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Perdana Menteri Dan Menteri Kemajuan Desa Dan Wilayah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Perdana Menteri Dan Menteri Kemajuan Desa dan Wilayah",
+    "first_seen": "2024-07-16",
+    "last_seen": "2024-07-16"
+   },
+   {
+    "role": "Timbalan Perdana Menteri dan Menteri Kemajuan Desa Dan Wilayah",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-02-24"
+   },
+   {
+    "role": "Timbalan Perdana Menteri dan Menteri Kemajuan Desa dan Wilayah",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "aiman-athirah-sabu",
+  "name": "Datuk Hajah Aiman Athirah binti Sabu",
+  "core_name": "aiman athirah sabu",
+  "name_variants": [
+   "Datuk Aiman Athirah binti Sabu",
+   "Datuk Hajah Aiman Athirah Binti Sabu",
+   "Datuk Hajah Aiman Athirah binti Sabu",
+   "Datuk Hajah Raj Munni Binti Sabu",
+   "Datuk Hajah Raj Munni binti Sabu",
+   "Puan Aiman Athirah Binti Sabu"
+  ],
+  "label_variants": [
+   "Datuk Hajah Aiman Athirah binti Sabu",
+   "Datuk Hajah Raj Munni bin Sabu",
+   "Datuk Hajah Raj Munni binti Sabu",
+   "Puan Hajah Raj Munni binti Sabu"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sepang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga Dan Masyarakat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-10-10"
+   },
+   {
+    "role": "Timbalan Menteri Perumahan Dan Kerajaan Tempatan",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Perumahan dan Kerajaan Tempatan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Perumahandan Kerajaan Tempatan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "aiman-athirah-sabu-ii-02-03-2023",
+  "name": "Puan Aiman Athirah Binti Sabu (Sepang) ii DR.02.03.2023",
+  "core_name": "aiman athirah sabu ii 02 03 2023",
+  "name_variants": [
+   "Puan Aiman Athirah Binti Sabu (Sepang) ii DR.02.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga Dan Masyarakat",
+    "first_seen": "2023-03-02",
+    "last_seen": "2023-03-02"
+   }
+  ]
+ },
+ {
+  "speaker_id": "aiman-athirah-sabu-ii-28-02-2023",
+  "name": "Puan Aiman Athirah Binti Sabu (Sepang) ii DR.28.02.2023",
+  "core_name": "aiman athirah sabu ii 28 02 2023",
+  "name_variants": [
+   "Puan Aiman Athirah Binti Sabu (Sepang) ii DR.28.02.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga Dan Masyarakat",
+    "first_seen": "2023-02-28",
+    "last_seen": "2023-02-28"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ajis-sitin",
+  "name": "Senator Dato' Ajis Bin Sitin",
+  "core_name": "ajis sitin",
+  "name_variants": [
+   "Senator Dato' Ajis Bin Sitin"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "akmal-nasrullah-mohd-nasir",
+  "name": "Tuan Haji Akmal Nasrullah bin Haji Mohd Nasir",
+  "core_name": "akmal nasrullah mohd nasir",
+  "name_variants": [
+   "Tuan Akmal Nasrullah Bin Mohd Nasir",
+   "Tuan Haji Akmal Nasrullah Bin Haji Mohd Nasir",
+   "Tuan Haji Akmal Nasrullah bin Haji Mohd Nasir"
+  ],
+  "label_variants": [
+   "Tuan Haji Akmal Nasrullah bin Haji Mohd Nasir",
+   "Tuan Haji Akmal Nasrullah bin Mohd Nasir"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Johor Bahru",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Selangor Selangor",
+    "first_seen": "2023-11-20",
+    "last_seen": "2023-11-20"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Ekonomi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Kerajaan Tempatan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Peralihan Tenaga Dan Transformasi Air",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Peralihan Tenaga dan Transformasi Air",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Peralihan Tenagadan Transformasi Air",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "alexander-nanta-linggi",
+  "name": "Dato Sri Alexander Nanta Linggi",
+  "core_name": "alexander nanta linggi",
+  "name_variants": [
+   "Dato Sri Alexander Nanta Linggi"
+  ],
+  "label_variants": [
+   "Dato Seri Alexander Nanta Linggi",
+   "Dato Sri Alexander Nanta Linggi",
+   "Dato' Sri Alexander Nanta Linggi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kapit",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Kerja Raya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ali-biju",
+  "name": "Datuk Ali Anak Biju",
+  "core_name": "ali biju",
+  "name_variants": [
+   "Datuk Ali Anak Biju",
+   "Datuk Ali Anak Biju, Pmw.",
+   "Datuk Ali anak Biju",
+   "Tan Sri Dato' Seri Haji Abdul Hadi bin Haji Awang (Marang) Datuk Ali Anak Biju"
+  ],
+  "label_variants": [
+   "Datuk Ali anak Biju"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Saratok",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "alias-razak",
+  "name": "Dato' Dr. Haji Alias Bin Razak",
+  "core_name": "alias razak",
+  "name_variants": [
+   "Dato' Dr. Haji Alias Bin Razak",
+   "Dato' Dr. Haji Alias bin Razak"
+  ],
+  "label_variants": [
+   "Dato' Dr. Alias bin Razak",
+   "Dato' Dr. Haji Alias bin Razak",
+   "Dato' Dr. Haji. Alias bin Razak",
+   "Dato' Dr. Hj Alias bin Razak",
+   "Dato' Dr. Hj. Alias bin Razak",
+   "Dr. Hj. Alias bin Razak",
+   "Haji Alias bin Razak"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Nerus",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "alice-lau-kiong-yieng",
+  "name": "Puan Alice Lau Kiong Yieng",
+  "core_name": "alice lau kiong yieng",
+  "name_variants": [
+   "Puan Alice Lau Kiong Yieng"
+  ],
+  "label_variants": [
+   "Puan Alice Lau Kiong Yien",
+   "Puan Alice Lau Kiong Yieng"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lanang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Rakyat",
+    "first_seen": "2023-02-28",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Rakyat 2",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-02-24"
+   }
+  ]
+ },
+ {
+  "speaker_id": "aminolhuda-hassan",
+  "name": "Tuan Haji Aminolhuda Bin Hassan",
+  "core_name": "aminolhuda hassan",
+  "name_variants": [
+   "Tuan Haji Aminolhuda Bin Hassan",
+   "Tuan Haji Aminolhuda bin Hassan"
+  ],
+  "label_variants": [
+   "Haji Aminolhuda bin Hassan",
+   "Tuan Aminolhuda bin Hassan",
+   "Tuan Haji Aminolhuda Hassan",
+   "Tuan Haji Aminolhuda bin Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sri Gading",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "aminuddin-harun",
+  "name": "Dato' Seri Haji Aminuddin Bin Harun",
+  "core_name": "aminuddin harun",
+  "name_variants": [
+   "Dato' Seri Haji Aminuddin Bin Harun",
+   "Dato' Seri Haji Aminuddin bin Harun",
+   "Dato' Seri Utama Haji Aminuddin bin Harun"
+  ],
+  "label_variants": [
+   "Dato' Seri Aminuddin bin Harun",
+   "Dato' Seri Haji Aminuddin bin Harun",
+   "Dato' Seri Utama Aminuddin bin Harun",
+   "Dato' Seri Utama Haji Aminuddin bin Harun",
+   "Haji Aminuddin bin Harun"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Port Dickson",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "amir-hamzah-azizan",
+  "name": "Senator Datuk Seri Amir Hamzah bin Azizan",
+  "core_name": "amir hamzah azizan",
+  "name_variants": [
+   "Senator Datuk Seri Amir Hamzah Azizan.",
+   "Senator Datuk Seri Amir Hamzah Bin Azizan",
+   "Senator Datuk Seri Amir Hamzah bin Azizan"
+  ],
+  "label_variants": [
+   "Datuk Seri Amir Hamzah Azizan",
+   "Datuk Seri Amir Hamzah bin Azizan"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Kewangan II",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "amir-md-ghazali",
+  "name": "Senator Tuan Amir bin Md Ghazali",
+  "core_name": "amir md ghazali",
+  "name_variants": [
+   "Senator Tuan Amir bin Md Ghazali"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "amirudin-shari",
+  "name": "Dato' Seri Amirudin Bin Shari",
+  "core_name": "amirudin shari",
+  "name_variants": [
+   "Dato' Seri Amirudin Bin Shari",
+   "Dato' Seri Amirudin bin Shari"
+  ],
+  "label_variants": [
+   "Dato' Seri Amiruddin bin Shari",
+   "Dato' Seri Amirudin bin Shari",
+   "Datuk Seri Amirudin bin Shari"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Gombak",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "andi-muhammad-suryady-bandy",
+  "name": "Datuk Andi Muhammad Suryady Bin Bandy",
+  "core_name": "andi muhammad suryady bandy",
+  "name_variants": [
+   "Datuk Andi Muhammad Suryady Bin Bandy",
+   "Datuk Andi Muhammad Suryady bin Bandy"
+  ],
+  "label_variants": [
+   "Datuk Andi Muhammad Suryady bin Bandy"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kalabakan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "anifah-aman",
+  "name": "Senator Tan Sri Datuk Seri Panglima Anifah bin Aman",
+  "core_name": "anifah aman",
+  "name_variants": [
+   "Senator Tan Sri Datuk Seri Panglima Anifah bin Aman",
+   "Senator Tan Sri Datuk Seri Panglima Anifah bin Aman."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "anna-bell",
+  "name": "Senator Puan Anna Bell @ Suzieana binti Perian.",
+  "core_name": "anna bell",
+  "name_variants": [
+   "Senator Datuk Anna Bell @ Suzieana binti Perian",
+   "Senator Puan Anna Bell @ Suzieana binti Perian."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "anwar-ibrahim",
+  "name": "Dato' Seri Anwar Bin Ibrahim",
+  "core_name": "anwar ibrahim",
+  "name_variants": [
+   "Dato' Seri Anwar Bin Ibrahim",
+   "Dato' Seri Anwar bin Ibrahim",
+   "Perdana Menteridan Menteri Kewangan, Dato' Seri Anwar Bin Ibrahim"
+  ],
+  "label_variants": [
+   "Dato' Seri Anwar Bin Ibrahim",
+   "Dato' Seri Anwar bin Ibrahim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tambun",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Perdana Menteri Dan Menteri Kewangan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Perdana Menteri dan Menteri Kewangan",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "anyi-ngau",
+  "name": "Dato Anyi Ngau",
+  "core_name": "anyi ngau",
+  "name_variants": [
+   "Dato Anyi Ngau"
+  ],
+  "label_variants": [
+   "Dato Anyi Ngau",
+   "Dato' Anyi Ngau"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Baram",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "arman-azha-abu-hanifah",
+  "name": "Senator Dato' (Dr.) Arman Azha bin Abu Hanifah",
+  "core_name": "arman azha abu hanifah",
+  "name_variants": [
+   "Senator Dato' (Dr.) Arman Azha bin Abu Hanifah"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "armizan-mohd-ali",
+  "name": "Datuk Armizan Bin Mohd Ali",
+  "core_name": "armizan mohd ali",
+  "name_variants": [
+   "Datuk Armizan Bin Mohd Ali",
+   "Datuk Armizan bin Mohd Ali"
+  ],
+  "label_variants": [
+   "Datuk Armizan bin Mohd Ali"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Papar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak Dan Tugas- Tugas Khas)",
+    "first_seen": "2022-12-20",
+    "last_seen": "2023-11-29"
+   },
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak Dan Tugas-Tugas Khas)",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Menteri Di Jabatan Perdwebana Menteri (Hal Ehwal Sabah, Sarawak Dan Tugas- Tugas Khas)",
+    "first_seen": "2023-09-14",
+    "last_seen": "2023-09-14"
+   },
+   {
+    "role": "Menteri Perdagangan Dalam NeMgeri dan Kos Sara Hidup",
+    "first_seen": "2025-11-24",
+    "last_seen": "2025-11-24"
+   },
+   {
+    "role": "Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Perdagangan Dalam Negeridan Kos Sara Hidup",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas- Tugas Khas)",
+    "first_seen": "2023-10-10",
+    "last_seen": "2023-10-10"
+   }
+  ]
+ },
+ {
+  "speaker_id": "arthur-joseph-kurup",
+  "name": "Datuk Arthur Joseph Kurup",
+  "core_name": "arthur joseph kurup",
+  "name_variants": [
+   "Dato' Sri Arthur Joseph Kurup",
+   "Datuk Arthur Joseph Kurup"
+  ],
+  "label_variants": [
+   "Dato' Seri Arthur Joseph Kurup",
+   "Dato' Sri Arthur Joseph Kurup",
+   "Datuk Arthur Joseph Kurup"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pensiangan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Sumber Asli dan Kelestarian Alam",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pertanian Dan Keterjaminan Makanan",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Pertanian dan Keterjaminan Makanan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pertaniandan Keterjaminan Makanan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Timbalan Menteri Sains, Teknologi Dan Inovasi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Sains, Teknologi dan Inovasi",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-10-10"
+   }
+  ]
+ },
+ {
+  "speaker_id": "awang-bemee-awang-ali-basah",
+  "name": "Senator Dato Awang Bemee bin Awang Ali Basah.",
+  "core_name": "awang bemee awang ali basah",
+  "name_variants": [
+   "Senator Dato Awang Bemee bin Awang Ali Basah",
+   "Senator Dato Awang Bemee bin Awang Ali Basah."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Yang di-Pertua Dewan Negara",
+    "first_seen": "2025-02-03",
+    "last_seen": "2026-01-19"
+   }
+  ]
+ },
+ {
+  "speaker_id": "awang-hashim",
+  "name": "Datuk Haji Awang Bin Hashim",
+  "core_name": "awang hashim",
+  "name_variants": [
+   "Datuk Haji Awang Bin Hashim",
+   "Datuk Haji Awang bin Hashim"
+  ],
+  "label_variants": [
+   "Datuk Awang bin Hashim",
+   "Datuk Haji Awang bin Hashim",
+   "Haji Awang bin Hashim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pendang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "awang-sariyan",
+  "name": "Senator Datuk Seri Prof. Emeritus Dr. Awang bin Sariyan",
+  "core_name": "awang sariyan",
+  "name_variants": [
+   "Senator Datuk Seri Prof. Emeritus Dr. Awang bin Sariyan",
+   "Senator Datuk Sri Prof. Emeritus Dr. Awang bin Sariyan"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "azahar-hassan",
+  "name": "Senator Tuan Azahar bin Hassan.",
+  "core_name": "azahar hassan",
+  "name_variants": [
+   "Senator Tuan Azahar bin Hassan",
+   "Senator Tuan Azahar bin Hassan."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "azahari-hasan",
+  "name": "Kapten Azahari Bin Hasan",
+  "core_name": "azahari hasan",
+  "name_variants": [
+   "Kapten Azahari Bin Hasan",
+   "Kapten Azahari bin Hasan"
+  ],
+  "label_variants": [
+   "Kapten Azahari bin Hasan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Padang Rengas",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "azalina-othman-said",
+  "name": "Dato' Sri Azalina Othman Said",
+  "core_name": "azalina othman said",
+  "name_variants": [
+   "Dato' Sri Azalina Othman",
+   "Dato' Sri Azalina Othman Said"
+  ],
+  "label_variants": [
+   "Dato' Seri Azalina Othman Said",
+   "Dato' Sri Azalina Othman Said",
+   "Dato' Sri Azalina binti Othman Said",
+   "Dato'Seri Azalina Othman Said"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pengerang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Undang-Undang Dan Reformasi Institusi)",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Undang-Undang dan Reformasi Institusi)",
+    "first_seen": "2024-10-17",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Undang-Undangdan Reformasi Institusi)",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi)",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-02"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Undang-Undang dan Reformasi Institusi)",
+    "first_seen": "2023-10-10",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi)",
+    "first_seen": "2024-02-27",
+    "last_seen": "2025-07-31"
+   }
+  ]
+ },
+ {
+  "speaker_id": "azhar-ahmad",
+  "name": "Senator Datuk Dr. Haji Azhar bin Ahmad",
+  "core_name": "azhar ahmad",
+  "name_variants": [
+   "Senator Datuk Dr. Haji Azhar bin Ahmad",
+   "Senator Datuk Dr. Haji Azhar bin Ahmad."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "aziz-ariffin",
+  "name": "Senator Datuk Haji Aziz bin Ariffin",
+  "core_name": "aziz ariffin",
+  "name_variants": [
+   "Senator Datuk Haji Aziz bin Ariffin"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "azli-yusof",
+  "name": "Tuan Azli Bin Yusof",
+  "core_name": "azli yusof",
+  "name_variants": [
+   "Tuan Azli Bin Yusof",
+   "Tuan Azli bin Yusof",
+   "Tuan Haji Azli bin Yusof"
+  ],
+  "label_variants": [
+   "Haji Azli bin Yusof",
+   "Tuan Azli bin Yusof",
+   "Tuan Haji Azli bin Yusof"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Shah Alam",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "azman-nasrudin",
+  "name": "Dato' Azman Bin Nasrudin",
+  "core_name": "azman nasrudin",
+  "name_variants": [
+   "Dato' Azman Bin Nasrudin",
+   "Dato' Azman bin Nasrudin"
+  ],
+  "label_variants": [
+   "Dato' Azman bin Nasrudin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Padang Serai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "baharuddin-ahmad",
+  "name": "Senator Tuan Haji Baharuddin bin Ahmad.",
+  "core_name": "baharuddin ahmad",
+  "name_variants": [
+   "Senator Tuan Haji Baharuddin bin Ahmad",
+   "Senator Tuan Haji Baharuddin bin Ahmad."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "bakri-jamaluddin",
+  "name": "Tuan Haji Bakri Bin Jamaluddin",
+  "core_name": "bakri jamaluddin",
+  "name_variants": [
+   "Tuan Haji Bakri Bin Jamaluddin",
+   "Tuan Haji Bakri bin Jamaluddin"
+  ],
+  "label_variants": [
+   "Haji Bakri bin Jamaluddin",
+   "Tuan Haji Bakri bin Jamaluddin",
+   "Tuan Haji Bakri bin Jamaludin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tangga Batu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "bobbey-ah-fang-suan",
+  "name": "Senator Datuk Bobbey Ah Fang bin Suan.",
+  "core_name": "bobbey ah fang suan",
+  "name_variants": [
+   "Senator Datuk Bobbey Ah Fang bin Suan."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "bobbey-suan",
+  "name": "Senator Datuk Bobbey bin Suan",
+  "core_name": "bobbey suan",
+  "name_variants": [
+   "Senator Datuk Bobbey bin Suan"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "bung-moktar-radin",
+  "name": "Datuk Seri Panglima Bung Moktar Bin Radin",
+  "core_name": "bung moktar radin",
+  "name_variants": [
+   "Datuk Seri Panglima Bung Moktar Bin Radin",
+   "Datuk Seri Panglima Bung Moktar bin Radin"
+  ],
+  "label_variants": [
+   "Dato' Seri Panglima Bung Moktar bin Radin",
+   "Datuk Seri Panglima Bung Moktar bin Raden",
+   "Datuk Seri Panglima Bung Moktar bin Radin",
+   "Datuk Seri Panglima Moktar bin Raden",
+   "Datuk Seri Panglima Moktar bin Radin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kinabatangan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2025-12-04"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "bung-moktar-selangor",
+  "name": "Datuk Seri Panglima Bung Moktar Bin Selangor",
+  "core_name": "bung moktar selangor",
+  "name_variants": [
+   "Datuk Seri Panglima Bung Moktar Bin Selangor"
+  ],
+  "label_variants": [],
+  "constituencies": [
+   {
+    "constituency": "Kinabatangan",
+    "first_seen": "2023-11-20",
+    "last_seen": "2023-11-20"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "cha-kee-chin",
+  "name": "Tuan Cha Kee Chin",
+  "core_name": "cha kee chin",
+  "name_variants": [
+   "Tuan Cha Kee Chin",
+   "Tuan Cha Kee Čhin"
+  ],
+  "label_variants": [
+   "Tuan Cha Kee Chin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Rasah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "chan-foong-hin",
+  "name": "Tuan Chan Foong Hin",
+  "core_name": "chan foong hin",
+  "name_variants": [
+   "Datuk Chan Foong Hin",
+   "Tuan Chan Foong Hin"
+  ],
+  "label_variants": [
+   "Datuk Chan Foong Hin",
+   "Tuan Chan Foong Hin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Kinabalu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Perladangan dan Komoditi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Perladangandan Komoditi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Timbalan Menteri Pertanian Dan Keterjaminan Makanan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Pertanian dan Keterjaminan Makanan",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "chang-lih-kang",
+  "name": "Tuan Chang Lih Kang",
+  "core_name": "chang lih kang",
+  "name_variants": [
+   "Datuk Chang Lih Kang",
+   "Tuan Chang Lih Kang"
+  ],
+  "label_variants": [
+   "Datuk Chang Lih Kang",
+   "Tuan Chang Lih Kang"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanjong Malim",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Sains, Teknologi Dan Inovasi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Sains, Teknologi dan Inovasi",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "chang-lih-kang-29-10-2024-v",
+  "name": "Tuan Chang Lih Kang (Tanjong Malim) DR 29.10.2024 v",
+  "core_name": "chang lih kang 29 10 2024 v",
+  "name_variants": [
+   "Tuan Chang Lih Kang (Tanjong Malim) DR 29.10.2024 v"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Sains, Teknologidan Inovasi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "che-alias-hamid",
+  "name": "Tuan Che Alias Bin Hamid",
+  "core_name": "che alias hamid",
+  "name_variants": [
+   "Senator Tuan Che Alias bin Hamid",
+   "Senator Tuan Che Alias bin Hamid.",
+   "Tuan Che Alias Bin Hamid"
+  ],
+  "label_variants": [
+   "Tuan Che Alias bin Hamid"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kemaman",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-10-12"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "che-mohamad-zulkifly-jusoh",
+  "name": "Datuk Che Mohamad Zulkifly Bin Jusoh",
+  "core_name": "che mohamad zulkifly jusoh",
+  "name_variants": [
+   "Datuk Che Mohamad Zulkifly Bin Jusoh",
+   "Datuk Che Mohamad Zulkifly bin Jusoh"
+  ],
+  "label_variants": [
+   "Datuk Che Mohamad Zulkifly bin Jusoh",
+   "Yang Berhormat Datuk Che Mohamad Zulkifly bin Jusoh"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Besut",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "chiew-choon-man",
+  "name": "Tuan Chiew Choon Man",
+  "core_name": "chiew choon man",
+  "name_variants": [
+   "Tuan Chiew Choon Man"
+  ],
+  "label_variants": [
+   "Tuan Chiew Choon Man"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Miri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pelancongan, Seni dan Budaya",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "chong-chieng-jen",
+  "name": "Tuan Chong Chieng Jen",
+  "core_name": "chong chieng jen",
+  "name_variants": [
+   "Tuan Chong Chieng Jen"
+  ],
+  "label_variants": [
+   "Tuan Chong Chieng Jen"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Stampin",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "chong-chieng-jen-06-03-2023-iii",
+  "name": "Tuan Chong Chieng Jen (Stampin) DR.06.03.2023 iii",
+  "core_name": "chong chieng jen 06 03 2023 iii",
+  "name_variants": [
+   "Tuan Chong Chieng Jen (Stampin) DR.06.03.2023 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "chong-zhemin",
+  "name": "Tuan Chong Zhemin",
+  "core_name": "chong zhemin",
+  "name_variants": [
+   "Tuan Chong Zhemin"
+  ],
+  "label_variants": [
+   "Tuan Chong Zhemin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kampar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "chow-kon-yeow",
+  "name": "Tuan Chow Kon Yeow",
+  "core_name": "chow kon yeow",
+  "name_variants": [
+   "Tuan Chow Kon Yeow"
+  ],
+  "label_variants": [
+   "Tuan Chow Kon Yeow"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batu Kawan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "chow-yu-hui",
+  "name": "Tuan Chow Yu Hui",
+  "core_name": "chow yu hui",
+  "name_variants": [
+   "Tuan Chow Yu Hui"
+  ],
+  "label_variants": [
+   "Tuan Chow Yu Hui"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Raub",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "dominic-lau-hoe-chai",
+  "name": "Senator Datuk Dr. Dominic Lau Hoe Chai",
+  "core_name": "dominic lau hoe chai",
+  "name_variants": [
+   "Senator Datuk Dr. Dominic Lau Hoe Chai"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "doris-sophia-brodi",
+  "name": "Dato' Sri Doris Sophia Anak Brodi",
+  "core_name": "doris sophia brodi",
+  "name_variants": [
+   "Dato' Sri Doris Sophia Anak Brodi",
+   "Dato' Sri Doris Sophia anak Brodi"
+  ],
+  "label_variants": [
+   "Dato' Sri Doris Sophia anad Brodie",
+   "Dato' Sri Doris Sophia anak Brodi",
+   "Dato' Sri Doris Sophia anak Brodie"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sri Aman",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Sri Āman",
+    "first_seen": "2023-03-01",
+    "last_seen": "2023-03-06"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "dzulkefly-ahmad",
+  "name": "Datuk Seri Dr. Haji Dzulkefly Bin Ahmad",
+  "core_name": "dzulkefly ahmad",
+  "name_variants": [
+   "Datuk Seri Dr. Haji Dzulkefly Bin Ahmad",
+   "Datuk Seri Dr. Haji Dzulkefly bin Ahmad"
+  ],
+  "label_variants": [
+   "Datuk Seri Dr. Dzulkefly bin Ahmad",
+   "Datuk Seri Dr. Dzulkefly bin Ahmad.",
+   "Datuk Seri Dr. Haji Datuk Seri Dr. Dzulkefly bin Ahmad",
+   "Datuk Seri Dr. Haji Datuk Seri Dr. Haji Dzulkefly bin Ahmad",
+   "Datuk Seri Dr. Haji Dzulkefly bin Ahmad",
+   "Datuk Seri Haji Dr. Dzulkefly bin Ahmad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Selangor",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Kesihatan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "dzulkefly-ahmad-02-03-2023-iii",
+  "name": "Datuk Seri Dr. Haji Dzulkefly Bin Ahmad (Kuala Selangor) DR.02.03.2023 iii",
+  "core_name": "dzulkefly ahmad 02 03 2023 iii",
+  "name_variants": [
+   "Datuk Seri Dr. Haji Dzulkefly Bin Ahmad (Kuala Selangor) DR.02.03.2023 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "edward-linggi-bukut",
+  "name": "Senator Datuk Edward Linggi Bukut",
+  "core_name": "edward linggi bukut",
+  "name_variants": [
+   "Senator Datuk Edward Linggi Bukut"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "edwin-banta",
+  "name": "Tuan Edwin Anak Banta",
+  "core_name": "edwin banta",
+  "name_variants": [
+   "Tuan Edwin Anak Banta",
+   "Tuan Edwin anak Banta"
+  ],
+  "label_variants": [
+   "Tuan Edwin anak Banta"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Selangau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ewon-benedick",
+  "name": "Datuk Ewon Benedick",
+  "core_name": "ewon benedick",
+  "name_variants": [
+   "Datuk Ewon Benedick"
+  ],
+  "label_variants": [
+   "Datuk Ewon Benedick",
+   "Datuk Ewon Benedict"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Penampang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pembangunan Usahawan Dan Koperasi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Pembangunan Usahawan dan Koperasi",
+    "first_seen": "2023-02-24",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Menteri Pembangunan Usahawandan Koperasi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "fadhlina-sidek",
+  "name": "Puan Fadhlina Binti Sidek",
+  "core_name": "fadhlina sidek",
+  "name_variants": [
+   "Puan Fadhlina Binti Sidek",
+   "Puan Fadhlina binti Sidek"
+  ],
+  "label_variants": [
+   "Puan Fadhlina binti Dato' Sidek",
+   "Puan Fadhlina binti Sidek"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Nibong Tebal",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pendidikan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "fadillah-yusof",
+  "name": "Dato' Sri Haji Fadillah Bin Yusof",
+  "core_name": "fadillah yusof",
+  "name_variants": [
+   "Dato' Amar Haji Fadillah bin Yusof",
+   "Dato' Sri Haji Fadillah Bin Yusof",
+   "Dato' Sri Haji Fadillah bin Yusof",
+   "Datuk Amar Haji Fadillah bin Haji Yusof",
+   "Datuk Amar Haji Fadillah bin Yusof",
+   "Timbalan Perdana Menteridan Menteri Peralihan Tenagadan Transformasi Air, Dato' Sri Haji Fadillah Bin Yusof"
+  ],
+  "label_variants": [
+   "Dato' Seri Fadillah bin Yusof",
+   "Dato' Seri Haji Fadillah bin Yusof",
+   "Dato' Sri Haji Fadillah bin Haji Yusof",
+   "Dato' Sri Haji Fadillah bin Yusof",
+   "Datuk Amar Haji Fadillah bin Haji Yusof",
+   "Datuk Amar Haji Fadillah bin Haji Yusuf"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Petra Jaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Petra aJaya",
+    "first_seen": "2024-03-26",
+    "last_seen": "2024-03-26"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Perdana Menteri Dan Menteri Peralihan Tenaga Dan Transformasi Air",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Perdana Menteri Dan Menteri Perladangan Dan Komoditi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Perdana Menteri dan Menteri Peralihan Tenaga Dan Transformasi Air",
+    "first_seen": "2025-05-05",
+    "last_seen": "2025-05-05"
+   },
+   {
+    "role": "Timbalan Perdana Menteri dan Menteri Peralihan Tenaga dan Transformasi Air",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Perdana Menteri dan Menteri Perladangan Dan Komoditi",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-02-24"
+   }
+  ]
+ },
+ {
+  "speaker_id": "fathul-huzir-ayob",
+  "name": "Tuan Fathul Huzir Bin Ayob",
+  "core_name": "fathul huzir ayob",
+  "name_variants": [
+   "Tuan Fathul Huzir Bin Ayob",
+   "Tuan Fathul Huzir bin Ayob"
+  ],
+  "label_variants": [
+   "Tuan Fathul Huzir bin Ayob"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Gerik",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "fong-kui-lun",
+  "name": "Tuan Fong Kui Lun",
+  "core_name": "fong kui lun",
+  "name_variants": [
+   "Tuan Fong Kui Lun"
+  ],
+  "label_variants": [
+   "Tuan Fong Kui Lun"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bukit Bintang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "fuziah-salleh",
+  "name": "Senator Puan Hajah Fuziah Binti Salleh",
+  "core_name": "fuziah salleh",
+  "name_variants": [
+   "Senator Datuk Dr. Fuziah binti Salleh",
+   "Senator Dr. Hajah Fuziah binti Salleh.",
+   "Senator Puan Hajah Fuziah Binti Salleh",
+   "Senator Puan Hajah Fuziah binti Salleh"
+  ],
+  "label_variants": [
+   "Datuk Dr. Fuziah binti Salleh",
+   "Datuk Dr. Hajah Fuziah binti Salleh",
+   "Dr. Hajah Fuziah binti Salleh",
+   "Hajah Fuziah binti Salleh",
+   "Puan Hajah Fuziah binti Salleh"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup",
+    "first_seen": "2023-02-14",
+    "last_seen": "2025-03-05"
+   },
+   {
+    "role": "Timbalan Menteri Perdagangan Dalam Negeri ban Kos Sara Hidup",
+    "first_seen": "2024-02-26",
+    "last_seen": "2024-07-11"
+   },
+   {
+    "role": "Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup",
+    "first_seen": "2024-02-28",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ganabatirau-veraman",
+  "name": "Tuan Ganabatirau A/L Veraman",
+  "core_name": "ganabatirau veraman",
+  "name_variants": [
+   "Tuan Ganabatirau A/L Veraman",
+   "Tuan Ganabatirau a/l Veraman"
+  ],
+  "label_variants": [
+   "Tuan Ganabatirau A/L Veraman",
+   "Tuan Ganabatirau a/I Veraman",
+   "Tuan Ganabatirau a/l Veraman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Klang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "gapari-katingan",
+  "name": "Datuk Seri Panglima Dr. Gapari bin Katingan @ Geoffrey Kitingan",
+  "core_name": "gapari katingan",
+  "name_variants": [
+   "Datuk Seri Panglima Dr. Gapari Bin Katingan @ Geoffrey Kitingan",
+   "Datuk Seri Panglima Dr. Gapari bin Katingan @ Geoffrey Kitingan",
+   "Datuk Seri Panglima Dr. Gapari bin Katingan @ Geoffrey Kitingan (Keningau",
+   "Datuk Seri Panglima Dr. Gapari bin Katingan @ Geoffrey Kitingan, S.P.D.K.",
+   "Datuk Seri Panglima Gapari Bin Katingan @ Geoffrey Kitingan",
+   "Datuk Seri Panglima Gapari bin Katingan @ Geoffrey Kitingan"
+  ],
+  "label_variants": [
+   "Datuk Seri Panglima Dr. Jeffrey G. Kitingan",
+   "Datuk Seri Panglima Gapari bin Katingan @ Geofrey Kitingan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Keningau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "gobind-singh-deo",
+  "name": "Tuan Gobind Singh Deo",
+  "core_name": "gobind singh deo",
+  "name_variants": [
+   "Tuan Gobind Singh Deo"
+  ],
+  "label_variants": [
+   "Tuan Gobind Sing Deo",
+   "Tuan Gobind Singh Deo"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Damansara",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Digital",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "halimah-ali",
+  "name": "Dr. Hajah Halimah Ali",
+  "core_name": "halimah ali",
+  "name_variants": [
+   "Dr. Hajah Halimah Ali"
+  ],
+  "label_variants": [
+   "Dr. Hajah Halimah Ali",
+   "Dr. Hajjah Halimah Ali",
+   "Hajah Halimah Ali"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kapar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hamzah-zainudin",
+  "name": "Dato' Seri Hamzah Bin Zainudin",
+  "core_name": "hamzah zainudin",
+  "name_variants": [
+   "Dato' Seri Hamzah Bin Zainudin",
+   "Dato' Seri Hamzah bin Zainudin"
+  ],
+  "label_variants": [
+   "Dato' Seri Hamzah bin Zainuddin",
+   "Dato' Seri Hamzah bin Zainudin",
+   "Datuk Seri Hamzah bin Zainudin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Larut",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hamzah-zainudin-tan-sri-mahaiaddin-mohd-yassin",
+  "name": "Dato' Seri Hamzah bin Zainudin (Larut) Tan Sri Dato' Haji Mahaiaddin bin Mohd Yassin",
+  "core_name": "hamzah zainudin tan sri mahaiaddin mohd yassin",
+  "name_variants": [
+   "Dato' Seri Hamzah bin Zainudin (Larut) Tan Sri Dato' Haji Mahaiaddin bin Mohd Yassin"
+  ],
+  "label_variants": [],
+  "constituencies": [
+   {
+    "constituency": "Pagoh",
+    "first_seen": "2026-02-12",
+    "last_seen": "2026-02-12"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hanifah-hajar-taib",
+  "name": "Dato Hajjah Hanifah Hajar Taib",
+  "core_name": "hanifah hajar taib",
+  "name_variants": [
+   "Dato Hajah Hanifah Hajar Taib",
+   "Dato Hajjah Hanifah Hajar Taib"
+  ],
+  "label_variants": [
+   "Dato Hajah Hanifah Hajar Taib",
+   "Dato Hajjah Hanifah Hajar Taib"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Mukah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Ekonomi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Kesihatan",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Ékonomi",
+    "first_seen": "2023-02-13",
+    "last_seen": "2023-02-13"
+   }
+  ]
+ },
+ {
+  "speaker_id": "hannah-yeoh",
+  "name": "Puan Hannah Yeoh",
+  "core_name": "hannah yeoh",
+  "name_variants": [
+   "Puan Hannah Yeoh",
+   "Puan Hannah Yeoh Tseow Suan"
+  ],
+  "label_variants": [
+   "Puan Hannah Yeoh",
+   "Puan Hannah Yeoh Tseow Suan",
+   "Puan Hannah Yeoh Tseow Suan] [Segambut",
+   "Puan Yeoh Tseow Suan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Segambut",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Belia Dan Sukan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Belia dan Sukan",
+    "first_seen": "2023-02-24",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Menteri Beliadan Sukan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Wilayah Persekutuan)",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "hasbi-habibollah",
+  "name": "Datuk Haji Hasbi Bin Haji Habibollah",
+  "core_name": "hasbi habibollah",
+  "name_variants": [
+   "Datuk Haji Hasbi Bin Haji Habibollah",
+   "Datuk Haji Hasbi bin Haji Habibollah"
+  ],
+  "label_variants": [
+   "Datuk Haji Hasbi bin Habibollah",
+   "Datuk Haji Hasbi bin Haji Habibollah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Limbang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pengangkutan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "hasni-mohammad",
+  "name": "Datuk Seri Utama Ir. Hasni Bin Mohammad",
+  "core_name": "hasni mohammad",
+  "name_variants": [
+   "Datuk Seri Utama Ir. Hasni Bin Mohammad",
+   "Datuk Seri Utama Ir. Hasni bin Mohammad",
+   "Datuk Seri Utama ir. Hasni Bin Mohammad"
+  ],
+  "label_variants": [
+   "Dato' Ir. Hasni bin Mohammad",
+   "Datuk Seri Utama Hasni bin Mohammad",
+   "Datuk Seri Utama Ir. Hasni bin Mohammad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Simpang Renggam",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hassan-abdul-karim",
+  "name": "Tuan Hassan Bin Abdul Karim",
+  "core_name": "hassan abdul karim",
+  "name_variants": [
+   "Tuan Hassan Bin Abdul Karim",
+   "Tuan Hassan bin Abdul Karim"
+  ],
+  "label_variants": [
+   "Tuan Hassan bin Abdul Karim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pasir Gudang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hassan-saad",
+  "name": "Tuan Hassan Bin Saad",
+  "core_name": "hassan saad",
+  "name_variants": [
+   "Tuan Hassan Bin Saad",
+   "Tuan Hassan bin Saad"
+  ],
+  "label_variants": [
+   "Tuan Hassan bin Saad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Baling",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hassan-saad-28-02-2023-v",
+  "name": "Tuan Hassan Bin Saad (Baling) DR.28.02.2023 V",
+  "core_name": "hassan saad 28 02 2023 v",
+  "name_variants": [
+   "Tuan Hassan Bin Saad (Baling) DR.28.02.2023 V"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "henry-sum-agong",
+  "name": "Dato' Henry Sum Agong",
+  "core_name": "henry sum agong",
+  "name_variants": [
+   "Dato Henry Sum Agong",
+   "Dato' Henry Sum Agong"
+  ],
+  "label_variants": [
+   "Dato Henry Sum Agong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lawas",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hishammuddin-hussein",
+  "name": "Dato' Seri Hishammuddin Bin Tun Hussein",
+  "core_name": "hishammuddin hussein",
+  "name_variants": [
+   "Dato' Seri Hishammuddin Bin Tun Hussein",
+   "Dato' Seri Hishammuddin bin Tun Hussein"
+  ],
+  "label_variants": [
+   "Dato' Seri Hishammuddin bin Datuk Hussein",
+   "Dato' Seri Hishammuddin bin Tun Hussein"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sembrong",
+    "first_seen": "2023-02-13",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "hishammuddin-husseinsembrong",
+  "name": "Dato' Seri Hishammuddin Bin Tun HusseinSembrong)",
+  "core_name": "hishammuddin husseinsembrong",
+  "name_variants": [
+   "Dato' Seri Hishammuddin Bin Tun HusseinSembrong)"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "huang-tiong-sii",
+  "name": "Dato' Sri Huang Tiong Sii",
+  "core_name": "huang tiong sii",
+  "name_variants": [
+   "Dato' Sri Huang Tiong Sii"
+  ],
+  "label_variants": [
+   "Dato' Sri Huang Tiong Sii"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sarikei",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Perladangan dan Komoditi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Asli dan Kelestarian Alam",
+    "first_seen": "2024-03-12",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Asli, Alam Sekitar Dan Perubahan Iklim",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-03-25"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Asli, Alam Sekitar dan Perubahan Iklim",
+    "first_seen": "2023-02-24",
+    "last_seen": "2024-02-29"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Aslidan Kelestarian Alam",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "huang-tiong-sii-sarikei",
+  "name": "Dato' Sri Huang Tiong Sii (Sarikei",
+  "core_name": "huang tiong sii sarikei",
+  "name_variants": [
+   "Dato' Sri Huang Tiong Sii (Sarikei"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Sumber Asli dan Kelestarian Alam",
+    "first_seen": "2025-11-04",
+    "last_seen": "2025-11-04"
+   }
+  ]
+ },
+ {
+  "speaker_id": "husain-awang",
+  "name": "Senator Dato' Haji Husain bin Awang",
+  "core_name": "husain awang",
+  "name_variants": [
+   "Senator Dato' Haji Husain bin Awang"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "hussin-ismail",
+  "name": "Senator Tuan Haji Hussin bin Ismail",
+  "core_name": "hussin ismail",
+  "name_variants": [
+   "Senator Tuan Haji Hussin bin Ismail",
+   "Senator Tuan Haji Hussin bin Ismail."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ibharim-tuan-man",
+  "name": "Dato' Sri Tuan Ibharim Bin Tuan Man",
+  "core_name": "ibharim tuan man",
+  "name_variants": [
+   "Dato' Sri Tuan Ibharim Bin Tuan Man",
+   "Dato' Sri Tuan Ibharim bin Tuan Man",
+   "Dato' Tuan Ibharim Bin Tuan Man"
+  ],
+  "label_variants": [
+   "Dato' Seri Tuan Ibharim bin Tuan Man",
+   "Dato' Sri Tuan Ibharim bin Tuan Man",
+   "Dato' Sri Tuan Ibrahim bin Tuan Man",
+   "Tuan Ibharim bin Tuan Man"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kubang Kerian",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "idris-ahmad",
+  "name": "Datuk Haji Idris Bin Haji Ahmad",
+  "core_name": "idris ahmad",
+  "name_variants": [
+   "Datuk Haji Idris Bin Haji Ahmad",
+   "Datuk Haji Idris bin Haji Ahmad"
+  ],
+  "label_variants": [
+   "Datuk Haji Idris bin Haji Ahmad",
+   "Datuk Idris bin Ahmad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bagan Serai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ikmal-hisham-abdul-aziz",
+  "name": "Dato' Sri Ikmal Hisham Bin Abdul Aziz",
+  "core_name": "ikmal hisham abdul aziz",
+  "name_variants": [
+   "Dato' Sri Ikmal Hisham Bin Abdul Aziz",
+   "Dato' Sri Ikmal Hisham bin Abdul Aziz"
+  ],
+  "label_variants": [
+   "Dato' Sri Ikmal Hisham bin Abdul Aziz"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanah Merah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "isaiah-d-jacob",
+  "name": "Senator Tuan Isaiah a/l D Jacob.",
+  "core_name": "isaiah d jacob",
+  "name_variants": [
+   "Senator Tuan Isaiah a/l D Jacob",
+   "Senator Tuan Isaiah a/l D Jacob."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "iskandar-dzulkarnain-abdul-khalid",
+  "name": "Datuk Iskandar Dzulkarnain Bin Abdul Khalid",
+  "core_name": "iskandar dzulkarnain abdul khalid",
+  "name_variants": [
+   "Datuk Iskandar Dzulkarnain Bin Abdul Khalid",
+   "Datuk Iskandar Dzulkarnain bin Abdul Khalid"
+  ],
+  "label_variants": [
+   "Datuk Iskandar Dzulkarnain bin Abdul Khalid"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Kangsar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ismail-abdul-muttalib",
+  "name": "Dato' Sri Dr. Haji Ismail bin Haji Abd. Muttalib",
+  "core_name": "ismail abdul muttalib",
+  "name_variants": [
+   "Dato' Sri Dr. Haji Ismail Bin Haji Abd. Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Haji Abd. Muttalib",
+   "Dato' Sri Haji Ismail Bin Haji Abd. Muttalib",
+   "Dato' Sri Haji Ismail Bin Haji Abd. Muttalib.",
+   "Dato' Sri Haji Ismail bin Haji Abd. Muttalib"
+  ],
+  "label_variants": [
+   "Dato' Sri Dr. Haji Ismail bin Abd Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Abd. Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Haji Abd Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Haji Abd. Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Hj Abd. Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Hj. Abd Muttalib",
+   "Dato' Sri Dr. Haji Ismail bin Hj.Abd Muttalib",
+   "Haji Ismail bin Abd Muttalib"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Maran",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ismail-abdul-muttalib-iv-13-02-2023",
+  "name": "Dato' Sri Haji Ismail Bin Haji Abd. Muttalib (Maran) iv DR.13.02.2023",
+  "core_name": "ismail abdul muttalib iv 13 02 2023",
+  "name_variants": [
+   "Dato' Sri Haji Ismail Bin Haji Abd. Muttalib (Maran) iv DR.13.02.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ismail-sabri-yaakob",
+  "name": "Dato' Sri Ismail Sabri Bin Yaakob",
+  "core_name": "ismail sabri yaakob",
+  "name_variants": [
+   "Dato' Sri Ismail Sabri Bin Yaakob",
+   "Dato' Sri Ismail Sabri bin Yaakob"
+  ],
+  "label_variants": [
+   "Dato' Sri Ismail Sabri bin Yaakob"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bera",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "isnaraissah-munirah-majilis",
+  "name": "Puan Isnaraissah Munirah Binti Majilis",
+  "core_name": "isnaraissah munirah majilis",
+  "name_variants": [
+   "Puan Isnaraissah Munirah Binti Majilis",
+   "Puan Isnaraissah Munirah binti Majilis",
+   "Puan Isnaraissah Munirah binti Majilis Fakharudy"
+  ],
+  "label_variants": [
+   "Puan Isnaraissah Munirah Majilis",
+   "Puan Isnaraissah Munirah Majilis @ Fakharudy",
+   "Puan Isnaraissah Munirah binti Majilis @ Fakharudy"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Belud",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "jalaluddin-alias",
+  "name": "Datuk Seri Haji Jalaluddin bin Haji Alias",
+  "core_name": "jalaluddin alias",
+  "name_variants": [
+   "Datuk Seri Haji Jalaluddin Bin Haji Alias",
+   "Datuk Seri Haji Jalaluddin bin Haji Alias",
+   "Datuk Seri Jalaluddin Bin Alias",
+   "Datuk Seri Jalaluddin bin Alias"
+  ],
+  "label_variants": [
+   "Datuk Seri Haji Jalaluddin bin Alias",
+   "Datuk Seri Haji Jalaluddin bin Alias Yang Berhormat",
+   "Datuk Seri Haji Jalaluddin bin Haji Alias",
+   "Datuk Seri Jalaluddin Bin Alias",
+   "Datuk Seri Jalaluddin bin Alias"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jelebu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "jamaludin-yahya",
+  "name": "Tuan Jamaludin Bin Yahya",
+  "core_name": "jamaludin yahya",
+  "name_variants": [
+   "Tuan Haji Jamaludin bin Yahya",
+   "Tuan Jamaludin Bin Yahya",
+   "Tuan Jamaludin bin Yahya"
+  ],
+  "label_variants": [
+   "Tuan Haji Jamaluddin bin Yahya",
+   "Tuan Haji Jamaludin bin Yahya",
+   "Tuan Jamaluddin bin Yahya",
+   "Tuan Jamaludin bin Yahya"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pasir Salak",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "jamaludin-yahya-iv-02-03-2023",
+  "name": "Tuan Jamaludin Bin Yahya (Pasir Salak) iv DR.02.03.2023",
+  "core_name": "jamaludin yahya iv 02 03 2023",
+  "name_variants": [
+   "Tuan Jamaludin Bin Yahya (Pasir Salak) iv DR.02.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "jamaludin-yahya-iv-06-03-2023",
+  "name": "Tuan Jamaludin Bin Yahya (Pasir Salak) iv DR.06.03.2023",
+  "core_name": "jamaludin yahya iv 06 03 2023",
+  "name_variants": [
+   "Tuan Jamaludin Bin Yahya (Pasir Salak) iv DR.06.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "jimmy-puah-wee-tse",
+  "name": "Tuan Jimmy Puah Wee Tse",
+  "core_name": "jimmy puah wee tse",
+  "name_variants": [
+   "Tuan Jimmy Puah Wee Tse"
+  ],
+  "label_variants": [
+   "Tuan Jimmy Puah Wee Tse"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tebrau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "johari-abdul",
+  "name": "Tan Sri Dato' (Dr.) Johari bin Abdul",
+  "core_name": "johari abdul",
+  "name_variants": [
+   "Dato' Johari bin Abdul",
+   "Tan Sri Dato' (Dr.) Johari Bin Abdul",
+   "Tan Sri Dato' (Dr.) Johari bin Abdul",
+   "Tan Sri Dato' Dr. Johari bin Abdul",
+   "Tan Sri Dato' Johari bin Abdul"
+  ],
+  "label_variants": [
+   "Tan Sri Dato' Dr. Johari bin Abdul"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Tuan Yang di-Pertua Dewan Rakyat, YB.",
+    "first_seen": "2023-02-15",
+    "last_seen": "2023-02-15"
+   },
+   {
+    "role": "Yang di-Pertua Dewan Rakyat",
+    "first_seen": "2023-06-07",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Yang di-Pertua Dewan Rakyat, YB.",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-06-06"
+   }
+  ]
+ },
+ {
+  "speaker_id": "johari-abdul-ghani",
+  "name": "Datuk Seri Johari Bin Abdul Ghani",
+  "core_name": "johari abdul ghani",
+  "name_variants": [
+   "Datuk Seri Johari Bin Abdul Ghani",
+   "Datuk Seri Johari bin Abdul Ghani",
+   "Johari Bin Abdul Ghani"
+  ],
+  "label_variants": [
+   "Datuk Seri Johari bin Abd Ghani",
+   "Datuk Seri Johari bin Abdul Ghani"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Titiwangsa",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pelaburan, Perdagangan dan Industri",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Perladangan Dan Komoditi",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Perladangan dan Komoditi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Menteri Perladangandan Komoditi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "jonathan-yasin",
+  "name": "Datuk Jonathan Bin Yasin",
+  "core_name": "jonathan yasin",
+  "name_variants": [
+   "Datuk Jonathan Bin Yasin",
+   "Datuk Jonathan Bin Yasin, Asdk.",
+   "Datuk Jonathan bin Yasin"
+  ],
+  "label_variants": [
+   "Datuk Jonathan Yasin",
+   "Datuk Jonathan bin Yasin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ranau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "jufitri-joha",
+  "name": "Senator Dr. Jufitri bin Joha",
+  "core_name": "jufitri joha",
+  "name_variants": [
+   "Senator Dr. Jufitri bin Joha"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "kalam-salan",
+  "name": "Tuan Kalam Bin Salan",
+  "core_name": "kalam salan",
+  "name_variants": [
+   "Tuan Kalam Bin Salan",
+   "Tuan Kalam bin Salan"
+  ],
+  "label_variants": [
+   "Tuan Kalam bin Salam",
+   "Tuan Kalam bin Salan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sabak Bernam",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "kamal-ashaari",
+  "name": "Tuan Haji Kamal Bin Ashaari",
+  "core_name": "kamal ashaari",
+  "name_variants": [
+   "Tuan Haji Kamal Bin Ashaari",
+   "Tuan Haji Kamal bin Ashaari"
+  ],
+  "label_variants": [
+   "Haji Kamal bin Ashaari",
+   "Tuan Haji Kamal bin Ashaari",
+   "Tuan Kamal bin Ashaari"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuala Krau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "kelvin-yii-lee-wuen",
+  "name": "Dr. Kelvin Yii Lee Wuen",
+  "core_name": "kelvin yii lee wuen",
+  "name_variants": [
+   "Dr. Kelvin Yii Lee Wuen"
+  ],
+  "label_variants": [
+   "Dr. Kelvin Yii Lee Wain",
+   "Dr. Kelvin Yii Lee Wuen",
+   "Tuan Kelvin Yii Lee Wuen"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bandar Kuching",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "kelvin-yii-lee-wuen-01-03-2023-iii",
+  "name": "Dr. Kelvin Yii Lee Wuen (Bandar Kuching) DR.01.03.2023 iii",
+  "core_name": "kelvin yii lee wuen 01 03 2023 iii",
+  "name_variants": [
+   "Dr. Kelvin Yii Lee Wuen (Bandar Kuching) DR.01.03.2023 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "kesavadas-a-achyuthan-nair",
+  "name": "Senator Dato' Kesavadas a/l A. Achyuthan Nair",
+  "core_name": "kesavadas a achyuthan nair",
+  "name_variants": [
+   "Senator Dato' Kesavadas a/l A. Achyuthan Nair",
+   "Senator Dato' Kesavadas a/l A.Achyuthan Nair."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "kesavan-subramaniam",
+  "name": "Tuan Kesavan A/L Subramaniam",
+  "core_name": "kesavan subramaniam",
+  "name_variants": [
+   "Tuan Kesavan A/L Subramaniam",
+   "Tuan Kesavan a/l Subramaniam"
+  ],
+  "label_variants": [
+   "Tuan Kesavan A/L Subramaniam",
+   "Tuan Kesavan a/l Subramaniam"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sungai Siput",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "khairil-nizam-khirudin",
+  "name": "Ir. Ts. Haji Khairil Nizam bin Khirudin",
+  "core_name": "khairil nizam khirudin",
+  "name_variants": [
+   "Ir. Ts. Haji Khairil Nizam Bin Khirudin",
+   "Ir. Ts. Haji Khairil Nizam bin Khirudin",
+   "Ir. Ts. Khairil Nizam Bin Khirudin",
+   "Ir. Ts. Khairil Nizam bin Khirudin"
+  ],
+  "label_variants": [
+   "Haji Khairil Nizam bin Khirudin",
+   "Tuan Ir. Ts. Haji Khairil Nizam bin Khirudin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jerantut",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "khairul-firdaus-akbar-khan",
+  "name": "Tuan Khairul Firdaus Bin Akbar Khan",
+  "core_name": "khairul firdaus akbar khan",
+  "name_variants": [
+   "Datuk Khairul Firdaus bin Akbar Khan",
+   "Timba lan Menteri Pelancongan, Seni dan Budaya, Tuan Khairul Firdaus bin Akbar Khan",
+   "Tuan Khairul Firdaus Bin Akbar Khan",
+   "Tuan Khairul Firdaus bin Akbar Khan"
+  ],
+  "label_variants": [
+   "Datuk Khairul Firdaus bin Akbar Khan",
+   "Tuan Khairul Firdaus bin Akbar Khan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batu Sapi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pelancongan, Seni Dan Budaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Pelancongan, Seni dan Budaya",
+    "first_seen": "2023-10-10",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pelancongan, Senidan Budaya",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Manusia",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "khlir-mohd-nor",
+  "name": "Dato' Khlir Bin Mohd Nor",
+  "core_name": "khlir mohd nor",
+  "name_variants": [
+   "Dato' Khlir Bin Mohd Nor",
+   "Dato' Khlir bin Mohd Nor"
+  ],
+  "label_variants": [
+   "Dato' Khlir bin Mohd Nor",
+   "Dato'Khlir bin Mohd Nor"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ketereh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "khoo-poay-tiong",
+  "name": "Tuan Khoo Poay Tiong",
+  "core_name": "khoo poay tiong",
+  "name_variants": [
+   "Tuan Khoo Poay Tiong"
+  ],
+  "label_variants": [
+   "Tuan Khoo Poay Tiong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Melaka",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "koh-nai-kwong",
+  "name": "Senator Datuk Wira Koh Nai Kwong.",
+  "core_name": "koh nai kwong",
+  "name_variants": [
+   "Senator Datuk Wira Koh Nai Kwong."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ku-abdul-rahman-ku-ismail",
+  "name": "Dato' Wira Dr. Ku Abd Rahman Bin Ku Ismail",
+  "core_name": "ku abdul rahman ku ismail",
+  "name_variants": [
+   "Dato' Wira Dr. Ku Abd Rahman Bin Ku Ismail",
+   "Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail"
+  ],
+  "label_variants": [
+   "Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail",
+   "Dato' Wira Dr. Ku Abdul Rahman bin Ku Ismail"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kubang Pasu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "larry-soon",
+  "name": "Datuk Larry Soon @ Larry Sng Wei Shien",
+  "core_name": "larry soon",
+  "name_variants": [
+   "Datuk Larry Soon @ Larry Sng Wei Shien",
+   "Datuk Larry Soon @Larry Sng Wei Shien",
+   "Datuk Larry Soon Larry Sng Wei Shien"
+  ],
+  "label_variants": [
+   "Datuk Larry Soon @ Larry Sng Wei Shein",
+   "Datuk Larry Soon @ Larry Sng Wei Shien"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Julau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "lee-chean-chung",
+  "name": "Tuan Lee Chean Chung",
+  "core_name": "lee chean chung",
+  "name_variants": [
+   "Tuan Lee Chean Chung"
+  ],
+  "label_variants": [
+   "Tuan Lee Chean Chung"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Petaling Jaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "lee-chuan-how",
+  "name": "Tuan Lee Chuan How",
+  "core_name": "lee chuan how",
+  "name_variants": [
+   "Tuan Lee Chuan How"
+  ],
+  "label_variants": [
+   "Tuan Lee Chuan How"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ipoh TImor",
+    "first_seen": "2023-06-06",
+    "last_seen": "2023-06-06"
+   },
+   {
+    "constituency": "Ipoh Timor",
+    "first_seen": "2023-05-22",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Ipoh Timur",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-04-04"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "leong-ngah-ngah",
+  "name": "Senator Dato' Leong Ngah Ngah",
+  "core_name": "leong ngah ngah",
+  "name_variants": [
+   "Senator Dato' Leong Ngah Ngah"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "liew-chin-tong",
+  "name": "Tuan Liew Chin Tong",
+  "core_name": "liew chin tong",
+  "name_variants": [
+   "Tuan Liew Chin Tong"
+  ],
+  "label_variants": [
+   "Tuan Liew Chin Tong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Iskandar Puteri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kewangan",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pelaburan, Perdagangan Dan Industri",
+    "first_seen": "2023-05-22",
+    "last_seen": "2025-05-05"
+   },
+   {
+    "role": "Timbalan Menteri Pelaburan, Perdagangan dan Industri",
+    "first_seen": "2023-10-10",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pelaburan, Perdagangandan Industri",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Timbalan Menteri Perdagangan Antarabangsa Dan Industri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-04-04"
+   }
+  ]
+ },
+ {
+  "speaker_id": "liew-chin-tong-4-ii-2026",
+  "name": "Tuan Liew Chin Tong (Iskandar Puteri) DR.4.ii.2026",
+  "core_name": "liew chin tong 4 ii 2026",
+  "name_variants": [
+   "Tuan Liew Chin Tong (Iskandar Puteri) DR.4.ii.2026"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kewangan",
+    "first_seen": "2026-02-04",
+    "last_seen": "2026-02-04"
+   }
+  ]
+ },
+ {
+  "speaker_id": "lim-guan-eng",
+  "name": "Tuan Lim Guan Eng",
+  "core_name": "lim guan eng",
+  "name_variants": [
+   "Tuan Lim Guan Eng",
+   "Tuan Lim Ġuan Eng"
+  ],
+  "label_variants": [
+   "Tuan Lim Guan Eng"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bagan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "lim-hui-ying",
+  "name": "Puan Lim Hui Ying",
+  "core_name": "lim hui ying",
+  "name_variants": [
+   "Puan Lim Hui Ying"
+  ],
+  "label_variants": [
+   "Puan Lim Hui Ling",
+   "Puan Lim Hui Ying"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanjong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kewangan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Kelurga dan Masyarakat",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pendidikan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "lim-lip-eng",
+  "name": "Tuan Lim Lip Eng",
+  "core_name": "lim lip eng",
+  "name_variants": [
+   "Tuan Lim Lip Eng"
+  ],
+  "label_variants": [
+   "Tuan Lim Lip Eng"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kepong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "lim-pay-hen",
+  "name": "Senator Datuk Lim Pay Hen",
+  "core_name": "lim pay hen",
+  "name_variants": [
+   "Senator Datuk Lim Pay Hen",
+   "Senator Datuk Lim Pay Hen."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "lingeshwaran-seri-r-arunasalam",
+  "name": "Senator Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam",
+  "core_name": "lingeshwaran seri r arunasalam",
+  "name_variants": [
+   "Senator Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam",
+   "Senator Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "linggu",
+  "name": "Senator Datuk Linggu @ Edward bin Bukut.",
+  "core_name": "linggu",
+  "name_variants": [
+   "Senator Datuk Linggu @ Edward bin Bukut."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "lo-su-fui",
+  "name": "Tuan Lo Su Fui",
+  "core_name": "lo su fui",
+  "name_variants": [
+   "Datuk Lo Su Fui",
+   "Tuan Lo Su Fui",
+   "Tuan Lo Su Fui, J.P."
+  ],
+  "label_variants": [
+   "Datuk Lo Su Fui",
+   "Tuan Lo Su Fui"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tawau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Wilayah Persekutuan)",
+    "first_seen": "2026-07-13",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri *Wilayah Persekutuan)",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-07-16"
+   }
+  ]
+ },
+ {
+  "speaker_id": "loke-siew-fook",
+  "name": "Tuan Loke Siew Fook",
+  "core_name": "loke siew fook",
+  "name_variants": [
+   "Tuan Loke Siew Fook"
+  ],
+  "label_variants": [
+   "Tuan Loke Siew Foo",
+   "Tuan Loke Siew Fook"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Seremban",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pengangkutan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "low-kian-chuan",
+  "name": "Senator Tan Sri Dato' Low Kian Chuan",
+  "core_name": "low kian chuan",
+  "name_variants": [
+   "Senator Tan Sri Dato' Low Kian Chuan",
+   "Senator Tan Sri Dato' Low Kian Chuan."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "lukanisman-awang-sauni",
+  "name": "Dato Lukanisman bin Awang Sauni",
+  "core_name": "lukanisman awang sauni",
+  "name_variants": [
+   "Dato Lukanisman Bin Awang Sauni",
+   "Dato Lukanisman bin Awang Sauni",
+   "Tuan Lukanisman Bin Awang Sauni"
+  ],
+  "label_variants": [
+   "Dato Lukanisman bin Awang",
+   "Dato Lukanisman bin Awang Sauni",
+   "Tuan Lukanisman bin Awang Sauni"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sibuti",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kesihatan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Luar Negeri",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "m-kulasegaran",
+  "name": "Tuan M. Kulasegaran",
+  "core_name": "m kulasegaran",
+  "name_variants": [
+   "Tuan M. Kulasegaran",
+   "Tuan M. Kulasegaran a/l V. Murugeson",
+   "Tuan M. Kulasegaran a/l V.Murugeson"
+  ],
+  "label_variants": [
+   "Tuan M. Kulasegaran",
+   "Tuan M. Kulasegaran a/I Murugeson",
+   "Tuan M. Kulasegaran a/l Murugeson",
+   "Tuan M. Kulasegaran a/l V. Murugeson",
+   "Tuan M.Kulasegaran a/l V.Murugeson"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ipoh Barat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Undang-Undang Dan Reformasi Institusi)",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Undang-Undang dan Reformasi Institusi)",
+    "first_seen": "2024-10-17",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi)",
+    "first_seen": "2025-12-02",
+    "last_seen": "2025-12-02"
+   },
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Undang-Undang dan Reformasi Institusi)",
+    "first_seen": "2025-02-03",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi)",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-02-23"
+   }
+  ]
+ },
+ {
+  "speaker_id": "m-kulasegaran-29-10-2024-ii",
+  "name": "Tuan M. Kulasegaran (Ipoh Barat) DR 29.10.2024 ii",
+  "core_name": "m kulasegaran 29 10 2024 ii",
+  "name_variants": [
+   "Tuan M. Kulasegaran (Ipoh Barat) DR 29.10.2024 ii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Undang-Undangdan Reformasi Institusi)",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "madius-tangau",
+  "name": "Datuk Seri Panglima Madius Tangau",
+  "core_name": "madius tangau",
+  "name_variants": [
+   "Datuk Seri Panglima Madius Tangau"
+  ],
+  "label_variants": [
+   "Datuk Seri Panglima Madius Tangau",
+   "Datuk Seri Panglima Madius bin Tangau",
+   "Datuk Seri Panglima Madius bin Tangau,",
+   "Datuk Seri Panglima Wilfred Madius Tangau"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tuaran",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mahiaddin-mohd-yassin",
+  "name": "Tan Sri Dato' Haji Mahiaddin bin Mohd. Yassin",
+  "core_name": "mahiaddin mohd yassin",
+  "name_variants": [
+   "Tan Sri Dato' Haji Mahiaddin Bin Mohd. Yassin",
+   "Tan Sri Dato' Haji Mahiaddin bin Mohd. Yassin",
+   "Tan Sri Haji Mahiaddin Bin Mohd. Yassin",
+   "Tan Sri Haji Mahiaddin bin Mohd. Yassin"
+  ],
+  "label_variants": [
+   "Tan Sri Dato' Haji Mahiaddin bin Haji Md Yassin",
+   "Tan Sri Dato' Haji Mahiaddin bin Haji Md. Yassin",
+   "Tan Sri Dato' Haji Mahiaddin bin Md Yasin",
+   "Tan Sri Dato' Haji Mahiaddin bin Md Yassin",
+   "Tan Sri Dato' Haji Mahiaddin bin Md. Yassin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pagoh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "manndzri-nasib",
+  "name": "Tuan Manndzri Bin Nasib",
+  "core_name": "manndzri nasib",
+  "name_variants": [
+   "Tuan Haji Manndzri Bin Haji Nasib",
+   "Tuan Haji Manndzri bin Haji Nasib",
+   "Tuan Manndzri Bin Nasib",
+   "Tuan Manndzri bin Nasib"
+  ],
+  "label_variants": [
+   "Tuan Haji Manndzri bin Haji Nasib",
+   "Tuan Manndzri bin Haji Nasib",
+   "Tuan Manndzri bin Nasib"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tenggara",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "manolan-mohamad",
+  "name": "Senator Tuan Manolan bin Mohamad",
+  "core_name": "manolan mohamad",
+  "name_variants": [
+   "Senator Tuan Manolan bin Mohamad",
+   "Senator Tuan Manolan bin Mohamad."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "marhamah-rosli",
+  "name": "Senator Puan Marhamah binti Rosli",
+  "core_name": "marhamah rosli",
+  "name_variants": [
+   "Senator Puan Marhamah binti Rosli"
+  ],
+  "label_variants": [
+   "Puan Marhamah binti Rosli"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mas-ermieyati-samsudin",
+  "name": "Datuk Wira Hajah Mas Ermieyati Binti Haji Samsudin",
+  "core_name": "mas ermieyati samsudin",
+  "name_variants": [
+   "Datuk Wira Hajah Mas Ermieyati Binti Haji Samsudin",
+   "Datuk Wira Hajah Mas Ermieyati binti Haji Samsudin"
+  ],
+  "label_variants": [
+   "Datuk Wira Hajah Mas Ermieyati binti Haji Samsudin",
+   "Datuk Wira Hajah Mas Ermieyati binti Samsudin",
+   "Datuk Wira Hajah Mas Ermieyati binti Samsudin,",
+   "Datuk Wira Hajah Mas Hajah Ermieyati binti Samsudin",
+   "Datuk Wira Mas Ermieyati binti Hj. Samsudin",
+   "Datuk Wira Mas Ermieyati binti Samsudin",
+   "Datuk Wira Mas Hajah Ermieyati binti Samsudin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Masjid Tanah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "matbali-musah",
+  "name": "Datuk Matbali Bin Musah",
+  "core_name": "matbali musah",
+  "name_variants": [
+   "Datuk Matbali Bin Musah",
+   "Datuk Matbali bin Musah",
+   "Datuk Seri Panglima Dr. Jeffrey G. Kitingan (Keningau) Datuk Matbali bin Musah"
+  ],
+  "label_variants": [
+   "Datuk Matbali bin Musah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sipitang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Śipitang",
+    "first_seen": "2023-02-28",
+    "last_seen": "2023-02-28"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "menteri-pertanian-dan-keterjaminan-makanan",
+  "name": "Menteri Pertanian dan Keterjaminan Makanan",
+  "core_name": "menteri pertanian dan keterjaminan makanan",
+  "name_variants": [
+   "Menteri Pertanian dan Keterjaminan Makanan"
+  ],
+  "label_variants": [],
+  "constituencies": [
+   {
+    "constituency": "Kota Raja",
+    "first_seen": "2025-07-23",
+    "last_seen": "2025-07-23"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "michael-mujah-lihan",
+  "name": "Senator Tuan Michael Mujah Lihan",
+  "core_name": "michael mujah lihan",
+  "name_variants": [
+   "Senator Tuan Michael Mujah Lihan",
+   "Senator Tuan Michael Mujah Lihan."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohamad-alamin",
+  "name": "Datuk Mohamad Alamin",
+  "core_name": "mohamad alamin",
+  "name_variants": [
+   "Datuk Mohamad Alamin",
+   "Datuk Mohamad bin Alamin"
+  ],
+  "label_variants": [
+   "Datuk Mohamad bin Alamin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kimanis",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Luar Negeri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Usahawan dan Koperasi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-alamin-02-03-2023-v",
+  "name": "Datuk Mohamad Alamin (Kimanis) DR.02.03.2023 V",
+  "core_name": "mohamad alamin 02 03 2023 v",
+  "name_variants": [
+   "Datuk Mohamad Alamin (Kimanis) DR.02.03.2023 V"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Luar Negeri",
+    "first_seen": "2023-03-02",
+    "last_seen": "2023-03-02"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-alamin-ii-01-03-2023",
+  "name": "Datuk Mohamad Alamin (Kimanis) ii DR.01.03.2023",
+  "core_name": "mohamad alamin ii 01 03 2023",
+  "name_variants": [
+   "Datuk Mohamad Alamin (Kimanis) ii DR.01.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Luar Negeri",
+    "first_seen": "2023-03-01",
+    "last_seen": "2023-03-01"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-fatmi-che-salleh",
+  "name": "Senator Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh",
+  "core_name": "mohamad fatmi che salleh",
+  "name_variants": [
+   "Senator Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh",
+   "Senator Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohamad-hasan",
+  "name": "Dato' Seri Utama Haji Mohamad Bin Haji Hasan",
+  "core_name": "mohamad hasan",
+  "name_variants": [
+   "Dato' Seri Utama Haji Mohamad Bin Haji Hasan",
+   "Dato' Seri Utama Haji Mohamad bin Haji Hasan"
+  ],
+  "label_variants": [
+   "Dato' Seri Utama Haji Mohamad bin Haji Hasan",
+   "Dato' Seri Utama Haji Mohamad bin Haji Hassan",
+   "Dato' Seri Utama Mohamad bin Haji Hasan",
+   "Dato' Seri Utama Mohamad bin Hasan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Rembau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Luar Negeri",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Pertahanan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-hasan-06-03-2023-v",
+  "name": "Dato' Seri Utama Haji Mohamad Bin Haji Hasan (Rembau) DR.06.03.2023 V",
+  "core_name": "mohamad hasan 06 03 2023 v",
+  "name_variants": [
+   "Dato' Seri Utama Haji Mohamad Bin Haji Hasan (Rembau) DR.06.03.2023 V"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Pertahanan",
+    "first_seen": "2023-03-06",
+    "last_seen": "2023-03-06"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-sabu",
+  "name": "Datuk Seri Haji Mohamad Bin Sabu",
+  "core_name": "mohamad sabu",
+  "name_variants": [
+   "Datuk Seri Haji Mohamad Bin Sabu",
+   "Datuk Seri Haji Mohamad bin Sabu",
+   "Datuk Seri Mohamad bin Sabu",
+   "Tuan Haji Mohamad Bin Sabu"
+  ],
+  "label_variants": [
+   "Datuk Seri Haji Mohamad bin Sabu",
+   "Tuan Haji Mohamad bin Sabu"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Raja",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pertanian Dan Keterjaminan Makanan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Pertanian dan Keterjaminan Makanan",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Pertaniandan Keterjaminan Makanan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohamad-shafizan-kepli",
+  "name": "Tuan Mohamad Shafizan Haji Kepli",
+  "core_name": "mohamad shafizan kepli",
+  "name_variants": [
+   "Tuan Mohamad Shafizan Haji Kepli"
+  ],
+  "label_variants": [
+   "Tuan Mohamad Shafizan Haji Kepli",
+   "Tuan Mohamd Shafizan Haji Kepli"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batang Lupar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohamed-haniffa-abdullah",
+  "name": "Senator Prof. Tan Sri Datuk Dr. Hj. Mohamed Haniffa bin Hj. Abdullah",
+  "core_name": "mohamed haniffa abdullah",
+  "name_variants": [
+   "Senator Prof. Tan Sri Datuk Dr. Haji Mohamed Haniffa bin Abdullah.",
+   "Senator Prof. Tan Sri Datuk Dr. Hj. Mohamed Haniffa bin Hj. Abdullah"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohamed-khaled-nordin",
+  "name": "Dato' Seri Haji Mohamed Khaled Bin Nordin",
+  "core_name": "mohamed khaled nordin",
+  "name_variants": [
+   "Dato' Seri Haji Mohamed Khaled Bin Nordin",
+   "Dato' Seri Haji Mohamed Khaled bin Nordin"
+  ],
+  "label_variants": [
+   "Dato' Seri Haji Mohamad Khaled bin Nordin",
+   "Dato' Seri Haji Mohamed Khaled bin Nordin",
+   "Dato' Seri Mohamed Khaled bin Nordin",
+   "Datuk Seri Haji Mohamed Khaled bin Nordin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Tinggi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Dalam Negeri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-02-13"
+   },
+   {
+    "role": "Menteri Pendidikan Tinggi",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Menteri Pertahanan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohammad-redzuan-othman",
+  "name": "Senator Dato' Prof. Emeritus Dr. Mohammad Redzuan bin Othman",
+  "core_name": "mohammad redzuan othman",
+  "name_variants": [
+   "Senator Dato' Prof. Emeritus Dr. Mohammad Redzuan bin Othman"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohammad-yusof-apdal",
+  "name": "Dato' Mohammad Yusof bin Apdal",
+  "core_name": "mohammad yusof apdal",
+  "name_variants": [
+   "Dato' Dr. Haji Mohammad Yusof bin Apdal",
+   "Dato' Dr. Mohammad Yusof bin Apdal",
+   "Dato' Mohammad Yusof Bin Apdal",
+   "Dato' Mohammad Yusof Bin Bin Apdal",
+   "Dato' Mohammad Yusof bin Apdal"
+  ],
+  "label_variants": [
+   "Dato' Dr. Mohammad Yusof bin Apdal",
+   "Dato' Haji Mohammad Yusof bin Apdal",
+   "Dato' Mohammad Yusof bin Apdal"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lahad Datu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pendidikan Tinggi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Sains, Teknologi Dan Inovasi",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Sains, Teknologi dan Inovasi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Sains, Teknologidan Inovasi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohammed-taufiq-johari",
+  "name": "Dr. Mohammed Taufiq Bin Johari",
+  "core_name": "mohammed taufiq johari",
+  "name_variants": [
+   "Dr. Mohammed Taufiq Bin Johari",
+   "Dr. Mohammed Taufiq bin Johari"
+  ],
+  "label_variants": [
+   "Dr. Mohammed Taufiq bin Johari"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sungai Petani",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Belia dan Sukan",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohd-azizi-abu-naim",
+  "name": "Tuan Mohd Azizi Bin Abu Naim",
+  "core_name": "mohd azizi abu naim",
+  "name_variants": [
+   "Tuan Mohd Azizi Bin Abu Naim",
+   "Tuan Mohd Azizi bin Abu Naim"
+  ],
+  "label_variants": [
+   "Tuan Mohd Azizi bin Abu Naim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Gua Musang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-hasbie-muda",
+  "name": "Senator Tuan Mohd Hasbie bin Muda",
+  "core_name": "mohd hasbie muda",
+  "name_variants": [
+   "Senator Tuan Mohd Hasbie bin Muda",
+   "Senator Tuan Mohd Hasbie bin Muda."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-hasnizan-harun",
+  "name": "Tuan Haji Mohd Hasnizan Bin Harun",
+  "core_name": "mohd hasnizan harun",
+  "name_variants": [
+   "Tuan Haji Mohd Hasnizan Bin Harun",
+   "Tuan Haji Mohd Hasnizan bin Harun"
+  ],
+  "label_variants": [
+   "Haji Mohd Hasnizan bin Harun",
+   "Tuan Haji Mohd Hasnizan bin Harun"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Hulu Selangor",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-hatta-md-ramli",
+  "name": "Senator Datuk Wira Dr. Mohd Hatta bin Md Ramli",
+  "core_name": "mohd hatta md ramli",
+  "name_variants": [
+   "Senator Datuk Wira Dr. Mohd Hatta bin Md Ramli"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-hisamudin-yahaya",
+  "name": "Senator Datuk Mohd Hisamudin bin Yahaya",
+  "core_name": "mohd hisamudin yahaya",
+  "name_variants": [
+   "Senator Datuk Mohd Hisamudin bin Yahaya"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-isam-mohd-isa",
+  "name": "Dato' Mohd Isam Bin Mohd Isa",
+  "core_name": "mohd isam mohd isa",
+  "name_variants": [
+   "Dato' Mohd Isam Bin Mohd Isa",
+   "Dato' Mohd Isam bin Mohd Isa"
+  ],
+  "label_variants": [
+   "Dato' Mohd Isam bin Mohd Isa"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tampin",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-kurniawan-naim-moktar",
+  "name": "Tuan Mohd Kurniawan Naim bin Moktar",
+  "core_name": "mohd kurniawan naim moktar",
+  "name_variants": [
+   "Tuan Mohd Kurniawan Naim bin Moktar"
+  ],
+  "label_variants": [
+   "Tuan Mohd Kurniawan Naim bin Moktar"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kinabatangan",
+    "first_seen": "2026-01-27",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-misbahul-munir-masduki",
+  "name": "Tuan Haji Mohd Misbahul Munir bin Masduki",
+  "core_name": "mohd misbahul munir masduki",
+  "name_variants": [
+   "Tuan Haji Mohd Misbahul Munir Bin Masduki",
+   "Tuan Haji Mohd Misbahul Munir bin Masduki",
+   "Tuan Mohd Misbahul Munir Bin Masduki",
+   "Tuan Mohd Misbahul Munir bin Masduki"
+  ],
+  "label_variants": [
+   "Haji Mohd Misbahul Munir bin Masduki",
+   "Tuan Haji Mohd Misbahul Munir bin Masduki",
+   "Tuan Haji Muhamad Misbahul Munir bin Masduki"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Parit Buntar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-naim-mokhtar",
+  "name": "Senator Dato' Setia Dr. Haji Mohd Na'im Bin Haji Mokhtar",
+  "core_name": "mohd naim mokhtar",
+  "name_variants": [
+   "Senator Dato' Setia Dr. Haji Mohd Na'im Bin Haji Mokhtar",
+   "Senator Dato' Setia Dr. Haji Mohd Na'im bin Haji Mokhtar",
+   "Senator Dato' Setia Dr. Haji Mohd Na'im bin Haji Mokhtar."
+  ],
+  "label_variants": [
+   "Dato' Seri Dr. Haji Mohd Na'im bin Haji Mokhtar",
+   "Dato' Setia Dr. Haji Mohd Na'im bin Haji Mokhtar",
+   "Dato' Setia Dr. Haji Mohd Na'im bin Mokhtar",
+   "Dato' Setia Dr. Haji Mohd Nai'm bin Mokhtar"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2023-02-14",
+    "last_seen": "2024-12-10"
+   },
+   {
+    "role": "Menteri bi Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2024-07-11",
+    "last_seen": "2024-07-11"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2023-03-16",
+    "last_seen": "2025-12-02"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohd-nazri-abu-hassan",
+  "name": "Tuan Mohd Nazri Bin Abu Hassan",
+  "core_name": "mohd nazri abu hassan",
+  "name_variants": [
+   "Tuan Mohd Nazri Bin Abu Hassan",
+   "Tuan Mohd Nazri bin Abu Hassan"
+  ],
+  "label_variants": [
+   "Tuan Mohd Nazri bin Abu Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Merbok",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-rafizi-ramli",
+  "name": "Tuan Mohd Rafizi Bin Ramli",
+  "core_name": "mohd rafizi ramli",
+  "name_variants": [
+   "Dato' Seri Mohd Rafizi bin Ramli",
+   "Tuan Mohd Rafizi Bin Ramli",
+   "Tuan Mohd Rafizi bin Ramli"
+  ],
+  "label_variants": [
+   "Dato' Seri Mohd Rafizi bin Ramli",
+   "Tuan Mohd Rafizi bin Ramli",
+   "Tuan Yang di-Pertua: Tuan Mohd Rafizi bin Ramli"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pandan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-03-03"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Ekonomi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2025-05-05"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohd-rafizi-ramli-vi-27-7-2025",
+  "name": "Dato' Seri Mohd Rafizi bin Ramli (Pandan) vi DR.27.7.2025",
+  "core_name": "mohd rafizi ramli vi 27 7 2025",
+  "name_variants": [
+   "Dato' Seri Mohd Rafizi bin Ramli (Pandan) vi DR.27.7.2025"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-sany-hamzan",
+  "name": "Tuan Mohd Sany Bin Hamzan",
+  "core_name": "mohd sany hamzan",
+  "name_variants": [
+   "Tuan Mohd Sany Bin Hamzan",
+   "Tuan Mohd Sany bin Hamzah",
+   "Tuan Mohd Sany bin Hamzan"
+  ],
+  "label_variants": [
+   "Tuan Mohd Sany Bin Hamzan",
+   "Tuan Mohd Sany bin Hamdan",
+   "Tuan Mohd Sany bin Hamzan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Hulu Langat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-shafie-apdal",
+  "name": "Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal",
+  "core_name": "mohd shafie apdal",
+  "name_variants": [
+   "Datuk Seri Panglima Haji Mohd Shafie Bin Haji Apdal",
+   "Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal",
+   "Datuk Seri Panglima Haji. Mohd. Shafie Bin Haji. Apdal",
+   "Datuk Seri Panglima Haji. Mohd. Shafie bin Haji. Apdal",
+   "Tuan Rushdan Bin Rusmi (Padang Besar) Datuk Seri Panglima Haji. Mohd. Shafie Bin Haji. Apdal"
+  ],
+  "label_variants": [
+   "Datuk Seri Panglima Haji Mohd Shafie bin Apdal",
+   "Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal",
+   "Datuk Seri Panglima Mohd Shafie bin Afdal",
+   "Datuk Seri Panglima Mohd Shafie bin Apdal",
+   "Datuk Seri Panglima Mohd Shafie bin Apdal,",
+   "Datuk Seri Panglima Mohd Shafie bin Haji Apdal"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Semporna",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-shahar-abdullah",
+  "name": "Dato' Indera Mohd Shahar Bin Abdullah",
+  "core_name": "mohd shahar abdullah",
+  "name_variants": [
+   "Dato' Indera Mohd Shahar Bin Abdullah",
+   "Dato' Indera Mohd Shahar bin Abdullah"
+  ],
+  "label_variants": [
+   "Dato' Indera Mohd Shahar bin Abdullah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Paya Besar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Ekonomi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mohd-suhaimi-abdullah",
+  "name": "Dato' Haji Mohd Suhaimi bin Abdullah",
+  "core_name": "mohd suhaimi abdullah",
+  "name_variants": [
+   "Dato' Haji Mohd Suhaimi Bin Abdullah",
+   "Dato' Haji Mohd Suhaimi bin Abdullah",
+   "Dato' Mohd Suhaimi Bin Abdullah",
+   "Dato' Mohd Suhaimi bin Abdullah"
+  ],
+  "label_variants": [
+   "Dato' Haji Mohd Suhaimi bin Abdullah",
+   "Dato' Haji Mohd Suhaimi bin Haji Abdullah",
+   "Dato' Mohd Suhaimi bin Abdullah",
+   "Dato' Mohd Suhaimi bin Haji Abdullah",
+   "Dato'Haji Mohd Suhaimi bin Haji Abdullah",
+   "Datuk Haji Mohd Suhaimi bin Abdullah",
+   "Datuk Haji Mohd Suhaimi bin Haji Abdullah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Langkawi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mohd-syahir-che-sulaiman",
+  "name": "Tuan Haji Mohd Syahir Bin Che Sulaiman",
+  "core_name": "mohd syahir che sulaiman",
+  "name_variants": [
+   "Tuan Haji Mohd Syahir Bin Che Sulaiman",
+   "Tuan Haji Mohd Syahir bin Che Sulaiman"
+  ],
+  "label_variants": [
+   "Haji Mohd Syahir bin Che Sulaiman",
+   "Tuan Haji Mohd Syahir bin Che Sulaiman",
+   "Tuan Mohd Syahir bin Che Sulaiman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bachok",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "mordi-bimol",
+  "name": "Tuan Mordi Bimol",
+  "core_name": "mordi bimol",
+  "name_variants": [
+   "Tuan Mordi Bimol",
+   "Tuan Mordi anak Bimol"
+  ],
+  "label_variants": [
+   "Tuan Mordi Anak Bimbol",
+   "Tuan Mordi Bimol",
+   "Tuan Mordi anak Bimol"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Mas Gading",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Belia dan Sukan",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "muhammad-bakhtiar-wan-chik",
+  "name": "Dato' Muhammad Bakhtiar Bin Wan Chik",
+  "core_name": "muhammad bakhtiar wan chik",
+  "name_variants": [
+   "Dato' Muhammad Bakhtiar Bin Wan Chik",
+   "Dato' Muhammad Bakhtiar bin Wan Chik"
+  ],
+  "label_variants": [
+   "Dato' Muhammad Bakhtiar bin Wan Chik"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Balik Pulau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "muhammad-fawwaz-mohamad-jan",
+  "name": "Tuan Muhammad Fawwaz Bin Mohamad Jan",
+  "core_name": "muhammad fawwaz mohamad jan",
+  "name_variants": [
+   "Tuan Haji Muhammad Fawwaz bin Mohamad Jan",
+   "Tuan Muhammad Fawwaz Bin Mohamad Jan",
+   "Tuan Muhammad Fawwaz bin Mohamad Jan"
+  ],
+  "label_variants": [
+   "Tuan Haji Muhammad Fawwaz bin Mohamad Jan",
+   "Tuan Haji Muhammad Fawwaz bin Mohd Jan",
+   "Tuan Muhammad Fawwaz bin Mohamad Jan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Permatang Pauh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "muhammad-islahuddin-abas",
+  "name": "Tuan Haji Muhammad Islahuddin Bin Abas",
+  "core_name": "muhammad islahuddin abas",
+  "name_variants": [
+   "Tuan Haji Muhammad Islahuddin Bin Abas",
+   "Tuan Haji Muhammad Islahuddin bin Abas"
+  ],
+  "label_variants": [
+   "Tuan Haji Muhammad Islahuddin bin Abas"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Mersing",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "muhammad-ismi-mat-taib",
+  "name": "Tuan Muhammad Ismi Bin Mat Taib",
+  "core_name": "muhammad ismi mat taib",
+  "name_variants": [
+   "Tuan Haji Muhammad Ismi bin Mat Taib",
+   "Tuan Muhammad Ismi Bin Mat Taib",
+   "Tuan Muhammad Ismi bin Mat Taib"
+  ],
+  "label_variants": [
+   "Tuan Haji Muhammad Ismi bin Mat Taib",
+   "Tuan Muhammad Ismi bin Mat Taib"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Parit",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "muhammad-ismi-mat-taib-iv-01-03-2023",
+  "name": "Tuan Muhammad Ismi Bin Mat Taib (Parit) iv DR.01.03.2023",
+  "core_name": "muhammad ismi mat taib iv 01 03 2023",
+  "name_variants": [
+   "Tuan Muhammad Ismi Bin Mat Taib (Parit) iv DR.01.03.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mujahid-yusof",
+  "name": "Senator Datuk Seri Dr. Mujahid bin Yusof",
+  "core_name": "mujahid yusof",
+  "name_variants": [
+   "Senator Datuk Seri Dr. Mujahid bin Yusof",
+   "Senator Datuk Seri Dr. Mujahid bin Yusof."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mumtaz-md-nawi",
+  "name": "Dato' Hajah Mumtaz binti Md Nawi",
+  "core_name": "mumtaz md nawi",
+  "name_variants": [
+   "Dato' Hajah Mumtaz Binti Md Nawi",
+   "Dato' Hajah Mumtaz binti Md Nawi",
+   "Dato' Mumtaz Binti Md Nawi",
+   "Dato' Mumtaz binti Md Nawi"
+  ],
+  "label_variants": [
+   "Dato' Hajah Mumtaz bin Md Nawi",
+   "Dato' Hajah Mumtaz binti Md Nawi",
+   "Dato' Mumtaz binti Md Nawi",
+   "Dato'Mumtaz binti Md Nawi",
+   "Hajah Mumtaz binti Md Nawi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tumpat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "muslimin-yahaya",
+  "name": "Datuk Muslimin Bin Yahaya",
+  "core_name": "muslimin yahaya",
+  "name_variants": [
+   "Datuk Muslimin Bin Yahaya",
+   "Datuk Muslimin bin Yahaya"
+  ],
+  "label_variants": [
+   "Datuk Muslimin bin Yahaya"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sungai Besar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "musoddak-ahmad",
+  "name": "Senator Tuan Musoddak bin Ahmad",
+  "core_name": "musoddak ahmad",
+  "name_variants": [
+   "Senator Tuan Musoddak bin Ahmad",
+   "Senator Tuan Musoddak bin Ahmad."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mustafa-musa",
+  "name": "Senator Datuk Haji Mustafa bin Musa",
+  "core_name": "mustafa musa",
+  "name_variants": [
+   "Senator Datuk Dr. Haji Mustafa bin Musa",
+   "Senator Datuk Haji Mustafa bin Musa",
+   "Senator Datuk Haji Mustafa bin Musa."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "mustapha",
+  "name": "Datuk Ts. Mustapha Sakmud",
+  "core_name": "mustapha",
+  "name_variants": [
+   "Datuk Ts. Mustapha @ Mohd Yunus bin Sakmud",
+   "Datuk Ts. Mustapha Sakmud",
+   "Tuan Mustapha @ Mohd Yunus Bin Sakmud"
+  ],
+  "label_variants": [
+   "Datuk Ts Mustapha Sakmud",
+   "Datuk Ts. Mustapha Sakmud",
+   "Tuan Haji Mustapha @ Mohd Yunus bin Sakmud",
+   "Tuan Mustapha @ Mohd Yunus bin Sakmud"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sepanggar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Sabah dan Sarawak)",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pendidikan Tinggi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Sumber Manusia",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "mutang-tagal",
+  "name": "Datuk Mutang Tagal",
+  "core_name": "mutang tagal",
+  "name_variants": [
+   "Datuk Mutang Tagal"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Yang di-Pertua Dewan Negara",
+    "first_seen": "2024-02-26",
+    "last_seen": "2024-02-26"
+   }
+  ]
+ },
+ {
+  "speaker_id": "nancy",
+  "name": "Dato' Seri Hajah Nancy Shukri",
+  "core_name": "nancy",
+  "name_variants": [
+   "Dato' Seri Hajah Nancy",
+   "Dato' Seri Hajah Nancy Shukri",
+   "Dato' Sri Hajah Nancy Shukri",
+   "Dato' Sri Hajah Nancy binti Shukri"
+  ],
+  "label_variants": [
+   "Dato' Seri Hajah Nancy binti Shukri",
+   "Dato' Sri Hajah Nancy binti Shukri",
+   "Dato'Seri Hajah Nancy binti Shukri",
+   "Tan Sri' Sri Hajah Nancy binti Shukri"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Santubong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pembangunan Wanita, Keluarga Dan Masyarakat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Pembangunan Wanita, Keluarga dan Masyarakat",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Pembangunan Wanita, Keluargadan Masyarakat",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "nelson-renganathan",
+  "name": "Senator Dato' Dr. Nelson a/l Renganathan",
+  "core_name": "nelson renganathan",
+  "name_variants": [
+   "Senator Dato' Dr. Nelson a/l Renganathan"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nelson-w-angang",
+  "name": "Senator Datuk Nelson W Angang.",
+  "core_name": "nelson w angang",
+  "name_variants": [
+   "Senator Datuk Nelson W Angang."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "ng-keng-heng",
+  "name": "Senator Dato' Ng Keng Heng",
+  "core_name": "ng keng heng",
+  "name_variants": [
+   "Senator Dato' Ng Keng Heng"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nga-kor-ming",
+  "name": "Tuan Nga Kor Ming",
+  "core_name": "nga kor ming",
+  "name_variants": [
+   "Tuan Nga Kor Ming"
+  ],
+  "label_variants": [
+   "Tuan Nga Kor Ming"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Teluk Intan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pembangunan Kerajaan Tempatan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Menteri Perumahan Dan Kerajaan Tempatan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Perumahan dan Kerajaan Tempatan",
+    "first_seen": "2024-02-27",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Perumahandan Kerajaan Tempatan",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ngeh-koo-ham",
+  "name": "Dato' Ngeh Koo Ham",
+  "core_name": "ngeh koo ham",
+  "name_variants": [
+   "Dato' Ngeh Koo Ham"
+  ],
+  "label_variants": [
+   "Dato' Ngeh Koo Ham",
+   "Dato'Ngeh Koo Ham",
+   "Datuk Ngeh Koo Ham"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Beruas",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "nik-mohamad-abduh-nik-abdul-aziz",
+  "name": "Senator Tuan Nik Mohamad Abduh bin Nik Abdul Aziz",
+  "core_name": "nik mohamad abduh nik abdul aziz",
+  "name_variants": [
+   "Senator Tuan Nik Mohamad Abduh bin Nik Abdul Aziz",
+   "Senator Tuan Nik Mohamad Abduh bin Nik Abdul Aziz."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nik-muhammad-zawawi-salleh",
+  "name": "Datuk Dr. Nik Muhammad Zawawi Bin Haji Salleh",
+  "core_name": "nik muhammad zawawi salleh",
+  "name_variants": [
+   "Datuk Dr. Nik Muhammad Zawawi Bin Haji Salleh",
+   "Datuk Dr. Nik Muhammad Zawawi bin Haji Salleh"
+  ],
+  "label_variants": [
+   "Datuk Dr. Nik Muhammad Zawawi bin Haji Salleh",
+   "Datuk Dr. Nik Muhammad Zawawi bin Salleh",
+   "Datuk Dr. Ustaz Nik Muhammad Zawawi bin Haji Salleh",
+   "Dr. Nik Muhammad Zawawi bin Salleh"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pasir Puteh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "nik-nazmi-nik-ahmad",
+  "name": "Tuan Nik Nazmi Bin Nik Ahmad",
+  "core_name": "nik nazmi nik ahmad",
+  "name_variants": [
+   "Tuan Nik Nazmi Bin Nik Ahmad",
+   "Tuan Nik Nazmi bin Nik Ahmad"
+  ],
+  "label_variants": [
+   "Tuan Nik Nazmi bin Nik Ahmad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Setiawangsa",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-03-03"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Suber Asli, Alam Sekitar Dan Perubahan Iklim",
+    "first_seen": "2023-03-06",
+    "last_seen": "2023-03-06"
+   },
+   {
+    "role": "Menteri Sumber Asli dan Kelestarian Alam",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-05-05"
+   },
+   {
+    "role": "Menteri Sumber Asli, Alam Sekitar Dan Perubahan Iklim",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Menteri Sumber Asli, Alam Sekitar dan Perubahan Iklim",
+    "first_seen": "2023-10-10",
+    "last_seen": "2023-10-10"
+   },
+   {
+    "role": "Menteri Sumber Aslidan Kelestarian Alam",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "niran-tan-kran",
+  "name": "Senator Tuan Niran Tan Kran",
+  "core_name": "niran tan kran",
+  "name_variants": [
+   "Senator Tuan Niran Tan Kran"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "noorita-sual",
+  "name": "Senator Puan Noorita binti Sual",
+  "core_name": "noorita sual",
+  "name_variants": [
+   "Senator Puan Noorita binti Sual"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nor-jazlan-tan-sri-mohamed",
+  "name": "Senator Datuk Nor Jazlan bin Tan Sri Mohamed",
+  "core_name": "nor jazlan tan sri mohamed",
+  "name_variants": [
+   "Senator Datuk Nor Jazlan bin Tan Sri Mohamed"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Negara",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-01-19"
+   }
+  ]
+ },
+ {
+  "speaker_id": "noraini-ahmad",
+  "name": "Datuk Seri Dr. Noraini Binti Ahmad",
+  "core_name": "noraini ahmad",
+  "name_variants": [
+   "Datuk Seri Dr. Noraini Binti Ahmad",
+   "Datuk Seri Dr. Noraini binti Ahmad"
+  ],
+  "label_variants": [
+   "Datuk Seri Dr. Noraini Ahmad",
+   "Datuk Seri Dr. Noraini bin Ahmad",
+   "Datuk Seri Dr. Noraini binti Ahmad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Parit Selangor",
+    "first_seen": "2023-11-20",
+    "last_seen": "2023-11-20"
+   },
+   {
+    "constituency": "Parit Sulong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Perladangan dan Komoditi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga Dan Masyarakat",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Wanita, Keluargadan Masyarakat",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "noraini-idris",
+  "name": "Senator Datuk Noraini binti Idris",
+  "core_name": "noraini idris",
+  "name_variants": [
+   "Senator Datuk Noraini binti Idris"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nordin-ahmad-ismail",
+  "name": "Komander Nordin Bin Ahmad Ismail TLDM (B)",
+  "core_name": "nordin ahmad ismail",
+  "name_variants": [
+   "Komander Nordin Bin Ahmad Ismail TLDM (B)",
+   "Komander Nordin bin Ahmad Ismail TLDM (B)"
+  ],
+  "label_variants": [],
+  "constituencies": [
+   {
+    "constituency": "Lumut",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "norhasmimi-abdul-ghani",
+  "name": "Senator Puan Norhasmimi binti Abdul Ghani",
+  "core_name": "norhasmimi abdul ghani",
+  "name_variants": [
+   "Senator Puan Norhasmimi binti Abdul Ghani"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "nur-jazlan-tan-sri-mohamed",
+  "name": "Senator Datuk Nur Jazlan bin Tan Sri Mohamed.",
+  "core_name": "nur jazlan tan sri mohamed",
+  "name_variants": [
+   "Senator Datuk Nur Jazlan bin Tan Sri Mohamed."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Negara",
+    "first_seen": "2025-02-03",
+    "last_seen": "2025-02-03"
+   }
+  ]
+ },
+ {
+  "speaker_id": "nurul-amin-hamid",
+  "name": "Tuan Nurul Amin Bin Hamid",
+  "core_name": "nurul amin hamid",
+  "name_variants": [
+   "Tuan Nurul Amin Bin Hamid",
+   "Tuan Nurul Amin bin Hamid"
+  ],
+  "label_variants": [
+   "Tuan Nurul Amin bin Hamid"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Padang Terap",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ogosi-2025",
+  "name": "OGOSI 2025",
+  "core_name": "ogosi 2025",
+  "name_variants": [
+   "OGOSI 2025"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "onn-abu-bakar",
+  "name": "Tuan Haji Onn Bin Abu Bakar",
+  "core_name": "onn abu bakar",
+  "name_variants": [
+   "Tuan Haji Onn Bin Abu Bakar",
+   "Tuan Haji Onn bin Abu Bakar"
+  ],
+  "label_variants": [
+   "Tuan Haji Onn bin Abu Bakar",
+   "Tuan Onn bin Abu Bakar"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batu Pahat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "oscar-ling-chai-yew",
+  "name": "Tuan Oscar Ling Chai Yew",
+  "core_name": "oscar ling chai yew",
+  "name_variants": [
+   "Tuan Oscar Ling Chai Yew"
+  ],
+  "label_variants": [
+   "Tuan Oscar Ling Chai Yew"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sibu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "pang-hok-liong",
+  "name": "Tuan Pang Hok Liong",
+  "core_name": "pang hok liong",
+  "name_variants": [
+   "Tuan Pang Hok Liong"
+  ],
+  "label_variants": [
+   "Tuan Pang Hok Liong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Labis",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "pele-peter-tinggom",
+  "name": "Senator Tuan Pele Peter Tinggom.",
+  "core_name": "pele peter tinggom",
+  "name_variants": [
+   "Senator Tuan Pele Peter Tinggom."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "pele-peter-tingom",
+  "name": "Senator Tuan Pele Peter Tingom",
+  "core_name": "pele peter tingom",
+  "name_variants": [
+   "Senator Tuan Pele Peter Tingom"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "prabakaran-m-parameswaran",
+  "name": "Tuan Prabakaran A/L M. Parameswaran",
+  "core_name": "prabakaran m parameswaran",
+  "name_variants": [
+   "Tuan Prabakaran A/L M. Parameswaran",
+   "Tuan Prabakaran a/l M. Parameswaran"
+  ],
+  "label_variants": [
+   "Tuan Prabakaran A/L M Parameswaran",
+   "Tuan Prabakaran a/I M Parameswaran",
+   "Tuan Prabakaran a/l M Parameswaran",
+   "Tuan Prabakaran a/l M. Parameswaran"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "radzi-jidin",
+  "name": "Dr. Radzi Jidin",
+  "core_name": "radzi jidin",
+  "name_variants": [
+   "Datuk Dr. Radzi Jidin",
+   "Dr. Radzi Jidin"
+  ],
+  "label_variants": [
+   "Datuk Dr. Mohd Radzi Bin Md. Jidin",
+   "Datuk Dr. Mohd Radzi bin Jidin",
+   "Datuk Dr. Mohd Radzi bin Md. Jidin",
+   "Datuk Dr. Radzi Jidin",
+   "Datuk Dr. Radzi bin Jidin",
+   "Datuk Tuan Yang di-Pertua. Radzi bin Jidin",
+   "Dr. Radzi Jidin",
+   "Dr. Radzi bin Jidin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Putrajaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ramanan-ramakrishnan",
+  "name": "Dato' Sri Ramanan Ramakrishnan",
+  "core_name": "ramanan ramakrishnan",
+  "name_variants": [
+   "Dato' Ramanan Ramakrishnan",
+   "Dato' Sri Ramanan Ramakrishnan"
+  ],
+  "label_variants": [
+   "Dato' Ramanan Ramakrishnan",
+   "Dato' Sri Ramanan Ramakrishnan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sungai Buloh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Sumber Manusia",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Usahawan Dan Koperasi",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Usahawan dan Koperasi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Pembangunan Usahawandan Koperasi",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ramkarpal-singh-karpal-singh",
+  "name": "Tuan Ramkarpal Singh A/L Karpal Singh",
+  "core_name": "ramkarpal singh karpal singh",
+  "name_variants": [
+   "Tuan Ramkarpal Singh A/L Karpal Singh",
+   "Tuan Ramkarpal Singh a/l Karpal Singh"
+  ],
+  "label_variants": [
+   "Tuan Ramkarpal Singh A/L Karpal Singh",
+   "Tuan Ramkarpal Singh a/I Karpal Singh",
+   "Tuan Ramkarpal Singh a/l Karpal Singh"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bukit Gelugor",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Undang-Undang Dan Reformasi Institusi)",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "ramli-mohd-nor",
+  "name": "Dato' Dr. Ramli bin Dato' Mohd Nor",
+  "core_name": "ramli mohd nor",
+  "name_variants": [
+   "Dato' Dr. Ramli Bin Dato' Mohd Nor",
+   "Dato' Dr. Ramli bin Dato' Mohd Nor",
+   "Dato' Ramli Bin Dato' Mohd Nor",
+   "Dato' Ramli Bin Dato'Mohd Nor",
+   "Dato' Ramli Dr. Bin Dato' Mohd Nor",
+   "Dato' Ramli Dr. bin Dato' Mohd Nor",
+   "Dato' Ramli bin Dato' Mohd Nor",
+   "Dato' Sri Dr. Ramli bin Dato' Mohd Nor"
+  ],
+  "label_variants": [
+   "D'to' Ramli bin D'to' Mohd Nor",
+   "Dato Ramli bin Dato Mohd Nor",
+   "Dato' Dr Ramli bin Dato' Mohd Nor",
+   "Dato' Dr. Ramli bin Dato' Mohd Nor",
+   "Dato' Dr. Ramli bin Dato' Mohd nor",
+   "Dato' Dr. Ramli bin Mohd Nor",
+   "Dato' Mohd Ramli bin Dato' Mohd Nor",
+   "Dato' Raml' bin Dato' Mohd Nor",
+   "Dato' Ramli bin Dato' Mohd Nor",
+   "Dato' Ramli bin Dato'Mohd Nor",
+   "Dato' Ramli bin Mohd Nor",
+   "Dato' Ramli bin'Dato' Mohd Nor",
+   "Dato' Sri Dr. Ramli bin Dato' Mohd Nor",
+   "Dato' ramli bin Dato' Mohd Nor",
+   "Dato'Ramli bin Dato' Mohd Nor",
+   "Dato'Ramli bin Dato'Mohd Nor",
+   "Dato'Ramli bin Mohd Nor"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Cameron Highlands",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Rakyat",
+    "first_seen": "2023-02-28",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Yang di-Pertua Dewan Rakyat 1",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-02-24"
+   }
+  ]
+ },
+ {
+  "speaker_id": "razali-idris",
+  "name": "Senator Datuk Razali bin Idris",
+  "core_name": "razali idris",
+  "name_variants": [
+   "Senator Datuk Razali bin Idris"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "richard-rapu",
+  "name": "Tuan Richard Rapu @ Aman Anak Begri",
+  "core_name": "richard rapu",
+  "name_variants": [
+   "Dato Dr. Richard Rapu @ Aman Anak Begri",
+   "Dato Dr. Richard Rapu @ Aman anak Begri",
+   "Dato Dr. Richard Rapu @Aman anak Begri",
+   "Richard Rapu @ Aman Anak Begri",
+   "Tuan Richard Rapu @ Aman Anak Begri",
+   "Tuan Richard Rapu @ Aman anak Begri",
+   "Tuan Richard Rapu @Aman anak Begri"
+  ],
+  "label_variants": [
+   "Dato Dr. Richard Rapu @ Aman anak Begri",
+   "Dato Dr. Richard Rapu @Aman anak Begri",
+   "Dato' Dr. Richard Rapu @ Aman anak Begri",
+   "Dr. Richard Rapu @ Aman anak Begri",
+   "Dr. Richard Rapu @Aman anak Begri"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Betong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "richard-riot-jaem",
+  "name": "Dato' Sri Richard Riot Anak Jaem",
+  "core_name": "richard riot jaem",
+  "name_variants": [
+   "Dato' Sri Dr. Richard Riot Anak Jaem",
+   "Dato' Sri Dr. Richard Riot anak Jaem",
+   "Dato' Sri Richard Riot Anak Jaem",
+   "Dato' Sri Richard Riot anak Jaem"
+  ],
+  "label_variants": [
+   "Dato' Sri (Dr.) Richard Riot anak Jaem",
+   "Dato' Sri Dr. Richard Riot anak Jaem",
+   "Dato' Sri Richard Riot anak Jaem"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Serian",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "richard-riot-jaem-28-02-2023-iii",
+  "name": "Dato' Sri Richard Riot Anak Jaem (Serian) DR.28.02.2023 iii",
+  "core_name": "richard riot jaem 28 02 2023 iii",
+  "name_variants": [
+   "Dato' Sri Richard Riot Anak Jaem (Serian) DR.28.02.2023 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "richard-riot-jaem-serian",
+  "name": "Dato' Sri Richard Riot Anak Jaem (Serian",
+  "core_name": "richard riot jaem serian",
+  "name_variants": [
+   "Dato' Sri Richard Riot Anak Jaem (Serian"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "riduan-rubin",
+  "name": "Tuan Riduan Bin Rubin",
+  "core_name": "riduan rubin",
+  "name_variants": [
+   "Tuan Riduan Bin Rubin",
+   "Tuan Riduan bin Rubin"
+  ],
+  "label_variants": [
+   "Tuan Riduan bin Rubin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tenom",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "riduan-rubin-13-02-2023-iii",
+  "name": "Tuan Riduan Bin Rubin (Tenom) DR.13.02.2023 iii",
+  "core_name": "riduan rubin 13 02 2023 iii",
+  "name_variants": [
+   "Tuan Riduan Bin Rubin (Tenom) DR.13.02.2023 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "rita-sarimah-patrick-insol",
+  "name": "Senator Puan Rita Sarimah anak Patrick Insol",
+  "core_name": "rita sarimah patrick insol",
+  "name_variants": [
+   "Senator Puan Rita Sarimah Anak Patrick Insol",
+   "Senator Puan Rita Sarimah Anak Patrick Insol.",
+   "Senator Puan Rita Sarimah anak Patrick Insol"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "robert-lau-hui-yew",
+  "name": "Senator Tuan Robert Lau Hui Yew.",
+  "core_name": "robert lau hui yew",
+  "name_variants": [
+   "Senator Tuan Robert Lau Hui Yew",
+   "Senator Tuan Robert Lau Hui Yew."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "roderick-wong-siew-lead",
+  "name": "Senator Tuan Roderick Wong Siew Lead",
+  "core_name": "roderick wong siew lead",
+  "name_variants": [
+   "Senator Tuan Roderick Wong Siew Lead",
+   "Senator Tuan Roderick Wong Siew Lead."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "rodiyah-sapiee",
+  "name": "Puan Rodiyah Binti Sapiee",
+  "core_name": "rodiyah sapiee",
+  "name_variants": [
+   "Puan Rodiyah Binti Sapiee",
+   "Puan Rodiyah binti Sapiee"
+  ],
+  "label_variants": [
+   "Puan Rodiyah binti Sapiee"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batang Sadong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "rodziah-ismail",
+  "name": "Puan Rodziah Binti Ismail",
+  "core_name": "rodziah ismail",
+  "name_variants": [
+   "Puan Hajah Rodziah binti Ismail",
+   "Puan Rodziah Binti Ismail",
+   "Puan Rodziah binti Ismail"
+  ],
+  "label_variants": [
+   "Hajah Rodziah binti Ismail",
+   "Puan Hajah Rodziah binti Ismail",
+   "Puan Hajah Roziah binti Ismail",
+   "Puan Rodziah binti Ismail"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ampang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ronald-kiandee",
+  "name": "Datuk Seri Dr. Ronald Kiandee",
+  "core_name": "ronald kiandee",
+  "name_variants": [
+   "Datuk Seri Dr. Ronald Kiandee"
+  ],
+  "label_variants": [
+   "Datuk Seri Dr. Ronald Kiandee"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Beluran",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ros-suryati-alang",
+  "name": "Senator Datin Ros Suryati binti Alang",
+  "core_name": "ros suryati alang",
+  "name_variants": [
+   "Senator Datin Hajah Ros Suryati binti Alang.",
+   "Senator Datin Ros Suryati binti Alang"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "roslan-hashim",
+  "name": "Tuan Roslan Bin Hashim",
+  "core_name": "roslan hashim",
+  "name_variants": [
+   "Tuan Roslan Bin Hashim",
+   "Tuan Roslan bin Hashim",
+   "Tuan Roslan bn Hashim"
+  ],
+  "label_variants": [
+   "Tuan Roslan bin Hashim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kulim Bandar Baharu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Kulim-Bandar Baharu",
+    "first_seen": "2025-10-23",
+    "last_seen": "2025-10-23"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "rosni-sohar",
+  "name": "Senator Datuk Rosni binti Sohar.",
+  "core_name": "rosni sohar",
+  "name_variants": [
+   "Senator Datuk Rosni binti Sohar",
+   "Senator Datuk Rosni binti Sohar."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "rosol-wahid",
+  "name": "Dato' Rosol Bin Wahid",
+  "core_name": "rosol wahid",
+  "name_variants": [
+   "Dato' Rosol Bin Wahid",
+   "Dato' Rosol bin Wahid"
+  ],
+  "label_variants": [
+   "Dato' Rosol Wahid",
+   "Dato' Rosol bin Wahid",
+   "Dato' Rosol bin Wahid [Hulu Terengganu] mencelah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Hulu Terengganu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "roy-angau-gingkoi",
+  "name": "Tuan Roy Angau Anak Gingkoi",
+  "core_name": "roy angau gingkoi",
+  "name_variants": [
+   "Tuan Roy Angau Anak Gingkoi",
+   "Tuan Roy Angau anak Gingkoi"
+  ],
+  "label_variants": [
+   "Tuan Roy Angau Anak Gingkoi",
+   "Tuan Roy Angau anak Gingkoi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lubok Antu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "rubiah",
+  "name": "Datuk Hajah Rubiah Binti Haji Wang",
+  "core_name": "rubiah",
+  "name_variants": [
+   "Datuk Hajah Rubiah Binti Haji",
+   "Datuk Hajah Rubiah Binti Haji Wang",
+   "Datuk Hajah Rubiah binti Haji Wang",
+   "Datuk Hajah Rubiah binti Wang"
+  ],
+  "label_variants": [
+   "Datuk Hajah Rubiah bin Wang",
+   "Datuk Hajah Rubiah binti Haji Wang",
+   "Datuk Hajah Rubiah binti Wang",
+   "Datuk Rubiah binti Haji Wang"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Samarahan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Kemajuan Desa Dan Wilayah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Timbalan Menteri Kemajuan Desa dan Wilayah",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Kemajuan Desadan Wilayah",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   }
+  ]
+ },
+ {
+  "speaker_id": "rushdan-rusmi",
+  "name": "Tuan Rushdan Bin Rusmi",
+  "core_name": "rushdan rusmi",
+  "name_variants": [
+   "Tuan Rushdan Bin Rusmi",
+   "Tuan Rushdan bin Rusmi"
+  ],
+  "label_variants": [
+   "Tuan Rushdan bin Rusmi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Padang Besar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "sabri-azit",
+  "name": "Tuan Sabri Bin Azit",
+  "core_name": "sabri azit",
+  "name_variants": [
+   "Tuan Sabri Bin Azit",
+   "Tuan Sabri bin Azit"
+  ],
+  "label_variants": [
+   "Tuan Sabri bin Azit"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jerai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "saifuddin-abdullah",
+  "name": "Dato' Sri Saifuddin Abdullah",
+  "core_name": "saifuddin abdullah",
+  "name_variants": [
+   "Dato' Sri Saifuddin Abdullah"
+  ],
+  "label_variants": [
+   "Dato' Saifuddin bin Abdullah",
+   "Dato' Seri Saifuddin bin Abdullah",
+   "Dato' Sri Saifuddin Abdullah",
+   "Dato' Sri Saifuddin bin Abdullah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Indera Mahkota",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "saifuddin-abdullah-29-10-2024-iv",
+  "name": "Dato' Sri Saifuddin Abdullah (Indera Mahkota) DR 29.10.2024 iv",
+  "core_name": "saifuddin abdullah 29 10 2024 iv",
+  "name_variants": [
+   "Dato' Sri Saifuddin Abdullah (Indera Mahkota) DR 29.10.2024 iv"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "saifuddin-nasution-ismail",
+  "name": "Senator Datuk Seri Saifuddin Nasution Bin Ismail",
+  "core_name": "saifuddin nasution ismail",
+  "name_variants": [
+   "Senator Datuk Seri Saifuddin Nasution Bin Ismail",
+   "Senator Datuk Seri Saifuddin Nasution bin Ismail",
+   "Senator Datuk Seri Saifuddin Nasution bin Ismail."
+  ],
+  "label_variants": [
+   "Datuk Seri Saifuddin Nasution bin Ismail"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Dalam Negeri",
+    "first_seen": "2023-02-14",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "salahuddin-ayub",
+  "name": "Datuk Seri Haji Salahuddin Bin Ayub",
+  "core_name": "salahuddin ayub",
+  "name_variants": [
+   "Datuk Seri Haji Salahuddin Bin Ayub"
+  ],
+  "label_variants": [
+   "Datuk Seri Haji Salahuddin bin Ayub",
+   "Datuk Seri Salahuddin bin Ayub"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pulai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-06-15"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-06-15"
+   },
+   {
+    "role": "Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-02-24"
+   }
+  ]
+ },
+ {
+  "speaker_id": "salamiah-mohd-nor",
+  "name": "Puan Hajah Salamiah Binti Mohd Nor",
+  "core_name": "salamiah mohd nor",
+  "name_variants": [
+   "Puan Hajah Salamiah Binti Mohd Nor",
+   "Puan Hajah Salamiah binti Mohd Nor"
+  ],
+  "label_variants": [
+   "Hajah Salamiah binti Mohd Nor",
+   "Puan Hajah Salamiah binti Mohd Noor",
+   "Puan Hajah Salamiah binti Mohd Nor",
+   "Puan Hajjah Salamiah binti Mohd Nor"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Temerloh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "salehuddin-saidin",
+  "name": "Senator Dato' Setia Salehuddin bin Saidin.",
+  "core_name": "salehuddin saidin",
+  "name_variants": [
+   "Senator Dato' Setia Salehuddin bin Saidin",
+   "Senator Dato' Setia Salehuddin bin Saidin."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "sanisvara-nethaji-rayer-rajaji",
+  "name": "Tuan Sanisvara Nethaji Rayer A/L Rajaji",
+  "core_name": "sanisvara nethaji rayer rajaji",
+  "name_variants": [
+   "Tuan Sanisvara Nethaji Rayer A/L Rajaji",
+   "Tuan Sanisvara Nethaji Rayer a/l Rajaji"
+  ],
+  "label_variants": [
+   "Tuan Sanisvara Nethaji Rayer A/L Rajaji",
+   "Tuan Sanisvara Nethaji Rayer a/I Rajaji",
+   "Tuan Sanisvara Nethaji Rayer a/l Rajaji",
+   "Tuan Tuan Sanisvara Nethaji Rayer a/l Rajaji"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jelutong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "saraswathy-kandasami",
+  "name": "Senator Puan Saraswathy A/P Kandasami",
+  "core_name": "saraswathy kandasami",
+  "name_variants": [
+   "Senator Puan Saraswathy A/P Kandasami",
+   "Senator Puan Saraswathy a/p Kandasami",
+   "Senator Puan Saraswathy a/p Kandasami."
+  ],
+  "label_variants": [
+   "Puan Saraswathy a/p Kandasami"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pembangunan Usahawan Dan Koperasi",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup, Senator Puan Hajah Fuziah Binti Salleh 2Timbalan Menteri Pembangunan Usahawan Dan Koperasi",
+    "first_seen": "2023-09-13",
+    "last_seen": "2023-09-13"
+   },
+   {
+    "role": "Timbalan Menteri Perpaduan Negara",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-03"
+   }
+  ]
+ },
+ {
+  "speaker_id": "saravanan-murugan",
+  "name": "Datuk Seri Saravanan A/L Murugan",
+  "core_name": "saravanan murugan",
+  "name_variants": [
+   "Datuk Seri Saravanan A/L Murugan",
+   "Datuk Seri Saravanan a/l Murugan"
+  ],
+  "label_variants": [
+   "Datuk Seri M. Saravanan a/l Murugan",
+   "Datuk Seri Saravanan a/l Murugan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tapah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "seruandi-saad",
+  "name": "Senator Tuan Seruandi bin Saad",
+  "core_name": "seruandi saad",
+  "name_variants": [
+   "Senator Tuan Seruandi bin Saad"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "sh-mohmed-puzi-sh-ali",
+  "name": "Dato' Sri Sh Mohmed Puzi Bin Sh Ali",
+  "core_name": "sh mohmed puzi sh ali",
+  "name_variants": [
+   "Dato' Sri Sh Mohmed Puzi Bin Sh Ali",
+   "Dato' Sri Sh Mohmed Puzi bin Sh Ali"
+  ],
+  "label_variants": [
+   "Dato' Sri Sh Mohmed Puzi bin Sh Ali",
+   "Datuk Seri Sh Mohmed Puzi bin Sh Ali"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pekan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "shaharizukirnain-abdul-kadir",
+  "name": "Tuan Shaharizukirnain Bin Abd Kadir",
+  "core_name": "shaharizukirnain abdul kadir",
+  "name_variants": [
+   "Tuan Shaharizukirnain Bin Abd Kadir",
+   "Tuan Shaharizukirnain bin Abd Kadir",
+   "Tuan Šhaharizukirnain Bin Abd Kadir"
+  ],
+  "label_variants": [
+   "Tuan Shaharizukirnain bin Abd Kadar",
+   "Tuan Shaharizukirnain bin Abd Kadir",
+   "Tuan Shaharizukirnain bin Abd. Kadir",
+   "Tuan Shahrizukirnain bin Abd Kadir"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Setiu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "shahelmey-yahya",
+  "name": "Datuk Ir. Shahelmey Bin Yahya",
+  "core_name": "shahelmey yahya",
+  "name_variants": [
+   "Datuk Ir. Shahelmey Bin Yahya",
+   "Datuk Ir. Shahelmey bin Yahya"
+  ],
+  "label_variants": [
+   "Datuk Ir. Shahelmey bin Yahya"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Putatan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "shahidan-kassim",
+  "name": "Dato' Seri Dr. Shahidan Bin Kassim",
+  "core_name": "shahidan kassim",
+  "name_variants": [
+   "Dato' Seri Dr. Shahidan Bin Kassim",
+   "Dato' Seri Dr. Shahidan bin Kassim"
+  ],
+  "label_variants": [
+   "Dato' Seri Dewan Rakyat. Shahidan bin Kassim",
+   "Dato' Seri Dr Shahidan bin Kassim",
+   "Dato' Seri Dr. Shahidan bin Kasim",
+   "Dato' Seri Dr. Shahidan bin Kassi",
+   "Dato' Seri Dr. Shahidan bin Kassim",
+   "Dato' Seri Dr. Shahidan bin KassimP",
+   "Dato' SeriDr. Shahidan bin Kassim",
+   "Dato'Seri Dr. Shahidan bin Kassim",
+   "Dr. Shahidan bin Kassim",
+   "Yang Berhormat Dato' Seri Dr. Shahidan bin Kassim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Arau",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "shahrol-wizan-sulong",
+  "name": "Senator Tuan Shahrol Wizan bin Sulong",
+  "core_name": "shahrol wizan sulong",
+  "name_variants": [
+   "Senator Tuan Shahrol Wizan bin Sulong"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "shamshulkahar-mohd-deli",
+  "name": "Dato' Haji Shamshulkahar Bin Mohd Deli",
+  "core_name": "shamshulkahar mohd deli",
+  "name_variants": [
+   "Dato' Haji Shamshulkahar Bin Mohd Deli",
+   "Dato' Haji Shamshulkahar bin Mohd Deli"
+  ],
+  "label_variants": [
+   "Dato' Haji Shamshulkahar bin Mohd Deli",
+   "Dato' Haji Shamsulkahar bin Mohd Deli",
+   "Dato' Shamsulkahar bin Mohd Deli",
+   "Haji Shamshulkahar bin Mohd Deli"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jempol",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "shamsuddin-abdul-ghaffar",
+  "name": "Senator Dato' Shamsuddin bin Haji Abd Ghaffar",
+  "core_name": "shamsuddin abdul ghaffar",
+  "name_variants": [
+   "Senator Dato' Shamsuddin bin Haji Abd Ghaffar",
+   "Senator Dato' Shamsuddin bin Haji Abd Ghaffar."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "shamsul-anuar-nasarah",
+  "name": "Datuk Seri Dr. Shamsul Anuar Bin Haji Nasarah",
+  "core_name": "shamsul anuar nasarah",
+  "name_variants": [
+   "Datuk Seri Dr. Shamsul Anuar Bin Haji Nasarah",
+   "Datuk Seri Dr. Shamsul Anuar bin Haji Nasarah"
+  ],
+  "label_variants": [
+   "Datuk Seri Dr. Shamsul Anuar bin Haji Nasarah",
+   "Datuk Seri Dr. Shamsul Anuar bin Nasarah"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Lenggong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Dalam Negeri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "sim-chee-keong",
+  "name": "Tuan Sim Chee Keong",
+  "core_name": "sim chee keong",
+  "name_variants": [
+   "Tuan Sim Chee Keong",
+   "Tuan Steven Sim Chee Keong"
+  ],
+  "label_variants": [
+   "Tuan Sim Chee Keong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bukit Mertajam",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pembangunan Usahawan dan Koperasi",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Sumber Manusia",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Timbalan Menteri Kewangan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "sim-tze-tzin",
+  "name": "Tuan Sim Tze Tzin",
+  "core_name": "sim tze tzin",
+  "name_variants": [
+   "Tuan Sim Tze Tzin"
+  ],
+  "label_variants": [
+   "Tuan Sim Tze Tzin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bayan Baru",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pelaburan, Perdagangan dan Industri",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "siti-aminah-aching",
+  "name": "Datuk Hajah Siti Aminah Binti Aching",
+  "core_name": "siti aminah aching",
+  "name_variants": [
+   "Datuk Hajah Siti Aminah Binti Aching",
+   "Datuk Hajah Siti Aminah binti Aching"
+  ],
+  "label_variants": [
+   "Datuk Hajah Siti Aminah bin Aching",
+   "Datuk Hajah Siti Aminah binti Aching",
+   "Datuk Siti Aminah binti Aching",
+   "Hajah Siti Aminah binti Aching"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Beaufort",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Perladangan Dan Komoditi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Perladangan dan Komoditi",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-10-19"
+   }
+  ]
+ },
+ {
+  "speaker_id": "siti-mastura-muhammad",
+  "name": "Dr. Siti Mastura Binti Muhammad",
+  "core_name": "siti mastura muhammad",
+  "name_variants": [
+   "Dr. Siti Mastura Binti Muhammad",
+   "Dr. Siti Mastura binti Muhammad"
+  ],
+  "label_variants": [
+   "Dr. Siti Mastura binti Mohamad",
+   "Dr. Siti Mastura binti Muhammad",
+   "Puan Siti Mastura binti Muhammad"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kepala Batas",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "siti-mastura-muhammad-iv-28-02-2023",
+  "name": "Dr. Siti Mastura Binti Muhammad (Kepala Batas) iv DR.28.02.2023",
+  "core_name": "siti mastura muhammad iv 28 02 2023",
+  "name_variants": [
+   "Dr. Siti Mastura Binti Muhammad (Kepala Batas) iv DR.28.02.2023"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "siti-zailah-mohd-yusoff",
+  "name": "Dato' Hajah Siti Zailah Binti Mohd. Yusoff",
+  "core_name": "siti zailah mohd yusoff",
+  "name_variants": [
+   "Dato' Hajah Siti Zailah Binti Mohd. Yusoff",
+   "Dato' Hajah Siti Zailah binti Mohd Yusoff",
+   "Dato' Hajah Siti Zailah binti Mohd. Yusoff",
+   "Dato' Hajah Siti Zailah bnti Mohd. Yusoff"
+  ],
+  "label_variants": [
+   "Dato' Hajah Siti Zailah binti Mohd Yusoff",
+   "Dato' Hajah Siti Zailah binti Mohd Yusoff, D.J.M.K.",
+   "Dato' Siti Zailah binti Mohd Yusoff",
+   "Dato' Siti Zailah binti Mohd Yusoff.",
+   "Hajah Siti Zailah binti Mohd Yusoff"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Rantau Panjang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "sivakumar-varatharaju-naidu",
+  "name": "Tuan Sivakumar A/L Varatharaju Naidu",
+  "core_name": "sivakumar varatharaju naidu",
+  "name_variants": [
+   "Dr. Sivakumar a/l Varatharaju Naidu",
+   "Tuan Sivakumar A/L Varatharaju Naidu",
+   "Tuan Sivakumar a/l Varatharaju Naidu"
+  ],
+  "label_variants": [
+   "Dr. Sivakumar a/l Varatharaju Naidu",
+   "Tuan Sivakumar Varatharaju Naidu",
+   "Tuan Sivakumar a/I Varatharaju Naidu",
+   "Tuan Sivakumar a/l Varatharaju Naidu",
+   "Tuan Tuan Sivakumar a/l Varatharaju Naidu"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Batu Gajah",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Sumber Manusia",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   }
+  ]
+ },
+ {
+  "speaker_id": "sivaraj-chandran",
+  "name": "Senator Dato' Sivaraj a/l Chandran",
+  "core_name": "sivaraj chandran",
+  "name_variants": [
+   "Senator Dato' Sivaraj a/l Chandran",
+   "Senator Dato' Sivaraj a/l Chandran."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "suhaili-abdul-rahman",
+  "name": "Dato' Indera Dr. Suhaili Bin Abdul Rahman",
+  "core_name": "suhaili abdul rahman",
+  "name_variants": [
+   "Dato' Indera Dr. Suhaili Bin Abdul Rahman",
+   "Dato' Indera Dr. Suhaili bin Abdul Rahman"
+  ],
+  "label_variants": [
+   "Dato' Indera Dr. Suhaili bin Abdul Rahman",
+   "Dr. Suhaili bin Abdul Rahman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Labuan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "constituency": "Selangor",
+    "first_seen": "2023-11-20",
+    "last_seen": "2023-11-20"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "suhaimi-nasir",
+  "name": "Datuk Suhaimi Bin Nasir",
+  "core_name": "suhaimi nasir",
+  "name_variants": [
+   "Datuk Suhaimi Bin Nasir",
+   "Datuk Suhaimi bin Nasir"
+  ],
+  "label_variants": [
+   "Datuk Suhaimi bin Nasir"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Libaran",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "suhaizan-kaiat",
+  "name": "Tuan Suhaizan bin Kaiat",
+  "core_name": "suhaizan kaiat",
+  "name_variants": [
+   "Tuan Suhaizan Bin Kaiat",
+   "Tuan Suhaizan bin Kaiat"
+  ],
+  "label_variants": [
+   "Tuan Suhaizan bin Kaiat"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Pulai",
+    "first_seen": "2023-09-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "susan-chemerai-anding",
+  "name": "Senator Puan Susan Chemerai Anding.",
+  "core_name": "susan chemerai anding",
+  "name_variants": [
+   "Senator Puan Susan Chemerai Anding",
+   "Senator Puan Susan Chemerai Anding."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "syahredzan-johan",
+  "name": "Tuan Syahredzan Bin Johan",
+  "core_name": "syahredzan johan",
+  "name_variants": [
+   "Tuan Syahredzan Bin Johan",
+   "Tuan Syahredzan bin Johan"
+  ],
+  "label_variants": [
+   "Tuan Syahredzan bin Johan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bangi",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "syed-abu-hussin-hafiz-syed-abdul-fasal",
+  "name": "Dato' Syed Abu Hussin Bin Hafiz Syed Abdul Fasal",
+  "core_name": "syed abu hussin hafiz syed abdul fasal",
+  "name_variants": [
+   "Dato' Syed Abu Hussin Bin Hafiz Syed Abdul Fasal",
+   "Dato' Syed Abu Hussin bin Hafiz Syed Abdul Fasal"
+  ],
+  "label_variants": [
+   "Dato' Syed Abu Hussin bin Hafiz Syed Abdul Fasal",
+   "Dato'Syed Abu Hussin bin Hafiz Syed Abdul Fasal"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bukit Gantang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "syed-ibrahim-syed-noh",
+  "name": "Tuan Syed Ibrahim Bin Syed Noh",
+  "core_name": "syed ibrahim syed noh",
+  "name_variants": [
+   "Tuan Syed Ibrahim Bin Syed Noh",
+   "Tuan Syed Ibrahim bin Syed Noh"
+  ],
+  "label_variants": [
+   "Tuan Syed Ibrahim bin Syed Noh"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ledang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Sumber Asli dan Kelestarian Alam",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "syed-saddiq-syed-abdul-rahman",
+  "name": "Tuan Syed Saddiq Bin Syed Abdul Rahman",
+  "core_name": "syed saddiq syed abdul rahman",
+  "name_variants": [
+   "Tuan Syed Saddiq Bin Syed Abdul Rahman",
+   "Tuan Syed Saddiq bin Syed Abdul Rahman"
+  ],
+  "label_variants": [
+   "Tuan Syed Saddiq bin Syed Abdul Rahman",
+   "Yang Berhormat Tuan Syed Saddiq bin Syed Abdul Rahman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Muar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "syerleena-abdul-rashid",
+  "name": "Puan Syerleena Binti Abdul Rashid",
+  "core_name": "syerleena abdul rashid",
+  "name_variants": [
+   "Puan Syerleena Binti Abdul Rashid",
+   "Puan Syerleena binti Abdul Rashid"
+  ],
+  "label_variants": [
+   "Puan Syerleena binti Abdul Rashid"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bukit Bendera",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "takiyuddin-hassan",
+  "name": "Datuk Seri Takiyuddin Bin Hassan",
+  "core_name": "takiyuddin hassan",
+  "name_variants": [
+   "Datuk Seri Takiyuddin Bin Hassan",
+   "Datuk Seri Takiyuddin bin Hassan"
+  ],
+  "label_variants": [
+   "Dato' Takiyuddin bin Hassan",
+   "Datuk Seri Takiyuddin bin Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Bharu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "tan-hong-pin",
+  "name": "Tuan Tan Hong Pin",
+  "core_name": "tan hong pin",
+  "name_variants": [
+   "Tuan Tan Hong Pin"
+  ],
+  "label_variants": [
+   "Tuan Tan Hong Pin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bakri",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "tan-kar-hing",
+  "name": "Tuan Tan Kar Hing",
+  "core_name": "tan kar hing",
+  "name_variants": [
+   "Tuan Tan Kar Hing"
+  ],
+  "label_variants": [
+   "Tuan Tan Kar Hing"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Gopeng",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "tan-kok-wai",
+  "name": "Tuan Tan Kok Wai",
+  "core_name": "tan kok wai",
+  "name_variants": [
+   "Tuan Tan Kok Wai"
+  ],
+  "label_variants": [
+   "Tuan Tan Kok Wai"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Cheras",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "tengku-zafrul-tengku-abdul-aziz",
+  "name": "Senator Datuk Seri Utama Tengku Zafrul Bin Tengku Abdul Aziz",
+  "core_name": "tengku zafrul tengku abdul aziz",
+  "name_variants": [
+   "Senator Datuk Seri Utama Tengku Zafrul Bin Tengku Abdul Aziz",
+   "Senator Datuk Seri Utama Tengku Zafrul bin Tengku Abdul Aziz",
+   "Senator Tengku Datuk Seri Utama Zafrul bin Tengku Abdul Aziz."
+  ],
+  "label_variants": [
+   "Datuk Seri Utama Tengku Zafrul bin Tengku Abdul Aziz",
+   "Tengku Datuk Seri Utama Zafrul bin Tengku Abdul Aziz"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Pelaburan, Perdagangan Dan Industri",
+    "first_seen": "2023-06-06",
+    "last_seen": "2024-10-23"
+   },
+   {
+    "role": "Menteri Pelaburan, Perdagangan ban Industri",
+    "first_seen": "2024-02-27",
+    "last_seen": "2024-02-27"
+   },
+   {
+    "role": "Menteri Pelaburan, Perdagangan dan Industri",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-01"
+   },
+   {
+    "role": "Menteri Pelaburan, Perdagangandan Industri",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Menteri Perdagangan Antarabangsa Dan Industri",
+    "first_seen": "2023-02-22",
+    "last_seen": "2023-03-28"
+   },
+   {
+    "role": "Menteri Perdagangan Antarabangsa dan Industri",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-02-24"
+   }
+  ]
+ },
+ {
+  "speaker_id": "teo-eng-tee",
+  "name": "Senator Datuk Teo Eng Tee @ Teo Kok Chee",
+  "core_name": "teo eng tee",
+  "name_variants": [
+   "Senator Datuk Teo Eng Tee @ Teo Kok Chee"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "teo-nie-ching",
+  "name": "Puan Teo Nie Ching",
+  "core_name": "teo nie ching",
+  "name_variants": [
+   "Puan Teo Nie Ching"
+  ],
+  "label_variants": [
+   "Puan Teo Nie Chin",
+   "Puan Teo Nie Ching"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kulai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Komunikasi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Komunikasi Dan Digital",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Komunikasi dan Digital",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-10-10"
+   }
+  ]
+ },
+ {
+  "speaker_id": "teresa-kok-suh-sim",
+  "name": "Puan Teresa Kok Suh Sim",
+  "core_name": "teresa kok suh sim",
+  "name_variants": [
+   "Puan Teresa Kok Suh Sim"
+  ],
+  "label_variants": [
+   "Puan Teresa Kok",
+   "Puan Teresa Kok Suh Sim"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Seputeh",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "ti-lian-ker",
+  "name": "Senator Dato' Sri Ti Lian Ker",
+  "core_name": "ti lian ker",
+  "name_variants": [
+   "Senator Dato' Sri Ti Lian Ker"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "tiew-way-keng",
+  "name": "Senator Puan Tiew Way Keng",
+  "core_name": "tiew way keng",
+  "name_variants": [
+   "Senator Puan Tiew Way Keng"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "timba-an-menteri-perdagangan-dalam-negeri-dan-kos-sara-hidup-senator-puan-fuziah-salleh-01-03-2023-v",
+  "name": "Timbaían Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup, Senator Puan Hajah Fuziah Binti Salleh DR.01.03.2023 V",
+  "core_name": "timbaían menteri perdagangan dalam negeri dan kos sara hidup senator puan fuziah salleh 01 03 2023 v",
+  "name_variants": [
+   "Timbaían Menteri Perdagangan Dalam Negeri Dan Kos Sara Hidup, Senator Puan Hajah Fuziah Binti Salleh DR.01.03.2023 V"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "tiong-king-sing",
+  "name": "Dato' Seri Tiong King Sing",
+  "core_name": "tiong king sing",
+  "name_variants": [
+   "Dato Sri Tiong King Sing",
+   "Dato' Seri Tiong King Sing"
+  ],
+  "label_variants": [
+   "Dato Sri Tiong King",
+   "Dato Sri Tiong King Sing",
+   "Dato' Seri Tiong King Sing",
+   "Dato' Sri Tiong King Sing"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bintulu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Pelancongan, Seni Dan Budaya",
+    "first_seen": "2022-12-19",
+    "last_seen": "2024-11-26"
+   },
+   {
+    "role": "Menteri Pelancongan, Seni dan Budaya",
+    "first_seen": "2023-02-24",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Menteri Pelancongan, Senidan Budaya",
+    "first_seen": "2024-10-29",
+    "last_seen": "2024-10-29"
+   },
+   {
+    "role": "Menteri Pelancongan, Šeni Dan Budaya",
+    "first_seen": "2023-03-01",
+    "last_seen": "2023-03-06"
+   }
+  ]
+ },
+ {
+  "speaker_id": "vell-paari-samy-vellu",
+  "name": "Senator Dato' Sri Vell Paari a/l Samy Vellu",
+  "core_name": "vell paari samy vellu",
+  "name_variants": [
+   "Senator Dato' Sri Vell Paari a/l Samy Vellu"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "verdon-bahanda",
+  "name": "Dato' Verdon Bin Bahanda",
+  "core_name": "verdon bahanda",
+  "name_variants": [
+   "Dato' Verdon Bin Bahanda",
+   "Dato' Verdon bin Bahanda"
+  ],
+  "label_variants": [
+   "Dato' Verdon bin Bahanda"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kudat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "vivian-wong-shir-yee",
+  "name": "Puan Vivian Wong Shir Yee",
+  "core_name": "vivian wong shir yee",
+  "name_variants": [
+   "Puan Vivian Wong Shir Yee"
+  ],
+  "label_variants": [
+   "Puan Vivian Wong Shir Yee"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sandakan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-ahmad-fayhsal-wan-ahmad-kamal",
+  "name": "Tuan Wan Ahmad Fayhsal Bin Wan Ahmad Kamal",
+  "core_name": "wan ahmad fayhsal wan ahmad kamal",
+  "name_variants": [
+   "Tuan Wan Ahmad Fayhsal Bin Wan Ahmad Kamal",
+   "Tuan Wan Ahmad Fayhsal bin Wan Ahmad Kamal"
+  ],
+  "label_variants": [
+   "Tuan Wan Ahmad Fayhsal bin Wan Ahmad Kamal"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Machang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-azizah-wan-ismail",
+  "name": "Dato' Seri Dr. Wan Azizah binti Dr. Wan Ismail",
+  "core_name": "wan azizah wan ismail",
+  "name_variants": [
+   "Dato' Seri Dr. Wan Azizah Binti Dr. Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah Binti Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah binti Dr. Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah binti Wan Ismail",
+   "Datuk Seri Dr. Wan Azizah Binti Wan Ismail",
+   "Datuk Seri Dr. Wan Azizah binti Wan Ismail"
+  ],
+  "label_variants": [
+   "Dato' Seri Dr. Wan Azizah Dr. Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah binti Dr. Wan Ismail",
+   "Dato' Seri Dr. Wan Azizah binti Wan Ismail"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bandar Tun Razak",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-hassan-mohd-ramli",
+  "name": "Tuan Haji Wan Hassan Bin Mohd Ramli",
+  "core_name": "wan hassan mohd ramli",
+  "name_variants": [
+   "Tuan Haji Wan Hassan Bin Mohd Ramli",
+   "Tuan Haji Wan Hassan bin Mohd Ramli"
+  ],
+  "label_variants": [
+   "Tuan Haji Wan Hassan bin Mohd Ramli",
+   "Tuan Haji Wan Hassan bin Wan Ramli"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Dungun",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-martina-wan-yusoff",
+  "name": "Senator Dr. Hajah Wan Martina binti Wan Yusoff",
+  "core_name": "wan martina wan yusoff",
+  "name_variants": [
+   "Senator Dr. Hajah Wan Martina binti Wan Yusoff",
+   "Senator Dr. Hajah Wan Martina binti Wan Yusoff."
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-razali-wan-nor",
+  "name": "Tuan Wan Razali Bin Wan Nor",
+  "core_name": "wan razali wan nor",
+  "name_variants": [
+   "Tuan Wan Razali Bin Wan Nor",
+   "Tuan Wan Razali bin Wan Nor"
+  ],
+  "label_variants": [
+   "Tuan Wan Razali bin Wan Nor"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kuantan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wan-saifulruddin-wan-jan",
+  "name": "Datuk Wan Saifulruddin Bin Wan Jan",
+  "core_name": "wan saifulruddin wan jan",
+  "name_variants": [
+   "Datuk Wan Saifulruddin Bin Wan Jan",
+   "Datuk Wan Saifulruddin bbn Wan Jan",
+   "Datuk Wan Saifulruddin bin Wan Jan",
+   "Datuk Wan Saifulruddin bn Wan Jan"
+  ],
+  "label_variants": [
+   "Datuk Wan Saiful bin Wan Jan",
+   "Datuk Wan Saifulruddin bin Wan Jan",
+   "Datuk Wan Saifulrudin bin Wan Jan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tasek Gelugor",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wee-jeck-seng",
+  "name": "Dato' Sri Dr. Wee Jeck Seng",
+  "core_name": "wee jeck seng",
+  "name_variants": [
+   "Dato' Sri Dr. Wee Jeck Seng"
+  ],
+  "label_variants": [
+   "Dato' Sri Dr. Wee Jeck Seng"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanjung Piai",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wee-ka-siong",
+  "name": "Datuk Seri Ir. Dr. Wee Ka Siong",
+  "core_name": "wee ka siong",
+  "name_variants": [
+   "Datuk Seri Ir. Dr. Wee Ka Siong"
+  ],
+  "label_variants": [
+   "Datuk Seri Ir. Dr. Wee Ka Siong",
+   "Datuk Seri Ir. Wee Ka Siong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Ayer Hitam",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wetrom-bahanda",
+  "name": "Datuk Wetrom Bin Bahanda",
+  "core_name": "wetrom bahanda",
+  "name_variants": [
+   "Datuk Wetrom Bin Bahanda",
+   "Datuk Wetrom bin Bahanda"
+  ],
+  "label_variants": [
+   "Datuk Wetrom bin Bahanda"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kota Marudu",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "william-leong-jee-keen",
+  "name": "Tuan William Leong Jee Keen",
+  "core_name": "william leong jee keen",
+  "name_variants": [
+   "Tuan William Leong Jee Keen"
+  ],
+  "label_variants": [
+   "Tuan William Leong Jee Keen",
+   "Tuan Willian Leong Jee Keen"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Selayang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "willie-mongin",
+  "name": "Datuk Willie Anak Mongin",
+  "core_name": "willie mongin",
+  "name_variants": [
+   "Datuk Willie Anak Mongin",
+   "Datuk Willie anak Mongin"
+  ],
+  "label_variants": [
+   "Datuk Willie Anak Mongin",
+   "Datuk Willie anak Mongin",
+   "Datuk Willie anak Mongin, P.M.W."
+  ],
+  "constituencies": [
+   {
+    "constituency": "Puncak Borneo",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "willie-mongin-29-10-2024-iii",
+  "name": "Datuk Willie Anak Mongin (Puncak Borneo) DR 29.10.2024 iii",
+  "core_name": "willie mongin 29 10 2024 iii",
+  "name_variants": [
+   "Datuk Willie Anak Mongin (Puncak Borneo) DR 29.10.2024 iii"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "wilson-ugak-kumbong",
+  "name": "Datuk Wilson Ugak Anak Kumbong",
+  "core_name": "wilson ugak kumbong",
+  "name_variants": [
+   "Datuk Ugak anak Kumbong",
+   "Datuk Wilson Ugak Anak Kumbong",
+   "Datuk Wilson Ugak anak Kumbong"
+  ],
+  "label_variants": [
+   "Datuk Ugak Anak Kumbong",
+   "Datuk Ugak anak Kumbong",
+   "Datuk Wilson Ugak Anak Kumbong",
+   "Datuk Wilson Ugak anak Kumbong"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Hulu Rajang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak Dan Tugas-Tugas Khas)",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-Tugas Khas)",
+    "first_seen": "2023-02-24",
+    "last_seen": "2023-02-24"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Hal Ehwal Sabah, Šarawak Dan Tugas-Tugas Khas)",
+    "first_seen": "2023-03-01",
+    "last_seen": "2023-03-01"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Hal Ehwal Selangor, Selangor Dan Tugas-Tugas Khas)",
+    "first_seen": "2023-11-20",
+    "last_seen": "2023-11-20"
+   },
+   {
+    "role": "Timbalan Menteri Digital",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak Dan Tugas-Tugas Khas)",
+    "first_seen": "2023-10-10",
+    "last_seen": "2023-10-10"
+   }
+  ]
+ },
+ {
+  "speaker_id": "wong-chen",
+  "name": "Tuan Wong Chen",
+  "core_name": "wong chen",
+  "name_variants": [
+   "Tuan Wong Chen"
+  ],
+  "label_variants": [
+   "Tuan Wong Chen"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Subang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-07-16"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wong-kah-woh",
+  "name": "Tuan Wong Kah Woh",
+  "core_name": "wong kah woh",
+  "name_variants": [
+   "Tuan Wong Kah Who",
+   "Tuan Wong Kah Woh"
+  ],
+  "label_variants": [
+   "Tuan Wong Kah Woh"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Taiping",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Pendidikan",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "wong-shu-qi",
+  "name": "Puan Wong Shu Qi",
+  "core_name": "wong shu qi",
+  "name_variants": [
+   "Puan Wong Shu Qi"
+  ],
+  "label_variants": [
+   "Puan Puan Wong Shu Qi",
+   "Puan Wong Shu Qi"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kluang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "wu-him-ven",
+  "name": "Senator Dato' Wu Him Ven",
+  "core_name": "wu him ven",
+  "name_variants": [
+   "Senator Dato' Wu Him Ven"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "yeo-bee-yin",
+  "name": "Puan Yeo Bee Yin",
+  "core_name": "yeo bee yin",
+  "name_variants": [
+   "Puan Yeo Bee Yin"
+  ],
+  "label_variants": [
+   "Puan Yeo Bee Yin"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Puchong",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "young-syefura-othman",
+  "name": "Puan Young Syefura Binti Othman",
+  "core_name": "young syefura othman",
+  "name_variants": [
+   "Puan Young Syefura Binti Othman",
+   "Puan Young Syefura binti Othman"
+  ],
+  "label_variants": [
+   "Puan Young Syefura Binti Othman",
+   "Puan Young Syefura binti Othman"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Bentong",
+    "first_seen": "2023-02-22",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "young-syefura-othman-bentong",
+  "name": "Puan Young Syefura Binti Othman Bentong)",
+  "core_name": "young syefura othman bentong",
+  "name_variants": [
+   "Puan Young Syefura Binti Othman Bentong)"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "yuneswaran-ramaraj",
+  "name": "Tuan Yuneswaran A/L Ramaraj",
+  "core_name": "yuneswaran ramaraj",
+  "name_variants": [
+   "Tuan Yuneswaran A/L Ramaraj",
+   "Tuan Yuneswaran a/l Ramaraj"
+  ],
+  "label_variants": [
+   "Tuan Yuneswaran A/L Ramaraj",
+   "Tuan Yuneswaran a/I Ramaraj",
+   "Tuan Yuneswaran a/l Ramaraj"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Segamat",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Timbalan Menteri Perpaduan Negara",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "yusuf-abdul-wahab",
+  "name": "Tuan Haji Yusuf Bin Abd Wahab",
+  "core_name": "yusuf abdul wahab",
+  "name_variants": [
+   "Dato Ir. Dato Haji Yusuf bin Abd Wahab",
+   "Dato Ir. Haji Yusuf bin Abd Wahab",
+   "Ir. Haji Yusuf bin Abd Wahab",
+   "Tuan Haji Yusuf Bin Abd Wahab",
+   "Tuan Haji Yusuf bin Abd Wahab"
+  ],
+  "label_variants": [
+   "Dato Ir. Haji Yusuf bin Abd Wahab",
+   "Dato Ir. Haji Yusuf bin Haji Abd Wahab",
+   "Dato Ir. Haji Yusuf bin Haji Abd. Wahab",
+   "Dato' Ir. Haji Yusuf bin Abd Wahab",
+   "Dato' Ir. Haji Yusuf bin Haji Abd Wahab",
+   "Haji Abd Wahab",
+   "Tuan Dato Ir. Haji Yusuf bin Abd Wahab",
+   "Tuan Haji Yusuf bin Abd Wahab",
+   "Tuan Haji Yusuf bin Abd. Wahab",
+   "Tuan Ir. Haji Yusuf bin Abd Wahab",
+   "Tuan Ir. Haji Yusuf bin Abd. Wahab",
+   "Tuan Yusuf bin Abd Wahab",
+   "Tuan Yusuf bin Abd. Wahab"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanjong Manis",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zahari-kechik",
+  "name": "Tuan Zahari Bin Kechik",
+  "core_name": "zahari kechik",
+  "name_variants": [
+   "Tuan Zahari Bin Kechik",
+   "Tuan Zahari bin Kechik"
+  ],
+  "label_variants": [
+   "Tuan Zahari bin Kechik"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jeli",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zahir-hassan",
+  "name": "Tuan Zahir Bin Hassan",
+  "core_name": "zahir hassan",
+  "name_variants": [
+   "Ir. Ts. Zahir bin Hassan",
+   "Tuan Zahir Bin Hassan",
+   "Tuan Zahir bin Hassan"
+  ],
+  "label_variants": [
+   "Tuan Ir. Ts. Zahir bin Hassan",
+   "Tuan Ts. Zahir bin Hasan",
+   "Tuan Ts. Zahir bin Hassan",
+   "Tuan Zahir bin Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Wangsa Maju",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zakri-hassan",
+  "name": "Tuan Zakri Bin Hassan",
+  "core_name": "zakri hassan",
+  "name_variants": [
+   "Tuan Zakri Bin Hassan",
+   "Tuan Zakri bin Hassan"
+  ],
+  "label_variants": [
+   "Tuan Zakri bin Hassan"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Kangar",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zakri-hassan-4-iv-2026",
+  "name": "Tuan Zakri bin Hassan (Kangar) DR.4.iv.2026",
+  "core_name": "zakri hassan 4 iv 2026",
+  "name_variants": [
+   "Tuan Zakri bin Hassan (Kangar) DR.4.iv.2026"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ },
+ {
+  "speaker_id": "zaliha-mustafa",
+  "name": "Dr. Zaliha Binti Mustafa",
+  "core_name": "zaliha mustafa",
+  "name_variants": [
+   "Datuk Seri Dr. Zaliha binti Mustafa",
+   "Dr. Zaliha Binti Mustafa",
+   "Dr. Zaliha binti Mustafa"
+  ],
+  "label_variants": [
+   "Datuk Seri Dr. Zaliha binti Mustafa",
+   "Dr. Zaliha binti Mustafa"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Sekijang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": [
+   {
+    "role": "Menteri Di Jabatan Perdana Menteri (Wilayah Persekutuan)",
+    "first_seen": "2024-03-04",
+    "last_seen": "2025-12-04"
+   },
+   {
+    "role": "Menteri Kesihatan",
+    "first_seen": "2022-12-19",
+    "last_seen": "2023-11-30"
+   },
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Wilayah Persekutuan)",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-11-13"
+   }
+  ]
+ },
+ {
+  "speaker_id": "zambry-abdul-kadir",
+  "name": "Senator Dato' Seri Diraja Dr. Zambry bin Abd Kadir",
+  "core_name": "zambry abdul kadir",
+  "name_variants": [
+   "Senator Dato' Seri Diraja Dr. Zambry Bin Abd Kadir",
+   "Senator Dato' Seri Diraja Dr. Zambry bin Abd Kadir",
+   "Senator Dato' Seri Diraja Dr. Zambry bin Abdul Kadir."
+  ],
+  "label_variants": [
+   "Dato Sri Diraja Zambry bin Abd Kadir",
+   "Dato' Seri Diraja Dr. Zambry bin Abd Kadir",
+   "Dato' Sri Diraja Zambry bin Abd Kadir",
+   "Datuk Seri Diraja Dr. Zambry bin Abd Kadir",
+   "Datuk Seri Diraja Dr. Zambry bin Abdul Kadir"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri Luar Negeri",
+    "first_seen": "2023-02-14",
+    "last_seen": "2023-11-27"
+   },
+   {
+    "role": "Menteri Pendidikan Tinggi",
+    "first_seen": "2024-02-26",
+    "last_seen": "2026-08-11"
+   }
+  ]
+ },
+ {
+  "speaker_id": "zulkafperi-hanapi",
+  "name": "Kapten Datuk Dr. Zulkafperi Bin Hanapi (B)",
+  "core_name": "zulkafperi hanapi",
+  "name_variants": [
+   "Kapten Datuk Dr. Zulkafperi Bin Hanapi (B)",
+   "Kapten Datuk Dr. Zulkafperi bin Hanapi (B)"
+  ],
+  "label_variants": [
+   "Dato' Dr. Zulkafperi bin Hanapi",
+   "Dr. Zulkafperi bin Hanapi",
+   "Dr. Zulkafperi bin Hanapi (B)",
+   "Kapten Dato' Dr. Zulkafperi bin Hanapi",
+   "Kapten Dato' Dr. Zulkafperi bin Hanapi (B)",
+   "Kapten Dato' Dr. Zulkafperi bin Hanapi (Bersara)"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Tanjong Karang",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zulkifli-hasan",
+  "name": "Senator Dr. Zulkifli bin Hasan",
+  "core_name": "zulkifli hasan",
+  "name_variants": [
+   "Senator Dr. Zulkifli Bin Hasan",
+   "Senator Dr. Zulkifli bin Hasan",
+   "Senator Dr. Zulkifli bin Hasan."
+  ],
+  "label_variants": [
+   "Dr. Zulkifli bin Hasan",
+   "Dr. Zulkifli bin Hassan"
+  ],
+  "constituencies": [],
+  "roles": [
+   {
+    "role": "Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2026-01-19",
+    "last_seen": "2026-08-11"
+   },
+   {
+    "role": "Timbalan Menteri Di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2024-03-04",
+    "last_seen": "2024-12-12"
+   },
+   {
+    "role": "Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama)",
+    "first_seen": "2024-02-26",
+    "last_seen": "2025-12-04"
+   }
+  ]
+ },
+ {
+  "speaker_id": "zulkifli-ismail",
+  "name": "Tuan Zulkifli Bin Ismail",
+  "core_name": "zulkifli ismail",
+  "name_variants": [
+   "Tuan Zulkifli Bin Ismail",
+   "Tuan Zulkifli bin Ismail"
+  ],
+  "label_variants": [
+   "Tuan Guru Zulkifli bin Ismail",
+   "Tuan Zulkifli bin Ismail"
+  ],
+  "constituencies": [
+   {
+    "constituency": "Jasin",
+    "first_seen": "2022-12-19",
+    "last_seen": "2026-08-11"
+   }
+  ],
+  "roles": []
+ },
+ {
+  "speaker_id": "zurainah-musa",
+  "name": "Senator Datuk Seri Hajah Zurainah binti Musa",
+  "core_name": "zurainah musa",
+  "name_variants": [
+   "Senator Datuk Seri Hajah Zurainah binti Musa"
+  ],
+  "label_variants": [],
+  "constituencies": [],
+  "roles": []
+ }
+]

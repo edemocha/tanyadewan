@@ -36,7 +36,8 @@ from tanyadewan.speakers.parties import current_parties
 
 WEB = ROOT / "web"
 app = FastAPI(title="TanyaDewan", docs_url=None, redoc_url=None)
-app.mount("/static", StaticFiles(directory=WEB), name="static")
+if WEB.is_dir():  # the old plain-HTML page; the public backend doesn't ship it
+    app.mount("/static", StaticFiles(directory=WEB), name="static")
 
 # Public deployment (all optional env vars; unset = local behaviour):
 #   ALLOWED_ORIGINS   comma-separated browser origins allowed to call the API (the Vercel site)

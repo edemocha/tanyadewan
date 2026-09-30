@@ -218,3 +218,9 @@ def test_attendance_date_header_is_not_an_entry_number() -> None:
     assert len(entries) == 3
     assert entries[0].startswith("Perdana Menteri") and entries[2].endswith("Abdul Rahman Bin Mohamad")
     assert split_numbered("1. Tuan A (Seat X) 2. Tuan B (Seat Y)") == ["Tuan A (Seat X)", "Tuan B (Seat Y)"]
+
+
+def test_vercel_backend_requirements_match_the_docker_ones() -> None:
+    # backend/requirements.txt must sit inside the service root for Vercel, so it is a copy: keep the two in step.
+    root = Path(__file__).resolve().parents[1]
+    assert (root / "backend" / "requirements.txt").read_text() == (root / "deploy" / "requirements.txt").read_text()
