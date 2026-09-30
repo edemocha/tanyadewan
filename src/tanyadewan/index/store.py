@@ -28,7 +28,8 @@ def get_client(qdrant_url: str, qdrant_path: str) -> QdrantClient:
 
 
 def client(cfg: IndexConfig) -> QdrantClient:
-    cfg.qdrant_path.mkdir(parents=True, exist_ok=True)
+    if not cfg.qdrant_url:  # only embedded mode writes locally; a hosted backend's filesystem may be read-only
+        cfg.qdrant_path.mkdir(parents=True, exist_ok=True)
     return get_client(cfg.qdrant_url, str(cfg.qdrant_path))
 
 

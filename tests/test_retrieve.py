@@ -224,3 +224,16 @@ def test_vercel_backend_requirements_match_the_docker_ones() -> None:
     # backend/requirements.txt must sit inside the service root for Vercel, so it is a copy: keep the two in step.
     root = Path(__file__).resolve().parents[1]
     assert (root / "backend" / "requirements.txt").read_text() == (root / "deploy" / "requirements.txt").read_text()
+
+
+def test_qdrant_client_with_a_url_does_not_touch_the_local_index_folder(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    from types import SimpleNamespace
+
+    from tanyadewan.index import store
+
+    monkeypatch.setattr(store, "get_client", lambda url, path: (url, path))
+    folder = tmp_path / "index" / "qdrant"
+    store.client(SimpleNamespace(qdrant_url="https://cluster.example.invalid", qdrant_path=folder))  # type: ignore[arg-type]
+    assert not folder.exists()  # read-only hosts (Vercel) would crash on this mkdir
+    store.client(SimpleNamespace(qdrant_url="", qdrant_path=folder))  # type: ignore[arg-type]
+    assert folder.is_dir()  # embedded mode still creates it
