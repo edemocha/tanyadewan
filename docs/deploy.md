@@ -26,12 +26,19 @@ How the backend service is built (`backend/`):
   after indexing more sittings. Official portraits are not shipped, so the public site shows initials instead of photos.
 - `app.py` is the entrypoint: public mode on, CPU models, absolute path to the override config.
 
-**Rehearsed locally on 30 Sep 2026** (not yet on Vercel): `python backend/build.py`, then the backend run from `backend/` in a fresh
+**Deployed on Vercel, 30 Sep to 1 Oct 2026.** The service build succeeded (about 2.5 minutes, including the model download), so items 1 to 3
+below turned out fine on this account: Services and large functions were available, the build could read `../src`, and the download worked.
+Project settings that mattered: Root Directory empty (the repo root), Framework Preset = Services, and the environment variables listed
+in step 2. Live checks without a login: `/api/status` returned 33,087 chunks; a Malay question took 7 s, an English one 13 s, and one
+after an idle period 24 s (cold start); the runtime logs showed 0 errors or fatals. Still unmeasured: many simultaneous visitors and
+memory under load.
+
+**Rehearsed locally first, on 30 Sep 2026:** `python backend/build.py`, then the backend run from `backend/` in a fresh
 Python 3.12 environment with only `requirements.txt`, public mode on, against a local Qdrant. `/api/status`, `/api/speakers` and
 `/api/parties` worked, the transcript and photo routes returned 404 as intended, real questions were answered, and two
 simultaneous questions both succeeded. The service process peaked at **1,582 MB** (Hobby limit: 2 GB).
 
-**Not verified, because it needs your Vercel account** (check these on the first deploy):
+**Risks the first deploy was meant to check** (status in the paragraph above):
 1. Services and large functions are **beta and need permission** on your account. The 1.2 GB of models exceeds the 500 MB Python bundle
    limit, so the backend needs [large functions](https://vercel.com/docs/functions/limitations#large-functions-beta) (up to 5 GB);
    set `VERCEL_SUPPORT_LARGE_FUNCTIONS=1` if the project isn't eligible by default.

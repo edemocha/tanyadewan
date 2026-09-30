@@ -5,8 +5,10 @@
 Every answer says who said it and when, and links to the exact page of the official PDF. If the records don't show
 it, the system says so instead of guessing. A librarian, not a pundit.
 
-> **Status (30 Sep 2026).** Works end to end on my machine. Not hosted publicly yet: free-tier hosting is the open
-> problem (see [Deployment](#deployment)). **Indexed today: 69 of 266 parsed sittings** (9 Oct 2025 to 11 Aug 2026).
+Built by [Danial Adam](https://github.com/edemocha).
+
+> **Status (1 Oct 2026).** **Live at [tanyadewan.vercel.app](https://tanyadewan.vercel.app)** on free tiers (see
+> [Deployment](#deployment)). **Indexed today: 69 of 266 parsed sittings** (9 Oct 2025 to 11 Aug 2026).
 > **Retrieval-quality numbers are not published yet.** The golden set is hand-written and still in progress, and I make
 > no quality claims without it (see [Evaluation](#evaluation)).
 
@@ -202,12 +204,18 @@ Tunables are all in `config.yaml`; retrieval experiments are run with `uv run py
 
 ## Deployment
 
-A public demo is **not hosted yet**. The plan is one Vercel project with two services (the Next.js frontend and the
-FastAPI backend on CPU models, routed by the root `vercel.json`) plus a free Qdrant Cloud cluster for the vectors. I
-rehearsed the backend service locally from a clean environment (service process peak 1.58 GB against Vercel Hobby's
-2 GB limit), but **it has not run on Vercel yet**: Services and large functions are betas that need account
-permission. [docs/deploy.md](docs/deploy.md) lists what was checked, what is still unverified, the free-tier limits
-that cap traffic (about 48 questions a day on Groq alone), and fallback hosts.
+The demo runs as one Vercel project with two services: the Next.js frontend and the FastAPI backend on CPU models,
+routed by the root `vercel.json`, with a free Qdrant Cloud cluster holding the vectors. Everything is on free tiers.
+
+Checked on the live site with no login, 1 Oct 2026: `/api/status` reports the 33,087 indexed chunks; a Malay question
+answered in 7 s and an English one (which adds the translation step) in 13 s, with cited sources; one question after the
+function had been idle took 24 s (a cold start); an off-topic question is refused with a "not in the indexed sittings"
+message; a bait question reports each position and declines to judge. Not measured: behaviour under many simultaneous
+visitors, and memory under load (locally the service process peaked at 1.58 GB against Vercel Hobby's 2 GB limit).
+
+Official MP portraits are not shown on the hosted site, because they are kept out of git by design (initials are used
+instead). [docs/deploy.md](docs/deploy.md) lists what was checked, the free-tier limits that cap traffic (about 48
+questions a day on Groq alone), and fallback hosts.
 
 ## Source and attribution
 
