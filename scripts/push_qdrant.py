@@ -15,6 +15,7 @@ import sys
 
 from qdrant_client import QdrantClient, models
 
+from tanyadewan.api.__main__ import load_dotenv
 from tanyadewan.config import load_config
 from tanyadewan.index.store import DENSE, SPARSE, get_client
 
@@ -25,9 +26,10 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="copy only the first N points (dry run)")
     args = ap.parse_args()
+    load_dotenv()  # the two QDRANT_CLOUD_* values may live in the gitignored .env
     url, key = os.environ.get("QDRANT_CLOUD_URL", ""), os.environ.get("QDRANT_CLOUD_API_KEY", "")
     if not url or not key:
-        print("Set QDRANT_CLOUD_URL and QDRANT_CLOUD_API_KEY (a free cluster at cloud.qdrant.io).")
+        print("Set QDRANT_CLOUD_URL and QDRANT_CLOUD_API_KEY in .env (a free cluster at cloud.qdrant.io).")
         return 1
     ic = load_config().index
     src = get_client(ic.qdrant_url, str(ic.qdrant_path))
