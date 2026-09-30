@@ -84,8 +84,10 @@ Fallbacks if this doesn't fit: a paid Hugging Face Docker Space, or your own PC 
 ### 2. Vercel, both services (you)
 1. Commit and push `vercel.json`, `backend/` (app.py, build.py, requirements.txt, seed/) and this change. Review `backend/seed/`
    first: it is metadata only (names, seats, roles, parties, sitting ids), but it is a choice to publish it.
-2. On vercel.com import the GitHub repo with **Root Directory = the repository root** (not `frontend`), so the root `vercel.json` and
-   its two services apply. Services is a beta: your import screen should show both detected services.
+2. On vercel.com import the GitHub repo with **Root Directory = the repository root** (not `frontend`), and set **Framework Preset =
+   Services** (Project Settings, Build and Deployment). Vercel builds the project as services only when *both* are true: the
+   framework is Services and `vercel.json` has a `services` key; otherwise it falls back to normal framework detection and
+   ignores the services ([Vercel guide](https://vercel.com/kb/guide/vercel-services)). Services is a beta.
 3. Project environment variables (shared by both services):
    - `NEXT_PUBLIC_PUBLIC_MODE` = `1` (frontend, read at build time)
    - `QDRANT_URL` and `QDRANT_API_KEY` (from step 1), `LLM_API_KEY` (your Groq key)
@@ -103,6 +105,16 @@ which also keeps an idle Qdrant Cloud cluster from being suspended.
 `deploy/Dockerfile` and `scripts/make_space_bundle.py` build the same backend as a Docker image (Hugging Face Space or any
 container host); set the same env vars plus `PUBLIC_MODE=1`, `ALLOWED_ORIGINS` and `TANYADEWAN_OVERRIDE=config.prod.yaml`.
 With a separate host, set `NEXT_PUBLIC_API_BASE` on a frontend-only Vercel project (Root Directory `frontend`, no `vercel.json`).
+
+## If questions return nothing on the deployed site
+Found on the first deploy (30 Sep 2026): the project had been imported as a plain Next.js app (Root Directory `frontend`, framework
+Next.js), so `vercel.json` was ignored and no backend existed. The signs, all checkable from the browser:
+- `/api/status` and `/api/ask` return a plain-text **404 "DNS_HOSTNAME_RESOLVED_PRIVATE"**. That is the frontend's local-development
+  rewrite (`/api/*` to `127.0.0.1:8766`) being refused by Vercel, so the request never reached a backend.
+- The header shows the **"Sidang" tab**, which means `NEXT_PUBLIC_PUBLIC_MODE` was not set for the build.
+- No "Buat masa ini: 69 daripada 266 persidangan" line on the home page, because the status call failed.
+Fix: Root Directory = repo root, Framework Preset = Services, set the environment variables, redeploy. Since 30 Sep the page also shows
+the error text (for example "The page could not be found (HTTP 404)") instead of staying blank.
 
 ## Guardrails already in the code
 - Per-IP limit (`RATE_PER_MINUTE`) and a site-wide daily cap (`DAILY_CAP`), public mode only. Both answer HTTP 429 with a Malay

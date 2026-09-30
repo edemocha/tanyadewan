@@ -113,13 +113,16 @@ export async function* ask(question: string, filters: Filters, signal: AbortSign
     signal,
   });
   if (!res.ok || !res.body) {
-    let detail = res.statusText;
+    let detail = "";
+    const raw = await res.text().catch(() => "");
     try {
-      detail = (await res.json()).detail ?? detail;
+      const d = JSON.parse(raw).detail;
+      detail = typeof d === "string" ? d : d ? JSON.stringify(d) : "";
     } catch {
-      /* not JSON */
+      detail = raw.split("\n")[0].trim().slice(0, 120); // a plain-text error page from the host
     }
-    throw new Error(typeof detail === "string" ? detail : JSON.stringify(detail));
+    // never empty: an empty message used to hide the error entirely
+    throw new Error(`${detail || res.statusText || "ralat pelayan"} (HTTP ${res.status})`);
   }
   const reader = res.body.getReader();
   const decoder = new TextDecoder();

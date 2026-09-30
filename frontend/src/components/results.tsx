@@ -192,9 +192,9 @@ export function Results({ question, filters, status }: { question: string; filte
         </div>
       ) : null}
 
-      {error ? (
+      {error || phase === "error" ? (
         <p className="mt-4 rounded-xl bg-error-subtle px-4 py-3 text-[13px] shadow-[inset_0_0_0_1px_var(--border-error)]">
-          Alamak, pustakawan tersadung: {error}. Cuba lagi.
+          Alamak, pustakawan tersadung: {error || "ralat tidak diketahui"}. Cuba lagi.
         </p>
       ) : null}
 
