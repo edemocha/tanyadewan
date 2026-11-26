@@ -71,7 +71,7 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
         aria-label={ok ? `Sumber ${n}: ${sources[n - 1].speaker}` : `Rujukan ${n} tanpa sumber`}
         aria-disabled={ok ? undefined : true}
         className={cn(
-          "relative ms-1 inline-flex h-5 min-w-6 -translate-y-px items-center justify-center rounded-md bg-surface px-1 align-middle font-sans text-[11px] font-medium tabular before:absolute before:-inset-x-1.5 before:-inset-y-1 before:content-['']",
+          "relative ms-1 inline-flex h-5 min-w-6 -translate-y-px items-center justify-center rounded-md border border-line bg-surface px-1 align-middle font-sans text-[11px] font-medium tabular before:absolute before:-inset-x-1.5 before:-inset-y-1 before:content-['']",
           // a citation is one of the three places the accent is allowed
           ok ? "text-brand" : "cursor-default text-muted-foreground line-through",
         )}
@@ -173,7 +173,7 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
               </cite>
             ) : null}
             {isShaky ? (
-              <span className="mt-2 block w-fit rounded-md bg-surface px-2 py-0.5 font-sans text-[12px] text-foreground">
+              <span className="mt-2 block w-fit rounded-md border border-line bg-surface px-2 py-0.5 font-sans text-[12px] text-foreground">
                 {wrongSource && !failedCheck
                   ? "tidak disahkan: tiada dalam sumber yang dirujuk"
                   : "tidak disahkan: bukan petikan kata demi kata"}

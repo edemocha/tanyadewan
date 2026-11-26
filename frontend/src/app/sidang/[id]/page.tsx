@@ -54,7 +54,7 @@ export default async function SittingPage({ params }: PageProps<"/sidang/[id]">)
             PDF rasmi <ArrowUpRight className="size-3.5" />
           </a>
           {sitting.is_draft ? (
-            <Badge className="bg-surface font-normal text-muted-foreground">naskhah draf: belum disemak</Badge>
+            <Badge className="border border-line bg-surface font-normal text-muted-foreground">naskhah draf: belum disemak</Badge>
           ) : null}
           <span className="text-muted-foreground tabular">{sitting.n_turns.toLocaleString("ms-MY")} giliran bercakap</span>
         </div>
@@ -90,7 +90,7 @@ export default async function SittingPage({ params }: PageProps<"/sidang/[id]">)
                       <div className="min-w-0 flex-1">
                         <p className="flex flex-wrap items-baseline gap-x-2 text-[13.5px]">
                           <span className="font-medium">{t.speaker}</span>
-                          {t.ocr ? <Badge className="bg-surface font-normal text-muted-foreground">OCR</Badge> : null}
+                          {t.ocr ? <Badge className="border border-line bg-surface font-normal text-muted-foreground">OCR</Badge> : null}
                           <a
                             href={t.pdf_url}
                             target="_blank"

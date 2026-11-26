@@ -3,35 +3,36 @@
 @import "shadcn/tailwind.css";
 @import "./tokens.css";
 
-/* Minimalist theme. The palette lives in tokens.css; everything below only aliases it: never put a raw colour here.
-   Dark is the default; light is [data-theme="light"]. */
+/* Editorial theme. The palette lives in tokens.css; everything below only aliases it: never put a raw colour here.
+   Light is the default; dark is [data-theme="dark"]. */
 @custom-variant dark (&:is([data-theme="dark"] *));
 
 @theme inline {
-  /* the palette as utilities: bg-surface, text-body, text-brand, bg-brand-fill, text-on-brand, border-line */
+  /* the palette as utilities: bg-surface, bg-hover, text-body, text-brand, bg-brand-fill, text-on-brand, border-line */
   --color-surface: var(--surface);
+  --color-hover: var(--hover);
   --color-body: var(--text-body);
   --color-line: var(--line);
   --color-brand: var(--accent);
   --color-brand-fill: var(--accent-fill);
   --color-on-brand: var(--on-accent);
 
-  /* shadcn's names, pointed at the same nine variables. "primary" is the neutral inverse button (text colour as
-     the fill). The accent is wired to no shadcn role, so a stock component cannot show it by accident: even "ring"
-     is the hairline colour, and the one real focus ring is the outline rule at the bottom of this file. */
+  /* shadcn's names, pointed at the same variables. "primary" is the neutral inverse button (text colour as the
+     fill). The accent is wired to no shadcn role, so a stock component cannot show it by accident: even "ring" is
+     the hairline colour, and the one real focus ring is the outline rule at the bottom of this file. */
   --color-background: var(--bg);
   --color-foreground: var(--text);
-  --color-card: var(--bg);
+  --color-card: var(--surface);
   --color-card-foreground: var(--text);
-  --color-popover: var(--bg);
+  --color-popover: var(--surface);
   --color-popover-foreground: var(--text);
   --color-primary: var(--text);
   --color-primary-foreground: var(--bg);
-  --color-secondary: var(--surface);
+  --color-secondary: var(--hover);
   --color-secondary-foreground: var(--text);
-  --color-muted: var(--surface);
+  --color-muted: var(--hover);
   --color-muted-foreground: var(--text-muted);
-  --color-accent: var(--surface); /* shadcn "accent" = hover fill, which is --surface here */
+  --color-accent: var(--hover); /* shadcn "accent" = hover fill */
   --color-accent-foreground: var(--text);
   --color-destructive: var(--text);
   --color-border: var(--line);
@@ -40,24 +41,26 @@
   --color-subtle: var(--text-muted);
 
   --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
-  --font-heading: var(--font-instrument), "Helvetica Neue", Arial, sans-serif;
-  /* quoted Hansard text; a system stack, so no extra font is downloaded */
-  --font-serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --font-heading: var(--font-geist), var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  /* quoted Hansard text: the serif is what makes it read as a record */
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
 
-  /* one radius everywhere (the send button is the only round thing) */
+  /* two radii: 8px for controls, 12px for the ask box, menus and notices (rounded-xl) */
   --radius-xs: 8px;
   --radius-sm: 8px;
   --radius-md: 8px;
   --radius-lg: 8px;
-  --radius-xl: 8px;
-  --radius-2xl: 8px;
-  --radius-3xl: 8px;
-  --radius-4xl: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 12px;
+  --radius-3xl: 12px;
+  --radius-4xl: 12px;
 
   /* two weights: 400 and 500. The heavier names collapse onto 500 so stock components can't add a third. */
   --font-weight-medium: 500;
   --font-weight-semibold: 500;
   --font-weight-bold: 500;
+
+  --shadow-elev: var(--elev);
 }
 
 :root {
@@ -70,8 +73,9 @@
   }
   html {
     @apply font-sans;
-    scroll-padding-bottom: 8rem; /* the composer pinned to the bottom of a results page must not cover what is focused */
     font-feature-settings: "cv11", "ss01", "ss03"; /* Inter: single-storey a, open digits, curved quotes */
+    scroll-padding-bottom: 8rem; /* the composer pinned to the bottom of a results page must not cover what is focused */
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground antialiased;
@@ -82,7 +86,7 @@
   button:not(:disabled), [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-  /* the neutral inverse: a --surface selection would vanish inside the search bar and every other --surface box */
+  /* the neutral inverse: visible on the page and on every surface */
   ::selection {
     background: var(--text);
     color: var(--bg);
@@ -95,12 +99,16 @@
   .tabular { font-variant-numeric: tabular-nums; }
 }
 
-/* House rules, unlayered so they also win over the stock shadcn components in components/ui:
-   no shadows or glows (that includes ring-* focus styles, which are box-shadows) except on the tactile surfaces
-   marked .skeu below, and one focus ring: a 1px accent outline. */
-*:not(.skeu), *::before, *::after {
+/* House rules, unlayered so they also win over the stock shadcn components in components/ui.
+   Shadows: none (that includes ring-* focus styles, which are box-shadows), except the one understated elevation
+   on things that float (.elev: the ask box and open menus). */
+*:not(.elev), *::before, *::after {
   box-shadow: none !important;
 }
+.elev {
+  box-shadow: var(--elev);
+}
+/* One focus ring everywhere: a 1px accent outline. */
 :focus-visible {
   outline: 1px solid var(--accent) !important;
   outline-offset: 2px;
@@ -110,11 +118,16 @@
 [data-slot="command-input"]:focus-visible {
   outline: none !important;
 }
-.searchbar:focus-within {
+.searchbar {
+  transition: border-color 150ms ease;
+}
+/* only when the question field itself has focus, not a filter button or the send button inside the bar */
+.searchbar:has(#q:focus-visible) {
+  border-color: var(--text-muted);
   outline: 1px solid var(--accent);
   outline-offset: 2px;
 }
-/* the same for the search field inside a filter popover; drawn inside the edge so the popover doesn't clip it */
+/* the same for the search field inside a filter menu; drawn inside the edge so the menu doesn't clip it */
 [data-slot="input-group"]:has([data-slot="command-input"]:focus-visible) {
   outline: 1px solid var(--accent);
   outline-offset: -1px;
@@ -125,56 +138,35 @@ h1:focus-visible {
   outline: none !important;
 }
 
-/* The starter cards on the landing page: the one place gradients are used (asked for by the owner, after the
-   answer engine the layout follows). Both are mixed from the palette, so they follow the theme.
-   Text contrast at the darkest/lightest end of each stays above 4.5:1. */
-.card-bright {
-  background-image:
-    linear-gradient(180deg, var(--hi), transparent 55%),
-    linear-gradient(135deg, var(--accent-fill), color-mix(in srgb, var(--accent-fill) 70%, var(--surface)));
-  color: var(--on-accent);
+/* Motion: short and quiet (150 to 200ms). Controls ease their colour; the send button gives on press; a result
+   block rises a few pixels as it arrives. */
+.press {
+  transition: transform 150ms ease, opacity 150ms ease;
 }
-.card-quiet {
-  background-image:
-    linear-gradient(180deg, var(--hi), transparent 55%),
-    linear-gradient(135deg, color-mix(in srgb, var(--accent-fill) 16%, var(--surface)), var(--surface));
-  color: var(--text);
+.press:hover:not(:disabled) {
+  opacity: 0.88;
+}
+.press:active:not(:disabled) {
+  transform: scale(0.96);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.rise {
+  animation: rise 200ms ease-out both;
 }
 
-/* Tactile (skeuomorphic) surfaces, asked for by the owner: the starter cards and the send button are raised
-   (a lit top edge, a shaded bottom edge, a soft cast shadow) and press in when clicked; the ask box is a well
-   cut into the page. These are the only shadows in the app. */
-.skeu-raised {
-  box-shadow:
-    inset 0 1px 0 var(--hi),
-    inset 0 -1px 0 var(--lo-soft),
-    0 1px 2px var(--lo-soft),
-    0 8px 16px -8px var(--lo);
-  transition: box-shadow 120ms ease, transform 120ms ease, opacity 120ms ease;
-}
-.skeu-raised:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow:
-    inset 0 1px 0 var(--hi),
-    inset 0 -1px 0 var(--lo-soft),
-    0 2px 3px var(--lo-soft),
-    0 12px 20px -10px var(--lo);
-}
-.skeu-raised:active:not(:disabled) {
-  transform: translateY(1px);
-  box-shadow: inset 0 2px 4px var(--lo), inset 0 0 0 1px var(--lo-soft);
-}
-.skeu-raised:disabled {
-  box-shadow: inset 0 1px 0 var(--hi), inset 0 -1px 0 var(--lo-soft);
-}
-.skeu-send {
-  background-image: linear-gradient(180deg, var(--hi), transparent 60%);
-}
-.skeu-well {
-  box-shadow:
-    inset 0 2px 4px var(--lo-soft),
-    inset 0 0 0 1px var(--lo-soft),
-    0 1px 0 var(--hi);
+/* The highlighted line on the landing page's sheet of Hansard: it starts as plain text and takes its highlight
+   a moment after the page arrives. */
+@keyframes sheet-mark { from { background-color: transparent; color: var(--text); } }
+.sheet-mark {
+  padding: 2px 4px;
+  background-color: var(--accent-fill);
+  color: var(--on-accent);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: sheet-mark 300ms ease-out 500ms backwards;
 }
 
 /* A source briefly outlined after its citation number is tapped */
@@ -182,11 +174,13 @@ h1:focus-visible {
 .flash { outline: 1px solid transparent; outline-offset: 6px; animation: flash-outline 2.6s ease-out; }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .press:active:not(:disabled) { transform: none; }
   .flash { animation: none; outline-color: var(--accent); }
 }

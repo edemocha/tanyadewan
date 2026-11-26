@@ -1,64 +1,58 @@
 /* The whole palette. Every colour in the app is one of these variables: never write a raw colour anywhere else.
-   Dark is the default; light is [data-theme="light"] (set before first paint by the script in layout.tsx, which
-   follows the saved choice, then prefers-color-scheme).
+   Light is the default: a warm off-white page, white surfaces, charcoal text. Dark is [data-theme="dark"], set
+   before first paint by the script in layout.tsx (the saved choice, then prefers-color-scheme).
 
-   The accent is allowed in four places: the full stop in the logo, the send button, citations (number chips,
-   the bar beside quoted Hansard text, PDF links), and the gradient starter cards on the landing page.
-   Everything else is black, white and one grey.
+   One accent, used sparingly: the full stop in the logo, the send button, and citations (number chips, the bar
+   beside quoted Hansard text, PDF links). Everything else is neutral.
 
-   --hi / --lo / --lo-soft are not colours of their own: they are white and black at low opacity, used only as
-   the highlight and shadow of the tactile surfaces (.skeu in globals.css).
-
-   Contrast (WCAG): every text/background pair below is at least 4.5:1. Mint (#62ECB5) fails on white, so the light
-   theme uses the darker --accent for text and keeps mint only as a fill behind --on-accent. */
+   Contrast (WCAG): every text/background pair is at least 4.5:1. Two values differ from the brief for that reason:
+   muted text is #6B6B6B, not #777777 (4.3:1 on the page); and mint (#62ECB5) is only ever a fill behind
+   --on-accent in the light theme, where accent text uses the darker green. */
 :root {
-  --bg: #000000;
-  --surface: #202226;
-  --text: #ffffff;
-  --text-body: rgba(255, 255, 255, 0.9); /* long answer text */
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --line: #202226;
-  --accent: #62ecb5;
+  --bg: #faf9f6; /* the page */
+  --surface: #ffffff; /* the ask box, menus, tiles, notices */
+  --hover: #f0eee9; /* hover fill, skeletons */
+  --text: #252525;
+  --text-body: #252525; /* long answer text */
+  --text-muted: #6b6b6b;
+  --line: #e8e6e1;
+  --accent: #0f7a55;
   --accent-fill: #62ecb5; /* only as a fill behind --on-accent text */
   --on-accent: #04261b;
-  /* light and shade for the tactile surfaces (starter cards, send button, ask box) */
-  --hi: rgba(255, 255, 255, 0.16);
-  --lo: rgba(0, 0, 0, 0.6);
-  --lo-soft: rgba(0, 0, 0, 0.35);
-  color-scheme: dark;
-}
-
-:root[data-theme="light"] {
-  --bg: #ffffff;
-  --surface: #f4f4f5;
-  --text: #000000;
-  --text-body: rgba(0, 0, 0, 0.88);
-  --text-muted: rgba(0, 0, 0, 0.6);
-  --line: #e7e7e9;
-  --accent: #0f7a55;
-  --accent-fill: #62ecb5;
-  --on-accent: #04261b;
-  --hi: rgba(255, 255, 255, 0.75);
-  --lo: rgba(0, 0, 0, 0.16);
-  --lo-soft: rgba(0, 0, 0, 0.08);
+  /* one understated shadow, for the two things that float: the ask box and open menus */
+  --elev: 0 1px 2px rgba(37, 37, 37, 0.04), 0 8px 24px -12px rgba(37, 37, 37, 0.14);
   color-scheme: light;
 }
 
+:root[data-theme="dark"] {
+  --bg: #191919;
+  --surface: #222222;
+  --hover: #2b2b2b;
+  --text: #f5f5f5;
+  --text-body: #f5f5f5;
+  --text-muted: #a3a3a3;
+  --line: #353535;
+  --accent: #62ecb5;
+  --accent-fill: #62ecb5;
+  --on-accent: #04261b;
+  --elev: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
 /* No JavaScript: still follow the system preference. */
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg: #ffffff;
-    --surface: #f4f4f5;
-    --text: #000000;
-    --text-body: rgba(0, 0, 0, 0.88);
-    --text-muted: rgba(0, 0, 0, 0.6);
-    --line: #e7e7e9;
-    --accent: #0f7a55;
+    --bg: #191919;
+    --surface: #222222;
+    --hover: #2b2b2b;
+    --text: #f5f5f5;
+    --text-body: #f5f5f5;
+    --text-muted: #a3a3a3;
+    --line: #353535;
+    --accent: #62ecb5;
     --accent-fill: #62ecb5;
     --on-accent: #04261b;
-    --hi: rgba(255, 255, 255, 0.75);
-    --lo: rgba(0, 0, 0, 0.16);
-    --lo-soft: rgba(0, 0, 0, 0.08);
-    color-scheme: light;
+    --elev: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
   }
 }

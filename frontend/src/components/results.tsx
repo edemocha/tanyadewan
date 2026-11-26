@@ -22,10 +22,10 @@ const FLASH_MS = 2600;
 
 const LABEL = "text-[12px] tracking-[0.08em] text-muted-foreground uppercase";
 // Neutral buttons: the accent is reserved for the send button and citations.
-const BTN = "inline-flex h-10 items-center rounded-lg px-4 text-[13px] font-medium transition-colors";
-const BTN_SOLID = `${BTN} bg-primary text-primary-foreground hover:opacity-85`;
-const BTN_QUIET = `${BTN} bg-surface text-foreground hover:opacity-85`;
-const TEXT_BTN = "inline-flex min-h-9 items-center gap-1.5 rounded-lg px-2 text-[13px] text-muted-foreground transition-colors hover:bg-surface hover:text-foreground";
+const BTN = "press inline-flex h-10 items-center rounded-lg px-4 text-[13px] font-medium";
+const BTN_SOLID = `${BTN} bg-primary text-primary-foreground`;
+const BTN_QUIET = `${BTN} border border-line bg-surface text-foreground`;
+const TEXT_BTN = "inline-flex min-h-9 items-center gap-1.5 rounded-lg px-2 text-[13px] text-muted-foreground transition-colors hover:bg-hover hover:text-foreground";
 
 type Props = {
   question: string;
@@ -241,7 +241,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
       ) : null}
 
       {notFound ? (
-        <div>
+        <div className="rise">
           <h2 className="font-heading text-[22px] leading-snug font-medium tracking-[-0.02em]">
             {status && isPartial(status) ? "Tiada dalam sidang yang diindeks." : "Tiada dalam rekod."}
           </h2>
@@ -274,6 +274,16 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
               id={`tab-${t}`}
               aria-selected={tab === t}
               aria-controls={`panel-${t}`}
+              tabIndex={tab === t ? 0 : -1}
+              onKeyDown={(e) => {
+                // the tabs pattern: arrow keys move between tabs, Tab leaves the list
+                if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+                e.preventDefault();
+                const next: Tab = t === "jawapan" ? "sumber" : "jawapan";
+                if (next === "sumber" && phase !== "done") setSawListEarly(true);
+                setTab(next);
+                document.getElementById(`tab-${next}`)?.focus();
+              }}
               onClick={() => {
                 if (t === "sumber" && phase !== "done") setSawListEarly(true);
                 setTab(t);
@@ -292,15 +302,15 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
 
       <div role="tabpanel" id="panel-jawapan" aria-labelledby="tab-jawapan" hidden={tab !== "jawapan"}>
         {sources.length ? (
-          <ul aria-label="Sumber" className="-mx-5 -mt-1 mb-5 flex gap-2 overflow-x-auto px-5 py-1 [scrollbar-width:none] sm:-mx-6 sm:px-6 [&::-webkit-scrollbar]:hidden">
+          <ul aria-label="Sumber" className="-mx-5 -mt-1 mb-5 flex gap-2 overflow-x-auto px-5 py-1 [scrollbar-width:none] sm:-mx-1 sm:px-1 [&::-webkit-scrollbar]:hidden">
             {sources.map((s) => (
               <li key={s.n} className="shrink-0">
                 <button
                   type="button"
                   onClick={() => onCite(s.n)}
-                  className="flex h-full w-44 flex-col items-start gap-1.5 rounded-lg bg-surface p-3 text-left transition-opacity hover:opacity-80"
+                  className="flex h-full w-44 flex-col items-start gap-1.5 rounded-lg border border-line bg-surface p-3 text-left transition-colors duration-150 hover:border-muted-foreground"
                 >
-                  <span className="inline-grid h-5 min-w-6 place-items-center rounded-md bg-background px-1 text-[11px] font-medium tabular text-brand">
+                  <span className="inline-grid h-5 min-w-6 place-items-center rounded-md border border-line bg-surface px-1 text-[11px] font-medium tabular text-brand">
                     {s.n}
                   </span>
                   <span className="line-clamp-2 text-[13px] leading-snug text-foreground">{s.speaker}</span>
@@ -312,7 +322,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         ) : null}
 
         {answer ? (
-          <article aria-busy={phase === "answering"}>
+          <article aria-busy={phase === "answering"} className="rise">
             <Answer
               text={answer}
               sources={sources}
@@ -322,17 +332,19 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
               onCite={onCite}
             />
             {phase === "done" ? (
-              <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-muted-foreground">
-                <span className="text-foreground tabular">
-                  {nSittings ? `Berdasarkan ${nSittings} persidangan` : "Jawapan ini tidak memetik mana-mana sumber"}
-                </span>
-                {verified ? (
-                  <span className="inline-flex items-center gap-1">
-                    <CheckIcon className="size-3.5" aria-hidden /> Petikan disemak kata demi kata
+              <div className="mt-8 flex items-start gap-4 text-[13px] text-muted-foreground">
+                <div className="flex min-h-9 min-w-0 flex-1 flex-wrap items-center gap-x-4 gap-y-1">
+                  <span className="text-foreground tabular">
+                    {nSittings ? `Berdasarkan ${nSittings} persidangan` : "Jawapan ini tidak memetik mana-mana sumber"}
                   </span>
-                ) : null}
-                {nSittings ? <span>Ringkasan AI, semak sumber.</span> : null}
-                <button type="button" onClick={copy} className={`${TEXT_BTN} -me-2 ms-auto shrink-0`}>
+                  {verified ? (
+                    <span className="inline-flex items-center gap-1">
+                      <CheckIcon className="size-3.5" aria-hidden /> Petikan disemak kata demi kata
+                    </span>
+                  ) : null}
+                  {nSittings ? <span>Ringkasan AI, semak sumber.</span> : null}
+                </div>
+                <button type="button" onClick={copy} className={`${TEXT_BTN} -me-2 shrink-0`}>
                   {copied ? <CheckIcon className="size-3.5" aria-hidden /> : <Copy className="size-3.5" aria-hidden />}
                   {copied ? "Disalin" : "Salin"}
                 </button>
@@ -342,7 +354,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         ) : null}
 
         {check && (check.unverified_quotes.length || check.missing_sources.length) ? (
-          <div className="mt-6 max-w-[65ch] rounded-lg bg-surface px-4 py-3 text-[13px] leading-relaxed">
+          <div className="rise mt-6 max-w-[65ch] rounded-xl border border-line bg-surface px-4 py-3 text-[13px] leading-relaxed">
             {check.unverified_quotes.length ? (
               <p>Sebahagian petikan tidak dijumpai kata demi kata dalam sumber; anggap sebagai parafrasa.</p>
             ) : null}
@@ -353,7 +365,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
       </div>
 
       {error || phase === "error" ? (
-        <div role="alert" className="mt-6 max-w-[65ch] rounded-lg bg-surface px-4 py-4 text-[13px] leading-relaxed">
+        <div role="alert" className="rise mt-6 max-w-[65ch] rounded-xl border border-line bg-surface px-4 py-4 text-[13px] leading-relaxed">
           <p className="font-medium">{limited ? "Pustakawan perlu tarik nafas sekejap." : "Alamak, pustakawan tersadung."}</p>
           <p className="text-muted-foreground">
             {limited
@@ -371,7 +383,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
 
 
       {sources.length ? (
-        <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"}>
+        <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"} className="rise">
           <h2 className={LABEL}>
             {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
           </h2>

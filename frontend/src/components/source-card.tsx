@@ -50,8 +50,8 @@ function highlighted(text: string, terms: string[]): ReactNode[] {
 }
 
 // The source number looks exactly like the citation chip in the answer, so the two read as one object.
-const NUM = "mt-0.5 inline-grid h-5 min-w-6 shrink-0 place-items-center rounded-md bg-surface px-1 text-[11px] font-medium tabular text-brand";
-const TAG = "rounded-md bg-surface px-1.5 py-0.5 text-[11px] text-muted-foreground";
+const NUM = "mt-0.5 inline-grid h-5 min-w-6 shrink-0 place-items-center rounded-md border border-line bg-surface px-1 text-[11px] font-medium tabular text-brand";
+const TAG = "rounded-md border border-line bg-surface px-1.5 py-0.5 text-[11px] text-muted-foreground";
 const TEXT_BTN = "inline-flex min-h-9 items-center gap-1 rounded-lg text-muted-foreground transition-colors hover:text-foreground";
 
 /**

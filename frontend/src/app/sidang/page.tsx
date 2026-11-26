@@ -59,7 +59,7 @@ export default async function SittingsPage() {
                     <span className="w-40 shrink-0 font-medium tabular">{s.date_display}</span>
                     <span className="hidden text-[13px] text-muted-foreground tabular sm:inline">{s.bil ? `Bil. ${s.bil}` : ""}</span>
                     <span className="ms-auto flex items-center gap-2 text-[13px] text-muted-foreground tabular">
-                      {s.is_draft ? <Badge className="bg-surface font-normal text-muted-foreground">draf</Badge> : null}
+                      {s.is_draft ? <Badge className="border border-line bg-surface font-normal text-muted-foreground">draf</Badge> : null}
                       {s.n_turns.toLocaleString("ms-MY")} giliran
                       <ChevronRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
                     </span>

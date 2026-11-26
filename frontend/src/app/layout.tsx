@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Inter } from "next/font/google";
+import { Geist, Inter, Source_Serif_4 } from "next/font/google";
 
 import { Sidebar, SiteHeader } from "@/components/site-header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
-// Two weights only, 400 and 500. Inter is variable; the heading face is loaded at 500 alone.
+// Inter for the interface and body, Geist for the title and the question heading, a serif for quoted Hansard
+// text. Two weights only (400 and 500); all three are loaded by next/font, so nothing is fetched at runtime.
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const instrument = Instrument_Sans({ variable: "--font-instrument", subsets: ["latin"], weight: ["500"] });
+const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
+const serif = Source_Serif_4({ variable: "--font-source-serif", subsets: ["latin"], weight: ["400"] });
 
 const TITLE = "TanyaDewan";
 const DESCRIPTION = "Tanya apa sahaja tentang perbahasan Dewan Rakyat. Setiap jawapan dipautkan ke Penyata Rasmi.";
@@ -18,16 +20,16 @@ export const metadata: Metadata = {
   openGraph: { title: TITLE, description: DESCRIPTION, siteName: "TanyaDewan", locale: "ms_MY", type: "website" },
 };
 
-// Runs before first paint: the saved choice wins, otherwise the system preference, otherwise dark (the default).
+// Runs before first paint: the saved choice wins, otherwise the system preference, otherwise light (the default).
 // Blocked storage (private mode) only loses the saved choice. <html> carries no data-theme in the markup, so React
 // never resets what this sets.
-const THEME_SCRIPT = `var t=null;try{t=localStorage.getItem("td_theme")}catch(e){}document.documentElement.dataset.theme=t==="light"||t==="dark"?t:matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"`;
+const THEME_SCRIPT = `var t=null;try{t=localStorage.getItem("td_theme")}catch(e){}document.documentElement.dataset.theme=t==="light"||t==="dark"?t:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"`;
 
 const FOOT_LINK = "text-foreground underline underline-offset-4";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ms" suppressHydrationWarning className={`${inter.variable} ${instrument.variable} h-full`}>
+    <html lang="ms" data-scroll-behavior="smooth" suppressHydrationWarning className={`${inter.variable} ${geist.variable} ${serif.variable} h-full`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>

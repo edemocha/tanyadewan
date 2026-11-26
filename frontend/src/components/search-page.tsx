@@ -1,18 +1,18 @@
 "use client";
 
-import { ArrowRight, Search } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { FilterChips } from "@/components/filter-chips";
-import { LogoMark } from "@/components/logo-mark";
+import { LandingSheet } from "@/components/landing-sheet";
 import { Results } from "@/components/results";
 import { apiUrl, type Filters, type Status } from "@/lib/api";
 import { coverage, isPartial, STARTERS } from "@/lib/copy";
 import { cn } from "@/lib/utils";
 
 /**
- * Search-first page, laid out like an answer engine: a centred title and one composer box on the landing page;
+ * Search-first page: the landing page pairs the composer with a sheet of Hansard showing one highlighted line;
  * on a results page the question becomes the heading and the composer pins to the bottom for the next question.
  * The question and filters live in the URL (?q=&speaker=&from=&to=), so a search is a shareable link and there
  * is no chat history (spec: single question, no saved threads).
@@ -86,7 +86,7 @@ export function SearchPage() {
         e.preventDefault();
         submit();
       }}
-      className="searchbar skeu skeu-well rounded-lg bg-surface"
+      className="searchbar elev rounded-xl border border-line bg-surface"
     >
       <label htmlFor="q" className="sr-only">
         Soalan
@@ -109,7 +109,7 @@ export function SearchPage() {
         // grows with what is typed (up to a point), so a long or prefilled question is never edited blind;
         // rows is the fallback where field-sizing is not supported
         className={cn(
-          "block field-sizing-content max-h-40 w-full resize-none overflow-y-auto bg-transparent px-4 pt-3.5 text-[16px] leading-normal outline-none placeholder:text-muted-foreground",
+          "block field-sizing-content max-h-40 w-full resize-none overflow-y-auto bg-transparent px-4 pt-3.5 text-[16px] leading-normal outline-none placeholder:overflow-hidden placeholder:text-ellipsis placeholder:whitespace-nowrap placeholder:text-muted-foreground",
           !searching && "min-h-[3.875rem]",
         )}
         autoComplete="off"
@@ -124,7 +124,7 @@ export function SearchPage() {
           type="submit"
           disabled={draft.trim().length < 2}
           aria-label="Cari"
-          className="skeu skeu-raised skeu-send grid size-9 shrink-0 place-items-center rounded-full bg-brand-fill text-on-brand disabled:cursor-not-allowed disabled:opacity-40"
+          className="press grid size-9 shrink-0 place-items-center rounded-full bg-brand-fill text-on-brand disabled:cursor-not-allowed disabled:opacity-40"
         >
           <ArrowRight className="size-[18px]" aria-hidden />
         </button>
@@ -134,47 +134,50 @@ export function SearchPage() {
 
   if (!searching) {
     return (
-      <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center px-5 py-10 sm:px-6">
-        <LogoMark className="mx-auto mb-5 size-12" />
-        <h1 className="text-center font-heading text-[clamp(26px,4.5vw,34px)] leading-[1.15] font-medium tracking-[-0.02em] text-balance">
-          Tanya apa sahaja tentang Dewan Rakyat.
-        </h1>
-        <p className="mt-3 mb-8 text-center text-[15px] text-muted-foreground">Pustakawan, bukan pengulas politik.</p>
-        {composer}
-        {status ? (
-          <p role={dbDown ? "status" : undefined} className="mt-3 text-center text-[12px] text-muted-foreground tabular text-pretty">
-            {dbDown ? (
-              DB_DOWN
-            ) : (
-              <>
-                Buat masa ini: {coverage(status)}
-                {isPartial(status) ? ". Pustakawan masih membaca." : "."}
-              </>
-            )}
-          </p>
-        ) : null}
-        <section aria-label="Contoh soalan" className="mt-12">
-          <p className="mb-2 text-[12px] tracking-[0.08em] text-muted-foreground uppercase">Cuba tanya</p>
-          {/* Gradient cards, as on the answer engine this layout follows: the first one bright, the rest quiet.
-              Raised and pressable (.skeu-raised); gradients and shading are mixed from the palette in globals.css. */}
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {STARTERS.map((s, i) => (
-              <li key={s}>
-                <button
-                  type="button"
-                  onClick={() => go({ q: s })}
-                  className={cn(
-                    "skeu skeu-raised flex h-full w-full flex-col gap-2 rounded-lg p-4 text-left",
-                    i === 0 ? "card-bright" : "card-quiet",
-                  )}
-                >
-                  <Search className="size-4" aria-hidden />
-                  <span className="text-[15px] leading-snug font-medium">{s}</span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </section>
+      // a container, so the two columns depend on the room the page really has (the rail takes some on desktop)
+      <div className="@container flex flex-1 flex-col justify-center overflow-x-clip">
+        <div className="mx-auto flex w-full max-w-[1104px] flex-col gap-10 px-5 py-10 sm:px-8">
+          <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-10 @4xl:grid-cols-[minmax(0,0.48fr)_minmax(0,0.52fr)] @4xl:gap-16">
+            <div className="flex flex-col">
+              <p className="text-[12px] tracking-[0.08em] text-muted-foreground uppercase">Penyata Rasmi Dewan Rakyat · Parlimen ke-15</p>
+              <h1 className="mt-5 font-serif text-[clamp(38px,7cqi,60px)] leading-[1.07] font-normal tracking-[-0.02em] text-balance">
+                Tanya apa sahaja tentang Dewan Rakyat.
+              </h1>
+              <p className="mt-5 mb-7 text-[17px] leading-7 text-muted-foreground @4xl:text-[18px]">Pustakawan, bukan pengulas politik.</p>
+              {composer}
+              <section aria-label="Contoh soalan" className="mt-8">
+                <h2 className="mb-1 text-[12px] font-normal tracking-[0.08em] text-muted-foreground uppercase">Cuba tanya</h2>
+                {/* quiet rows, not cards: the hairline between them is what makes this read as a list */}
+                <ul>
+                  {STARTERS.map((s) => (
+                    <li key={s} className="border-b border-line last:border-b-0">
+                      <button
+                        type="button"
+                        onClick={() => go({ q: s })}
+                        className="-mx-2 block min-h-11 w-[calc(100%+1rem)] rounded-lg px-2 py-2.5 text-left text-[15px] leading-snug text-body transition-colors duration-150 hover:bg-hover"
+                      >
+                        {s}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </div>
+            <LandingSheet />
+          </div>
+          {status ? (
+            <p role={dbDown ? "status" : undefined} className="border-t border-line pt-5 text-[13px] leading-5 text-muted-foreground tabular text-balance @4xl:text-center">
+              {dbDown ? (
+                DB_DOWN
+              ) : (
+                <>
+                  {coverage(status)} · {status.chunks.toLocaleString("en-US")} petikan diindeks
+                  {isPartial(status) ? ". Pustakawan masih membaca." : "."}
+                </>
+              )}
+            </p>
+          ) : null}
+        </div>
       </div>
     );
   }

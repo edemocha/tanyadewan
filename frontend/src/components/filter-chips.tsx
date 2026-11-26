@@ -15,10 +15,10 @@ const FIRST_SITTING = "2022-12-19"; // 15th Parliament's first sitting; only a f
 
 // Plain text buttons: no outline, no fill. Hover is the --surface fill; an active filter is simply full-strength text.
 const chip =
-  "inline-flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-1.5 text-[13px] transition-colors hover:bg-surface sm:px-2";
+  "inline-flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-1.5 text-[13px] transition-colors hover:bg-hover sm:px-2";
 const idle = "text-muted-foreground hover:text-foreground";
 const active = "font-medium text-foreground";
-const panel = "border border-line"; // a floating layer needs an edge; there is no shadow to give it one
+const panel = "elev rounded-xl border border-line"; // a floating layer: hairline, soft shadow, the larger radius
 
 function ActiveChip({ icon, label, onClear }: { icon: ReactNode; label: string; onClear: () => void }) {
   return (

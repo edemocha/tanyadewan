@@ -10,7 +10,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-5 inline-flex h-10 items-center rounded-lg bg-primary px-4 text-[14px] font-medium text-primary-foreground hover:opacity-85"
+        className="press mt-5 inline-flex h-10 items-center rounded-lg bg-primary px-4 text-[14px] font-medium text-primary-foreground"
       >
         Kembali ke carian
       </Link>

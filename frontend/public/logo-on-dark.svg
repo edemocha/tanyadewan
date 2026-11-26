@@ -3,11 +3,11 @@
   <defs>
     <clipPath id="droof"><path d="M517 487.2 L517 421.1 Q517 403.1 532.81 394.5 L760 271 L991.85 415.66 Q1019 432.6 1019 464.6 L1019 561.5 Q1019 566.5 1014.67 568.99 L926 620 Q948 611 951 592 L951 471.8 Q951 468.8 948.46 467.21 L760 349 Z"/></clipPath>
     <clipPath id="dbody"><path d="M661 442.5 L760 388 L760 572.4 L913 483.5 L913 574.5 Q913 596.5 894.64 608.62 L760 697.5 L760 572.4 L661 631.4 Z"/></clipPath>
-    <linearGradient id="dg1" gradientUnits="userSpaceOnUse" x1="770" y1="300" x2="1010" y2="570"><stop offset="0" stop-color="#000000" stop-opacity=".6"/><stop offset="1" stop-color="#000000" stop-opacity=".18"/></linearGradient>
-    <linearGradient id="dg2" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="625"><stop offset="0" stop-color="#000000" stop-opacity=".1"/><stop offset="1" stop-color="#000000" stop-opacity=".5"/></linearGradient>
-    <linearGradient id="dg3" gradientUnits="userSpaceOnUse" x1="0" y1="490" x2="0" y2="695"><stop offset="0" stop-color="#000000" stop-opacity=".34"/><stop offset="1" stop-color="#000000" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="dg1" gradientUnits="userSpaceOnUse" x1="770" y1="300" x2="1010" y2="570"><stop offset="0" stop-color="#191919" stop-opacity=".6"/><stop offset="1" stop-color="#191919" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="dg2" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="625"><stop offset="0" stop-color="#191919" stop-opacity=".1"/><stop offset="1" stop-color="#191919" stop-opacity=".5"/></linearGradient>
+    <linearGradient id="dg3" gradientUnits="userSpaceOnUse" x1="0" y1="490" x2="0" y2="695"><stop offset="0" stop-color="#191919" stop-opacity=".34"/><stop offset="1" stop-color="#191919" stop-opacity=".55"/></linearGradient>
   </defs>
-  <path fill="#ffffff" d="M517 487.2 L517 421.1 Q517 403.1 532.81 394.5 L760 271 L991.85 415.66 Q1019 432.6 1019 464.6 L1019 561.5 Q1019 566.5 1014.67 568.99 L926 620 Q948 611 951 592 L951 471.8 Q951 468.8 948.46 467.21 L760 349 Z M661 442.5 L760 388 L760 572.4 L913 483.5 L913 574.5 Q913 596.5 894.64 608.62 L760 697.5 L760 572.4 L661 631.4 Z"/>
+  <path fill="#f5f5f5" d="M517 487.2 L517 421.1 Q517 403.1 532.81 394.5 L760 271 L991.85 415.66 Q1019 432.6 1019 464.6 L1019 561.5 Q1019 566.5 1014.67 568.99 L926 620 Q948 611 951 592 L951 471.8 Q951 468.8 948.46 467.21 L760 349 Z M661 442.5 L760 388 L760 572.4 L913 483.5 L913 574.5 Q913 596.5 894.64 608.62 L760 697.5 L760 572.4 L661 631.4 Z"/>
   <rect x="760" y="250" width="300" height="420" fill="url(#dg1)" clip-path="url(#droof)"/>
   <rect x="600" y="370" width="160" height="350" fill="url(#dg2)" clip-path="url(#dbody)"/>
   <rect x="760" y="460" width="200" height="260" fill="url(#dg3)" clip-path="url(#dbody)"/>

@@ -38,7 +38,7 @@ function ThemeToggle() {
       type="button"
       onClick={flip}
       aria-label={dark ? "Tema cerah" : "Tema gelap"}
-      className="grid size-10 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+      className="grid size-10 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-hover hover:text-foreground"
     >
       {theme === null ? null : dark ? <Sun className="size-[18px]" aria-hidden /> : <Moon className="size-[18px]" aria-hidden />}
     </button>
@@ -85,8 +85,8 @@ export function Sidebar() {
               href={n.href}
               aria-current={on ? "page" : undefined}
               className={cn(
-                "flex h-9 items-center gap-2.5 rounded-lg px-2 text-[14px] transition-colors hover:bg-surface",
-                on ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                "flex h-9 items-center gap-2.5 rounded-lg px-2 text-[14px] transition-colors hover:bg-hover",
+                on ? "bg-hover text-foreground" : "text-muted-foreground hover:text-foreground",
               )}
             >
               <n.icon className="size-4" aria-hidden />
@@ -124,14 +124,14 @@ export function SiteHeader() {
             href="/sidang"
             aria-current={path.startsWith("/sidang") ? "page" : undefined}
             className={cn(
-              "rounded-lg px-2 py-1.5 text-[14px] transition-colors hover:bg-surface",
+              "rounded-lg px-2 py-1.5 text-[14px] transition-colors hover:bg-hover",
               path.startsWith("/sidang") ? "text-foreground" : "text-muted-foreground",
             )}
           >
             Sidang
           </Link>
         )}
-        <div className="ms-auto">
+        <div className="ms-auto -me-2.5">
           <ThemeToggle />
         </div>
       </div>
