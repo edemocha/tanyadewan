@@ -13,7 +13,7 @@ export const LOADING = [
 
 export const STARTERS = [
   "Apa yang MP cakap pasal PTPTN?",
-  "Which MPs raised flood mitigation in Kelantan?",
+  "Ahli Parlimen mana yang membangkitkan tebatan banjir di Kelantan?",
   "Minister cakap apa bila ditanya pasal harga telur?",
   "Siapa betul pasal isu subsidi diesel?",
 ];

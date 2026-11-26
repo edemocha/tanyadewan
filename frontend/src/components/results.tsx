@@ -1,26 +1,49 @@
 "use client";
 
-import { AlertTriangle, Check as CheckIcon, Copy, FileQuestion } from "lucide-react";
+import { Check as CheckIcon, ChevronDown, Copy } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-import { Answer } from "@/components/answer";
+import { Answer, citedSources, longQuotes, quoteInSource } from "@/components/answer";
 import { SourceCard } from "@/components/source-card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ask, type Check, type Filters, type Source, type Status } from "@/lib/api";
 import { coverage, isPartial, LOADING } from "@/lib/copy";
+import { cn } from "@/lib/utils";
 
 type Phase = "searching" | "answering" | "done" | "error";
+type Tab = "jawapan" | "sumber";
 
 // A hosted backend can be slow to wake (it loads about 1.2 GB of models on a cold start): say so after this long,
 // and give up rather than show a spinner forever.
 const SLOW_AFTER_MS = 20_000;
 const GIVE_UP_AFTER_MS = 120_000;
+// How long a source stays outlined after its citation number is tapped (matches .flash in globals.css).
+const FLASH_MS = 2600;
+
+const LABEL = "text-[12px] tracking-[0.08em] text-muted-foreground uppercase";
+// Neutral buttons: the accent is reserved for the send button and citations.
+const BTN = "inline-flex h-10 items-center rounded-lg px-4 text-[13px] font-medium transition-colors";
+const BTN_SOLID = `${BTN} bg-primary text-primary-foreground hover:opacity-85`;
+const BTN_QUIET = `${BTN} bg-surface text-foreground hover:opacity-85`;
+const TEXT_BTN = "inline-flex min-h-9 items-center gap-1.5 rounded-lg px-2 text-[13px] text-muted-foreground transition-colors hover:bg-surface hover:text-foreground";
+
+type Props = {
+  question: string;
+  filters: Filters;
+  status: Status | null;
+  hasFilters: boolean;
+  onRetry: () => void;
+  onClearFilters: () => void;
+  /** put the current question back in the composer so it can be reworded */
+  onEdit: () => void;
+};
 
 /**
- * One search: streams /api/ask and shows the answer, the "based on N sittings" line and the source cards.
- * The parent keys this component by question + filters, so every new search starts from a clean state.
+ * One search: streams /api/ask and shows it as two tabs, the answer (with a strip of its sources on top and the
+ * "based on N sittings" line under it) and the full source list.
+ * The parent keys this component by question + filters + attempt, so every new search starts from a clean state.
  */
-export function Results({ question, filters, status }: { question: string; filters: Filters; status: Status | null }) {
+export function Results({ question, filters, status, hasFilters, onRetry, onClearFilters, onEdit }: Props) {
   const [phase, setPhase] = useState<Phase>("searching");
   const [sources, setSources] = useState<Source[]>([]);
   const [answer, setAnswer] = useState("");
@@ -31,7 +54,12 @@ export function Results({ question, filters, status }: { question: string; filte
   const [slow, setSlow] = useState(false);
   const [flashN, setFlashN] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
+  const [tab, setTab] = useState<Tab>("jawapan");
+  // If the reader opened the source list while the answer was still streaming, leave the rows where they are:
+  // folding the uncited ones at the end would pull the row they are reading out from under them.
+  const [sawListEarly, setSawListEarly] = useState(false);
   const cardRefs = useRef(new Map<number, HTMLLIElement>());
+  const flashTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const ctl = new AbortController();
@@ -91,12 +119,34 @@ export function Results({ question, filters, status }: { question: string; filte
     return () => clearInterval(t);
   }, [phase]);
 
+  useEffect(
+    () => () => {
+      if (flashTimer.current) clearTimeout(flashTimer.current);
+    },
+    [],
+  );
+
+  // A citation number (or a tile in the source strip) opens the Sumber tab at that source. Both panels stay
+  // mounted, so the row exists already; it only has to become visible before it can be scrolled to.
   const onCite = (n: number) => {
-    const el = cardRefs.current.get(n);
-    if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (phase !== "done") setSawListEarly(true);
+    setTab("sumber");
+    if (flashTimer.current) clearTimeout(flashTimer.current);
     setFlashN(null);
-    requestAnimationFrame(() => setFlashN(n));
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        const el = cardRefs.current.get(n);
+        if (!el) return;
+        // a source the answer didn't cite sits in the folded list: open it first
+        const fold = el.closest("details");
+        if (fold) fold.open = true;
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+        el.focus({ preventScroll: true });
+        setFlashN(n);
+        flashTimer.current = setTimeout(() => setFlashN(null), FLASH_MS);
+      }),
+    );
   };
 
   // "Based on N sittings": the sittings of the sources the answer actually cites. An answer that cites
@@ -105,6 +155,25 @@ export function Results({ question, filters, status }: { question: string; filte
   const nSittings = new Set(sources.filter((s) => cited.has(s.n)).map((s) => s.date)).size;
   // The API sends no sources (and a "not_found" event) when retrieval found nothing relevant enough.
   const notFound = phase === "done" && sources.length === 0 && !error;
+
+  // Cited sources are the evidence; the rest were retrieved but not used, so they fold away (never removed).
+  const citedSrc = sources.filter((s) => cited.has(s.n));
+  const restSrc = sources.filter((s) => !cited.has(s.n));
+  const split = phase === "done" && !sawListEarly && citedSrc.length > 0 && restSrc.length > 0;
+
+  // "Quotes checked" is only claimed when the backend check ran clean AND every quote shown as a blockquote is found,
+  // word for word, in a source it cites. (The backend check alone accepts a quote found in ANY source, which would
+  // let a quote sit under the wrong speaker.)
+  const quotes = longQuotes(answer);
+  const attributed = quotes.every(([quote, tail]) => citedSources(tail, sources).some((s) => quoteInSource(quote, s)));
+  const verified =
+    phase === "done" && check !== null && !check.unverified_quotes.length && !check.missing_sources.length && quotes.length > 0 && attributed && nSittings > 0;
+
+  // "Terlalu laju. Cuba lagi sebentar lagi. (HTTP 429)" -> message + code, so the copy isn't doubled up.
+  const em = /^(.*?)\s*\(HTTP (\d+)\)$/.exec(error);
+  const code = em?.[2];
+  const msg = (em ? em[1] : error).replace(/[.\s]+$/, "");
+  const limited = code === "429";
 
   const copy = async () => {
     const lines = sources.map((s) => `[${s.n}] ${s.speaker} · ${s.date_display} · ${s.pdf_url}`);
@@ -117,110 +186,209 @@ export function Results({ question, filters, status }: { question: string; filte
     }
   };
 
+  // One outcome announced once, instead of every streamed token and every loading joke.
+  const SLOW = "Ambil masa lebih lama daripada biasa. Pelayan mungkin baru bangun dan sedang memuatkan model; tunggu sekejap.";
+  const statusText = notFound
+    ? "Tiada dalam rekod."
+    : phase === "searching"
+      ? slow
+        ? SLOW
+        : "Sedang mencari dalam Penyata Rasmi…"
+      : phase === "answering"
+        ? "Sumber ditemui, jawapan sedang ditulis…"
+        : phase === "done" && answer
+          ? `Jawapan siap. ${sources.length} sumber.`
+          : "";
+
+  const card = (s: Source) => (
+    <SourceCard
+      key={s.n}
+      source={s}
+      flash={flashN === s.n}
+      ref={(el) => {
+        if (el) cardRefs.current.set(s.n, el);
+        else cardRefs.current.delete(s.n);
+      }}
+    />
+  );
+
   return (
     <>
+      <p role="status" className="sr-only">
+        {statusText}
+      </p>
+      {/* its own region, so copying doesn't make the first one announce "Jawapan siap" a second time */}
+      <p role="status" className="sr-only">
+        {copied ? "Jawapan disalin." : ""}
+      </p>
+
       {phase === "searching" ? (
-        <div aria-live="polite" className="space-y-4">
-          <p className="text-[14px] text-muted-foreground">{LOADING[loadingLine % LOADING.length]}</p>
-          <div className="max-w-[68ch] space-y-2.5">
+        <div className="space-y-5">
+          <p aria-hidden className="text-[14px] text-muted-foreground">
+            {LOADING[loadingLine % LOADING.length]}
+          </p>
+          {slow ? (
+            <p aria-hidden className="text-[13px] text-muted-foreground">
+              {SLOW}
+            </p>
+          ) : null}
+          <div aria-hidden className="max-w-[65ch] space-y-3">
             <Skeleton className="h-4 w-[92%]" />
             <Skeleton className="h-4 w-[84%]" />
             <Skeleton className="h-4 w-[70%]" />
           </div>
-          {slow ? (
-            <p className="text-[13px] text-subtle">
-              Ambil masa lebih lama daripada biasa. Pelayan mungkin baru bangun dan sedang memuatkan model; tunggu
-              sekejap.
-            </p>
-          ) : null}
         </div>
       ) : null}
 
       {notFound ? (
-        <div className="rounded-2xl bg-card p-6 shadow-[0_0_0_1px_var(--border-subtle)]">
-          <FileQuestion className="size-6 text-subtle" />
-          <h2 className="mt-3 font-heading text-lg font-semibold tracking-[-0.01em]">
+        <div>
+          <h2 className="font-heading text-[22px] leading-snug font-medium tracking-[-0.02em]">
             {status && isPartial(status) ? "Tiada dalam sidang yang diindeks." : "Tiada dalam rekod."}
           </h2>
-          <p className="mt-1 text-[14px] leading-relaxed text-muted-foreground">
+          <p className="mt-2 max-w-[65ch] text-[15px] leading-relaxed text-muted-foreground">
             {status && isPartial(status)
-              ? `Kami tak jumpa apa-apa yang berkaitan dalam ${coverage(status)}. Ini tidak bermakna topik itu tidak pernah dibincangkan: sidang lain belum dibaca. Cuba perkataan lain, atau buang penapis.`
-              : "Kami tak jumpa apa-apa yang berkaitan dalam Penyata Rasmi yang diindeks. Cuba perkataan lain, atau buang penapis."}
+              ? `Kami tak jumpa apa-apa yang berkaitan dalam ${coverage(status)}. Ini tidak bermakna topik itu tidak pernah dibincangkan: sidang lain belum dibaca. Cuba perkataan lain.`
+              : "Kami tak jumpa apa-apa yang berkaitan dalam Penyata Rasmi yang diindeks. Cuba perkataan lain."}
+            {hasFilters ? " Atau buang penapis." : null}
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {hasFilters ? (
+              <button type="button" onClick={onClearFilters} className={BTN_SOLID}>
+                Buang penapis dan cari semula
+              </button>
+            ) : null}
+            <button type="button" onClick={onEdit} className={BTN_QUIET}>
+              Ubah soalan
+            </button>
+          </div>
         </div>
       ) : null}
 
-      {answer ? (
-        <article aria-live="polite">
-          <Answer
-            text={answer}
-            sources={sources}
-            missing={check?.missing_sources}
-            unverified={check?.unverified_quotes}
-            streaming={phase === "answering"}
-            onCite={onCite}
-          />
-          {phase === "done" ? (
-            <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[12.5px] text-subtle">
-              <span>
-                {nSittings
-                  ? `Berdasarkan ${nSittings} persidangan. Ringkasan AI, semak sumber.`
-                  : "Jawapan ini tidak memetik mana-mana sumber."}
-              </span>
-              <button
-                type="button"
-                onClick={copy}
-                className="inline-flex min-h-8 items-center gap-1 rounded-full px-2.5 text-muted-foreground hover:bg-muted hover:text-foreground"
-              >
-                {copied ? <CheckIcon className="size-3.5" /> : <Copy className="size-3.5" />}
-                {copied ? "Disalin" : "Salin"}
-              </button>
-            </div>
-          ) : null}
-        </article>
+      {sources.length || answer ? (
+        <div role="tablist" aria-label="Paparan" className="mb-6 flex gap-6 border-b border-line">
+          {(["jawapan", "sumber"] as const).map((t) => (
+            <button
+              key={t}
+              type="button"
+              role="tab"
+              id={`tab-${t}`}
+              aria-selected={tab === t}
+              aria-controls={`panel-${t}`}
+              onClick={() => {
+                if (t === "sumber" && phase !== "done") setSawListEarly(true);
+                setTab(t);
+              }}
+              className={cn(
+                // the underline is the tab indicator: the one border on this page that carries state
+                "-mb-px border-b py-2.5 text-[14px] transition-colors",
+                tab === t ? "border-foreground font-medium text-foreground" : "border-transparent text-muted-foreground hover:text-foreground",
+              )}
+            >
+              {t === "jawapan" ? "Jawapan" : <>Sumber {sources.length ? <span className="tabular">({sources.length})</span> : null}</>}
+            </button>
+          ))}
+        </div>
       ) : null}
 
-      {check && (check.unverified_quotes.length || check.missing_sources.length) ? (
-        <div className="mt-4 flex gap-2 rounded-xl bg-warning-subtle px-4 py-3 text-[13px] leading-relaxed">
-          <AlertTriangle className="mt-0.5 size-4 shrink-0" />
-          <div>
+      <div role="tabpanel" id="panel-jawapan" aria-labelledby="tab-jawapan" hidden={tab !== "jawapan"}>
+        {sources.length ? (
+          <ul aria-label="Sumber" className="-mx-5 -mt-1 mb-5 flex gap-2 overflow-x-auto px-5 py-1 [scrollbar-width:none] sm:-mx-6 sm:px-6 [&::-webkit-scrollbar]:hidden">
+            {sources.map((s) => (
+              <li key={s.n} className="shrink-0">
+                <button
+                  type="button"
+                  onClick={() => onCite(s.n)}
+                  className="flex h-full w-44 flex-col items-start gap-1.5 rounded-lg bg-surface p-3 text-left transition-opacity hover:opacity-80"
+                >
+                  <span className="inline-grid h-5 min-w-6 place-items-center rounded-md bg-background px-1 text-[11px] font-medium tabular text-brand">
+                    {s.n}
+                  </span>
+                  <span className="line-clamp-2 text-[13px] leading-snug text-foreground">{s.speaker}</span>
+                  <span className="mt-auto text-[12px] text-muted-foreground tabular">{s.date_display}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
+        {answer ? (
+          <article aria-busy={phase === "answering"}>
+            <Answer
+              text={answer}
+              sources={sources}
+              missing={check?.missing_sources}
+              unverified={check?.unverified_quotes}
+              streaming={phase === "answering"}
+              onCite={onCite}
+            />
+            {phase === "done" ? (
+              <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-muted-foreground">
+                <span className="text-foreground tabular">
+                  {nSittings ? `Berdasarkan ${nSittings} persidangan` : "Jawapan ini tidak memetik mana-mana sumber"}
+                </span>
+                {verified ? (
+                  <span className="inline-flex items-center gap-1">
+                    <CheckIcon className="size-3.5" aria-hidden /> Petikan disemak kata demi kata
+                  </span>
+                ) : null}
+                {nSittings ? <span>Ringkasan AI, semak sumber.</span> : null}
+                <button type="button" onClick={copy} className={`${TEXT_BTN} -me-2 ms-auto shrink-0`}>
+                  {copied ? <CheckIcon className="size-3.5" aria-hidden /> : <Copy className="size-3.5" aria-hidden />}
+                  {copied ? "Disalin" : "Salin"}
+                </button>
+              </div>
+            ) : null}
+          </article>
+        ) : null}
+
+        {check && (check.unverified_quotes.length || check.missing_sources.length) ? (
+          <div className="mt-6 max-w-[65ch] rounded-lg bg-surface px-4 py-3 text-[13px] leading-relaxed">
             {check.unverified_quotes.length ? (
               <p>Sebahagian petikan tidak dijumpai kata demi kata dalam sumber; anggap sebagai parafrasa.</p>
             ) : null}
             {check.missing_sources.length ? <p>Rujukan tanpa sumber: [{check.missing_sources.join("], [")}]</p> : null}
           </div>
+        ) : null}
+
+      </div>
+
+      {error || phase === "error" ? (
+        <div role="alert" className="mt-6 max-w-[65ch] rounded-lg bg-surface px-4 py-4 text-[13px] leading-relaxed">
+          <p className="font-medium">{limited ? "Pustakawan perlu tarik nafas sekejap." : "Alamak, pustakawan tersadung."}</p>
+          <p className="text-muted-foreground">
+            {limited
+              ? "Terlalu banyak soalan dalam masa yang singkat. Tunggu sebentar, kemudian cuba lagi."
+              : `${msg || "Ralat tidak diketahui"}.`}
+          </p>
+          <div className="mt-3 flex items-center gap-3">
+            <button type="button" onClick={onRetry} className={BTN_SOLID}>
+              Cuba lagi
+            </button>
+            {code ? <span className="text-[12px] text-muted-foreground tabular">HTTP {code}</span> : null}
+          </div>
         </div>
       ) : null}
 
-      {error || phase === "error" ? (
-        <p className="mt-4 rounded-xl bg-error-subtle px-4 py-3 text-[13px] shadow-[inset_0_0_0_1px_var(--border-error)]">
-          Alamak, pustakawan tersadung: {error || "ralat tidak diketahui"}. Cuba lagi.
-        </p>
-      ) : null}
 
       {sources.length ? (
-        <section aria-labelledby="sumber" className="mt-10">
-          <h2 id="sumber" className="font-heading text-[17px] font-semibold tracking-[-0.01em]">
-            Sumber <span className="text-subtle tabular">({sources.length})</span>
+        <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"}>
+          <h2 className={LABEL}>
+            {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
           </h2>
           {phase === "done" && answer && !cited.size ? (
-            <p className="mt-1 text-[13px] text-subtle">Petikan terdekat yang ditemui. Jawapan di atas tidak bergantung padanya.</p>
+            <p className="mt-2 text-[13px] text-muted-foreground">Petikan terdekat yang ditemui. Jawapan di atas tidak bergantung padanya.</p>
           ) : null}
-          <div className="mb-3" />
-          <ol className="grid gap-3">
-            {sources.map((s) => (
-              <SourceCard
-                key={s.n}
-                source={s}
-                flash={flashN === s.n}
-                ref={(el) => {
-                  if (el) cardRefs.current.set(s.n, el);
-                  else cardRefs.current.delete(s.n);
-                }}
-              />
-            ))}
-          </ol>
-          {meta ? <p className="mt-6 text-[11.5px] text-subtle tabular">{meta}</p> : null}
+          <ol className="mt-2">{(split ? citedSrc : sources).map(card)}</ol>
+          {split ? (
+            <details className="group">
+              <summary className={`${TEXT_BTN} -mx-2 mt-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden`}>
+                {restSrc.length} petikan lain ditemui, tidak dipetik dalam jawapan
+                <ChevronDown className="size-4 shrink-0 transition-transform group-open:rotate-180" aria-hidden />
+              </summary>
+              <ol className="mt-2">{restSrc.map(card)}</ol>
+            </details>
+          ) : null}
+          {meta ? <p className="mt-10 text-[12px] text-muted-foreground tabular">{meta}</p> : null}
         </section>
       ) : null}
     </>

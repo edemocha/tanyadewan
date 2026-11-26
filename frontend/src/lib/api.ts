@@ -41,6 +41,7 @@ export type Status = {
   sittings_indexed: number;
   sittings_total: number;
   chunks: number;
+  database?: "ok" | "unreachable"; // absent on an older backend
   engine: string;
   from: string | null;
   to: string | null;

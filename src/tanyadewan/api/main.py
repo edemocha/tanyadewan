@@ -26,6 +26,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from tanyadewan.api.errors import friendly_error
 from tanyadewan.api.sittings import get_sitting, list_sittings
 from tanyadewan.config import ROOT, load_config
 from tanyadewan.generate.answer import _photos, answer
@@ -121,16 +122,18 @@ def status() -> dict[str, Any]:
     total = (
         sum(1 for ln in docs.read_text(encoding="utf-8").splitlines() if ln.strip()) if docs.exists() else 0
     )
+    database = "ok"
     try:
         points = client(cfg.index).count(cfg.index.collection).count
-    except Exception:
-        points = 0
+    except Exception as e:  # say so, instead of a quiet 0 that looks like an empty index
+        points, database = 0, "unreachable"
+        print(f"status: database check failed: {type(e).__name__}: {e}")
     try:
         engine = get_llm(cfg.generate).name
     except LLMError as e:
         engine = f"unavailable: {e}"
     dates = sorted(indexed)
-    return {"sittings_indexed": len(indexed), "sittings_total": total, "chunks": points, "engine": engine, "public": PUBLIC,
+    return {"sittings_indexed": len(indexed), "sittings_total": total, "chunks": points, "database": database, "engine": engine, "public": PUBLIC,
             "from": dates[0][3:] if dates else None, "to": dates[-1][3:] if dates else None}  # fmt: skip
 
 
@@ -236,7 +239,8 @@ def ask(body: Ask, request: Request) -> StreamingResponse:
             for event, data in answer(body.question.strip(), filters):
                 yield _sse(event, data)
         except Exception as e:  # show it in the UI instead of a silent broken stream
-            yield _sse("error", f"{type(e).__name__}: {e}")
+            print(f"ask failed: {type(e).__name__}: {e}")
+            yield _sse("error", friendly_error(e))
             yield _sse("done", {})
 
     return StreamingResponse(stream(), media_type="text/event-stream", headers={"Cache-Control": "no-cache"})

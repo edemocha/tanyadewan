@@ -1,4 +1,4 @@
-"""Render frontend/src/app/icon.svg into the raster icons browsers and phones still ask for.
+"""Render the logo tile (frontend/assets/logo-tile.svg) into the raster icons browsers and phones still ask for.
 
     uv run python scripts/make_favicon.py
 
@@ -35,7 +35,9 @@ def ico(images: list[tuple[int, bytes]]) -> bytes:
 
 
 def main() -> None:
-    svg = APP / "icon.svg"
+    # icon.svg itself switches colour with the system theme, which a raster can't do: the tile is the mark in
+    # white on a black rounded square, readable on any tab strip or home screen.
+    svg = APP.parents[1] / "assets" / "logo-tile.svg"
     (APP / "favicon.ico").write_bytes(ico([(s, render(svg, s)) for s in ICO_SIZES]))
     (APP / "apple-icon.png").write_bytes(render(svg, APPLE_SIZE))
     for name in ("favicon.ico", "apple-icon.png"):

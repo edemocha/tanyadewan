@@ -105,8 +105,8 @@ Fallbacks if this doesn't fit: a paid Hugging Face Docker Space, or your own PC 
 A production build of `frontend/` with these settings passes (checked 30 Sep 2026).
 
 ### 3. Keep-alive
-Set the repo variable `SPACE_URL` to the Vercel URL; `.github/workflows/keepalive.yml` pings `/api/status` every two days,
-which also keeps an idle Qdrant Cloud cluster from being suspended.
+`.github/workflows/keepalive.yml` pings `/api/status` every two days (the production URL by default; the repo variable `SPACE_URL`
+overrides it), which also keeps an idle Qdrant Cloud cluster from being suspended.
 
 ### Other backend hosts (fallbacks)
 `deploy/Dockerfile` and `scripts/make_space_bundle.py` build the same backend as a Docker image (Hugging Face Space or any
@@ -122,6 +122,19 @@ Next.js), so `vercel.json` was ignored and no backend existed. The signs, all ch
 - No "Buat masa ini: 69 daripada 266 persidangan" line on the home page, because the status call failed.
 Fix: Root Directory = repo root, Framework Preset = Services, set the environment variables, redeploy. Since 30 Sep the page also shows
 the error text (for example "The page could not be found (HTTP 404)") instead of staying blank.
+
+## If the site shows "Pangkalan data carian tidak dapat dihubungi"
+Found on 9 Nov 2026: the free Qdrant Cloud cluster stopped accepting connections, most likely **suspended for inactivity** (free
+clusters pause after about a week idle; the dashboard says whether it was paused or deleted). `/api/ask` ended with `ResponseHandlingException: Connection reset by peer`, and `/api/status` showed `chunks: 0`. The
+keep-alive workflow had been failing on every run since 27 Oct because the `SPACE_URL` variable it needed was never set, so nothing
+kept the cluster awake and nobody was told.
+- Check: `/api/status` now reports `"database": "unreachable"`, and the home page says so in plain language instead of a raw error.
+- Fix: sign in to cloud.qdrant.io and resume the cluster. If it was deleted instead, create a new free cluster, put its URL and API key
+  in `.env` and in the Vercel environment variables (`QDRANT_URL`, `QDRANT_API_KEY`), run `scripts/push_qdrant.py` to upload the index
+  again from the local copy, and redeploy.
+- Prevention: the workflow now defaults to the production URL and **fails when the database is unreachable or empty**, so GitHub
+  emails you. GitHub pauses scheduled workflows in a public repo after 60 days without repository activity, so a commit now and then
+  matters.
 
 ## Guardrails already in the code
 - Per-IP limit (`RATE_PER_MINUTE`) and a site-wide daily cap (`DAILY_CAP`), public mode only. Both answer HTTP 429 with a Malay
