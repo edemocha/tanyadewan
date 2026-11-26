@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, Moon, Search, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSyncExternalStore } from "react";
@@ -60,64 +60,12 @@ function Logo({ className }: { className?: string }) {
   );
 }
 
-const NAV = [
-  { href: "/", label: "Cari", icon: Search },
-  ...(PUBLIC_MODE ? [] : [{ href: "/sidang", label: "Sidang", icon: BookOpen }]),
-];
-
-const FOOT_LINK = "text-foreground underline underline-offset-4";
-
-/**
- * Desktop: a left rail, as in the answer-engine layout this page follows: logo, navigation, and at the bottom the
- * credit and the theme toggle. The hairline is the one edge that separates the rail from the page.
- */
-export function Sidebar() {
-  const path = usePathname();
-  return (
-    <aside className="sticky top-0 hidden h-dvh w-56 shrink-0 flex-col border-e border-line px-3 py-4 lg:flex">
-      <Logo className="px-2 py-1" />
-      <nav aria-label="Utama" className="mt-6 grid gap-0.5">
-        {NAV.map((n) => {
-          const on = n.href === "/" ? path === "/" : path.startsWith(n.href);
-          return (
-            <Link
-              key={n.href}
-              href={n.href}
-              aria-current={on ? "page" : undefined}
-              className={cn(
-                "flex h-9 items-center gap-2.5 rounded-lg px-2 text-[14px] transition-colors hover:bg-hover",
-                on ? "bg-hover text-foreground" : "text-muted-foreground hover:text-foreground",
-              )}
-            >
-              <n.icon className="size-4" aria-hidden />
-              {n.label}
-            </Link>
-          );
-        })}
-      </nav>
-      <div className="mt-auto flex items-end justify-between gap-2 ps-2">
-        <p className="pb-2.5 text-[12px] leading-relaxed text-muted-foreground">
-          Dibina oleh{" "}
-          <a href="https://github.com/edemocha" target="_blank" rel="noopener" className={FOOT_LINK}>
-            Danial Adam
-          </a>
-          <br />
-          <a href="https://github.com/edemocha/tanyadewan" target="_blank" rel="noopener" className={FOOT_LINK}>
-            kod sumber
-          </a>
-        </p>
-        <ThemeToggle />
-      </div>
-    </aside>
-  );
-}
-
-/** Phones and tablets: a plain top bar with the logo and the theme toggle. */
+/** A plain top bar on every screen: the logo, the sittings link (when not public) and the theme toggle. */
 export function SiteHeader() {
   const path = usePathname();
   return (
-    <header className="h-14 lg:hidden">
-      <div className="flex h-full items-center gap-4 px-5 sm:px-6">
+    <header className="h-14 lg:h-16">
+      <div className="mx-auto flex h-full w-full max-w-[1104px] items-center gap-4 px-5 sm:px-8">
         <Logo />
         {PUBLIC_MODE ? null : (
           <Link

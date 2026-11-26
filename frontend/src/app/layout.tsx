@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Inter, Source_Serif_4 } from "next/font/google";
 
-import { Sidebar, SiteHeader } from "@/components/site-header";
+import { SiteHeader } from "@/components/site-header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
@@ -41,9 +41,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Terus ke kandungan
         </a>
         <TooltipProvider>
-          {/* a left rail on desktop, a top bar on phones; the page column fills the rest */}
+          {/* one column: a top bar, the page, the footer */}
           <div className="flex min-h-dvh">
-            <Sidebar />
             <div className="flex min-w-0 flex-1 flex-col">
               <SiteHeader />
               <main id="kandungan" tabIndex={-1} className="flex flex-1 flex-col outline-none">
@@ -54,8 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                   Sumber: Penyata Rasmi Dewan Rakyat © Parlimen Malaysia. Setiap jawapan dipautkan ke PDF rasmi.
                   TanyaDewan boleh tersilap: semak petikan dengan PDF.
                 </p>
-                {/* on desktop the credit lives at the foot of the rail */}
-                <p className="mt-2 lg:hidden">
+                <p className="mt-2">
                   Dibina oleh{" "}
                   <a href="https://github.com/edemocha" target="_blank" rel="noopener" className={FOOT_LINK}>
                     Danial Adam
