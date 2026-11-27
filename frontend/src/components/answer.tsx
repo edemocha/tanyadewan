@@ -1,8 +1,9 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
-import { Fragment, type ReactNode } from "react";
+import { Fragment, type ReactElement, type ReactNode, useState } from "react";
 
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import type { Source } from "@/lib/api";
 import { cn } from "@/lib/utils";
 
@@ -40,6 +41,26 @@ export const longQuotes = (text: string): [string, string][] =>
     .map((m): [string, string] => [m[1].trim(), m[2] ?? ""])
     .filter(([q]) => q.split(/\s+/).length >= QUOTE_MIN_WORDS);
 
+/** A citation number with its source previewed on hover or focus. */
+function SourcePreview({ src, chip }: { src: Source; chip: ReactElement }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <HoverCard open={open} onOpenChange={setOpen}>
+      {/* clicking goes to the full source in the other tab, so the preview must not stay behind */}
+      <HoverCardTrigger render={chip} onClick={() => setOpen(false)} />
+      <HoverCardContent>
+        <p className="text-[13px] leading-snug font-medium text-foreground">{src.speaker}</p>
+        <p className="mt-0.5 text-[12px] leading-snug text-muted-foreground tabular">
+          {src.date_display}
+          {src.page_label ? ` · hlm. ${src.page_label}` : ""}
+        </p>
+        <p className="mt-2 line-clamp-4 font-serif text-[14px] leading-[1.55] text-foreground [overflow-wrap:anywhere]">{src.text}</p>
+        <p className="mt-2 text-[12px] text-muted-foreground">Klik nombor untuk petikan penuh.</p>
+      </HoverCardContent>
+    </HoverCard>
+  );
+}
+
 type Props = {
   text: string;
   sources: Source[];
@@ -62,12 +83,12 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
 
   const cite = (n: number, key: string) => {
     const ok = n >= 1 && n <= sources.length && !bad.has(n);
-    return (
+    const chip = (
       <button
         key={key}
         type="button"
         onClick={() => ok && onCite(n)}
-        title={ok ? `Sumber ${n}` : "Rujukan tanpa sumber"}
+        title={ok ? undefined : "Rujukan tanpa sumber"}
         aria-label={ok ? `Sumber ${n}: ${sources[n - 1].speaker}` : `Rujukan ${n} tanpa sumber`}
         aria-disabled={ok ? undefined : true}
         className={cn(
@@ -79,6 +100,10 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
         {n}
       </button>
     );
+    if (!ok) return chip;
+    // Hovering (or focusing) a citation previews its source: who, when, and the start of what was said.
+    // Touch has no hover: a tap goes to the full source, as before.
+    return <SourcePreview key={key} src={sources[n - 1]} chip={chip} />;
   };
 
   const citesIn = (s: string, key: string) =>

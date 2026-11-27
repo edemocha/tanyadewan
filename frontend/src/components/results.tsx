@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Answer, citedSources, longQuotes, quoteInSource } from "@/components/answer";
 import { SourceCard } from "@/components/source-card";
+import { SourceDates } from "@/components/source-dates";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ask, type Check, type Filters, type Source, type Status } from "@/lib/api";
 import { coverage, isPartial, LOADING } from "@/lib/copy";
@@ -232,10 +233,28 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
               {SLOW}
             </p>
           ) : null}
-          <div aria-hidden className="max-w-[65ch] space-y-3">
-            <Skeleton className="h-4 w-[92%]" />
-            <Skeleton className="h-4 w-[84%]" />
-            <Skeleton className="h-4 w-[70%]" />
+          {/* the shape of what is coming: the two tabs, the strip of sources, then the answer's lines */}
+          <div aria-hidden>
+            <div className="flex gap-6 border-b border-line pb-3">
+              <Skeleton className="h-4 w-16" />
+              <Skeleton className="h-4 w-20" />
+            </div>
+            <div className="mt-5 flex gap-2 overflow-hidden">
+              {[0, 1, 2, 3].map((i) => (
+                <div key={i} className="flex h-[92px] w-44 shrink-0 flex-col gap-2 rounded-lg border border-line bg-surface p-3">
+                  <Skeleton className="h-5 w-6" />
+                  <Skeleton className="h-3 w-[85%]" />
+                  <Skeleton className="mt-auto h-3 w-[55%]" />
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 max-w-[65ch] space-y-3">
+              <Skeleton className="h-4 w-[92%]" />
+              <Skeleton className="h-4 w-[84%]" />
+              <Skeleton className="h-4 w-[70%]" />
+              <Skeleton className="mt-6 h-4 w-[88%]" />
+              <Skeleton className="h-4 w-[62%]" />
+            </div>
           </div>
         </div>
       ) : null}
@@ -384,6 +403,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
 
       {sources.length ? (
         <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"} className="rise">
+          <SourceDates sources={sources} cited={phase === "done" ? cited : new Set()} onCite={onCite} />
           <h2 className={LABEL}>
             {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
           </h2>
