@@ -25,6 +25,8 @@ type Props = {
   /** the indexed range (from /api/status): the axis spans it, so empty stretches are visible too */
   from?: string | null;
   to?: string | null;
+  /** outer spacing: the caller knows what follows */
+  className?: string;
 };
 
 /**
@@ -33,7 +35,7 @@ type Props = {
  * often a topic came up in the whole record: that needs a count from the backend, and the caption says so.
  * Solid = cited in the answer, outline = found but not cited. No other colour carries meaning.
  */
-export function SourceDates({ sources, cited, onCite, from, to }: Props) {
+export function SourceDates({ sources, cited, onCite, from, to, className = "mb-10" }: Props) {
   // how many dots fit side by side depends on the real width of the axis
   const axis = useRef<HTMLOListElement>(null);
   const [width, setWidth] = useState(NARROW_PX);
@@ -92,7 +94,7 @@ export function SourceDates({ sources, cited, onCite, from, to }: Props) {
   const anyCited = dated.some((s) => cited.has(s.n));
 
   return (
-    <figure className="mb-10">
+    <figure className={className}>
       <figcaption className="text-[12px] tracking-[0.08em] text-muted-foreground uppercase">Petikan mengikut tarikh sidang</figcaption>
 
       {/* side room of half a dot, so a dot on the first or last day is not cut off */}

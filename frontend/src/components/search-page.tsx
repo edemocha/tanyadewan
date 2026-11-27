@@ -183,37 +183,47 @@ export function SearchPage() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col px-5 sm:px-6">
-      {/* the question is the page heading */}
-      <h1 ref={h1Ref} tabIndex={-1} className="pt-6 pb-6 font-heading text-[clamp(24px,4vw,30px)] leading-[1.2] font-medium tracking-[-0.02em] text-balance sm:pt-10">
-        {q}
-      </h1>
-      <div className="flex-1 pb-10">
-        {dbDown ? (
-          <p role="status" className="mb-6 text-[13px] text-muted-foreground">
-            {DB_DOWN}
-          </p>
-        ) : null}
-        <Results
-          key={`${q}|${filters.speakerId ?? ""}|${filters.party ?? ""}|${filters.dateFrom ?? ""}|${filters.dateTo ?? ""}|${attempt}`}
-          question={q}
-          filters={filters}
-          status={status}
-          hasFilters={hasFilters}
-          onRetry={() => setAttempt((a) => a + 1)}
-          onClearFilters={() => go({ filters: { speakerId: null, party: null, dateFrom: null, dateTo: null } })}
-          onEdit={() => {
-            setDraft(q);
-            requestAnimationFrame(() => {
-              const el = document.getElementById("q") as HTMLTextAreaElement | null;
-              el?.focus();
-              el?.select();
-            });
-          }}
-        />
-      </div>
-      {/* the composer for the next question stays within reach at the bottom of the screen */}
-      <div className={cn("sticky bottom-0 z-20 -mx-5 bg-background px-5 pt-2 pb-4 sm:-mx-6 sm:px-6")}>{composer}</div>
+    // the same frame as the header and the landing page, so the logo, the question and the answer share one edge
+    <div className="mx-auto flex w-full max-w-[1104px] flex-1 flex-col px-5 sm:px-8">
+      {/* the question is the page heading, set like the landing page's headline */}
+      <header className="pt-6 pb-6 sm:pt-10 lg:mb-8 lg:border-b lg:border-line lg:pb-8">
+        <p className="text-[12px] tracking-[0.08em] text-muted-foreground uppercase">Soalan</p>
+        <h1
+          ref={h1Ref}
+          tabIndex={-1}
+          className={cn(
+            "mt-3 max-w-[26ch] font-serif leading-[1.12] font-normal tracking-[-0.02em] text-balance [overflow-wrap:anywhere]",
+            // a very long question steps down, so it never fills the screen
+            q.length > 110 ? "max-w-[44ch] text-[clamp(22px,3vw,28px)] leading-[1.25]" : "text-[clamp(28px,4.4vw,44px)]",
+          )}
+        >
+          {q}
+        </h1>
+      </header>
+      {dbDown ? (
+        <p role="status" className="mb-6 text-[13px] text-muted-foreground">
+          {DB_DOWN}
+        </p>
+      ) : null}
+      <Results
+        key={`${q}|${filters.speakerId ?? ""}|${filters.party ?? ""}|${filters.dateFrom ?? ""}|${filters.dateTo ?? ""}|${attempt}`}
+        question={q}
+        filters={filters}
+        status={status}
+        hasFilters={hasFilters}
+        onRetry={() => setAttempt((a) => a + 1)}
+        onClearFilters={() => go({ filters: { speakerId: null, party: null, dateFrom: null, dateTo: null } })}
+        onEdit={() => {
+          setDraft(q);
+          requestAnimationFrame(() => {
+            const el = document.getElementById("q") as HTMLTextAreaElement | null;
+            el?.focus();
+            el?.select();
+          });
+        }}
+        // the composer for the next question stays within reach at the bottom of the screen, under the answer
+        composer={<div className="sticky bottom-0 z-20 bg-background pt-2 pb-4">{composer}</div>}
+      />
     </div>
   );
 }

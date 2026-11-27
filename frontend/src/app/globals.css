@@ -171,6 +171,15 @@ h1:focus-visible {
   animation: sheet-mark 500ms cubic-bezier(0.3, 0, 0.2, 1) 600ms backwards;
 }
 
+/* The same highlighter inside a source: the exact words the answer quoted from it. */
+.quote-mark {
+  padding: 1px 2px;
+  background-color: var(--accent-fill);
+  color: var(--on-accent);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 /* A source briefly outlined after its citation number is tapped */
 @keyframes flash-outline { 0%, 60% { outline-color: var(--accent); } 100% { outline-color: transparent; } }
 .flash { outline: 1px solid transparent; outline-offset: 6px; animation: flash-outline 2.6s ease-out; }

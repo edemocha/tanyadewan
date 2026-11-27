@@ -1,7 +1,7 @@
 "use client";
 
 import { Check as CheckIcon, ChevronDown, Copy } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 import { Answer, citedSources, longQuotes, quoteInSource } from "@/components/answer";
 import { SourceCard } from "@/components/source-card";
@@ -26,6 +26,14 @@ const LABEL = "text-[12px] tracking-[0.08em] text-muted-foreground uppercase";
 const BTN = "press inline-flex h-10 items-center rounded-lg px-4 text-[13px] font-medium";
 const BTN_SOLID = `${BTN} bg-primary text-primary-foreground`;
 const BTN_QUIET = `${BTN} border border-line bg-surface text-foreground`;
+// Wide enough for the answer and its sources side by side (the page column is at most 1104px).
+const WIDE = "(min-width: 1024px)";
+const subscribeWide = (onChange: () => void) => {
+  const m = window.matchMedia(WIDE);
+  m.addEventListener("change", onChange);
+  return () => m.removeEventListener("change", onChange);
+};
+
 const TEXT_BTN = "inline-flex min-h-9 items-center gap-1.5 rounded-lg px-2 text-[13px] text-muted-foreground transition-colors hover:bg-hover hover:text-foreground";
 
 type Props = {
@@ -37,14 +45,18 @@ type Props = {
   onClearFilters: () => void;
   /** put the current question back in the composer so it can be reworded */
   onEdit: () => void;
+  /** the ask box for the next question: it sits at the foot of the answer column */
+  composer: ReactNode;
 };
 
 /**
- * One search: streams /api/ask and shows it as two tabs, the answer (with a strip of its sources on top and the
- * "based on N sittings" line under it) and the full source list.
+ * One search: streams /api/ask and shows the answer beside its evidence. On a wide screen the sources sit in a
+ * panel to the right, set like a page of the record, and stay in view while the answer is read; on a phone or
+ * tablet they are a second tab, with a strip of them above the answer.
  * The parent keys this component by question + filters + attempt, so every new search starts from a clean state.
  */
-export function Results({ question, filters, status, hasFilters, onRetry, onClearFilters, onEdit }: Props) {
+export function Results({ question, filters, status, hasFilters, onRetry, onClearFilters, onEdit, composer }: Props) {
+  const wide = useSyncExternalStore(subscribeWide, () => window.matchMedia(WIDE).matches, () => false);
   const [phase, setPhase] = useState<Phase>("searching");
   const [sources, setSources] = useState<Source[]>([]);
   const [answer, setAnswer] = useState("");
@@ -130,8 +142,11 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
   // A citation number (or a tile in the source strip) opens the Sumber tab at that source. Both panels stay
   // mounted, so the row exists already; it only has to become visible before it can be scrolled to.
   const onCite = (n: number) => {
-    if (phase !== "done") setSawListEarly(true);
-    setTab("sumber");
+    // side by side, the list is already in view: nothing to switch, only the panel scrolls
+    if (!wide) {
+      if (phase !== "done") setSawListEarly(true);
+      setTab("sumber");
+    }
     if (flashTimer.current) clearTimeout(flashTimer.current);
     setFlashN(null);
     requestAnimationFrame(() =>
@@ -142,7 +157,14 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         const fold = el.closest("details");
         if (fold) fold.open = true;
         const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+        const behavior = reduce ? "auto" : "smooth";
+        const panel = wide ? el.closest("aside") : null;
+        if (panel) {
+          // scroll the panel only: scrollIntoView would also move the page, and the reader's place in the answer with it
+          const r = el.getBoundingClientRect();
+          const top = panel.scrollTop + (r.top - panel.getBoundingClientRect().top) - Math.max((panel.clientHeight - r.height) / 2, 16);
+          panel.scrollTo({ top, behavior });
+        } else el.scrollIntoView({ behavior, block: "center" });
         el.focus({ preventScroll: true });
         setFlashN(n);
         flashTimer.current = setTimeout(() => setFlashN(null), FLASH_MS);
@@ -160,7 +182,8 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
   // Cited sources are the evidence; the rest were retrieved but not used, so they fold away (never removed).
   const citedSrc = sources.filter((s) => cited.has(s.n));
   const restSrc = sources.filter((s) => !cited.has(s.n));
-  const split = phase === "done" && !sawListEarly && citedSrc.length > 0 && restSrc.length > 0;
+  // (Not side by side: there the list is on screen the whole time, so it keeps its order and uncited rows are labelled.)
+  const split = phase === "done" && !wide && !sawListEarly && citedSrc.length > 0 && restSrc.length > 0;
 
   // "Quotes checked" is only claimed when the backend check ran clean AND every quote shown as a blockquote is found,
   // word for word, in a source it cites. (The backend check alone accepts a quote found in ANY source, which would
@@ -169,6 +192,17 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
   const attributed = quotes.every(([quote, tail]) => citedSources(tail, sources).some((s) => quoteInSource(quote, s)));
   const verified =
     phase === "done" && check !== null && !check.unverified_quotes.length && !check.missing_sources.length && quotes.length > 0 && attributed && nSittings > 0;
+
+  // The words the answer quoted, per source: only quotes found word for word in a source the answer cites for them,
+  // so the highlighter in a source can never mark words under the wrong speaker.
+  const quotedBy = new Map<number, string[]>();
+  if (phase === "done") {
+    for (const [quote, tail] of quotes) {
+      for (const src of citedSources(tail, sources)) {
+        if (quoteInSource(quote, src)) quotedBy.set(src.n, [...(quotedBy.get(src.n) ?? []), quote]);
+      }
+    }
+  }
 
   // "Terlalu laju. Cuba lagi sebentar lagi. (HTTP 429)" -> message + code, so the copy isn't doubled up.
   const em = /^(.*?)\s*\(HTTP (\d+)\)$/.exec(error);
@@ -206,6 +240,9 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
       key={s.n}
       source={s}
       flash={flashN === s.n}
+      compact={wide}
+      quoted={quotedBy.get(s.n)}
+      uncited={wide && phase === "done" && cited.size > 0 && !cited.has(s.n)}
       ref={(el) => {
         if (el) cardRefs.current.set(s.n, el);
         else cardRefs.current.delete(s.n);
@@ -213,8 +250,48 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
     />
   );
 
-  return (
+  const lines = (widths: string[]) => widths.map((w, i) => <Skeleton key={i} className="h-4" style={{ width: w }} />);
+
+  // What the Sumber tab holds on a phone and the panel holds on a wide screen.
+  const sourceList = (
     <>
+      <SourceDates
+        sources={sources}
+        cited={phase === "done" ? cited : new Set()}
+        onCite={onCite}
+        from={status?.from}
+        to={status?.to}
+        className={wide ? "mb-2" : "mb-10"}
+      />
+      {wide ? null : (
+        <h2 className={LABEL}>
+          {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
+        </h2>
+      )}
+      {phase === "done" && answer && !cited.size ? (
+        <p className="mt-2 text-[13px] text-muted-foreground">Petikan terdekat yang ditemui. Jawapan {wide ? "di sebelah" : "di atas"} tidak bergantung padanya.</p>
+      ) : null}
+      <ol className={wide ? undefined : "mt-2"}>{(split ? citedSrc : sources).map(card)}</ol>
+      {split ? (
+        <details className="group">
+          <summary className={`${TEXT_BTN} -mx-2 mt-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden`}>
+            {restSrc.length} petikan lain ditemui, tidak dipetik dalam jawapan
+            <ChevronDown className="size-4 shrink-0 transition-transform group-open:rotate-180" aria-hidden />
+          </summary>
+          <ol className="mt-2">{restSrc.map(card)}</ol>
+        </details>
+      ) : null}
+      {meta ? <p className={cn("text-[12px] text-muted-foreground tabular", wide ? "mt-4 border-t border-line pt-4" : "mt-10")}>{meta}</p> : null}
+    </>
+  );
+
+  // Side by side, the panel is there from the first moment of a search, so nothing shifts when the sources land.
+  const showPanel = wide && (sources.length > 0 || phase === "searching");
+
+  return (
+    <div className={cn("grid flex-1 grid-cols-[minmax(0,1fr)]", showPanel && "lg:grid-cols-[minmax(0,1fr)_minmax(0,23rem)] lg:gap-x-16")}>
+      <div className="flex w-full max-w-2xl min-w-0 flex-col">
+        <div className="flex-1 pb-10">
       <p role="status" className="sr-only">
         {statusText}
       </p>
@@ -233,29 +310,35 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
               {SLOW}
             </p>
           ) : null}
-          {/* the shape of what is coming: the two tabs, the strip of sources, then the answer's lines */}
-          <div aria-hidden>
-            <div className="flex gap-6 border-b border-line pb-3">
-              <Skeleton className="h-4 w-16" />
-              <Skeleton className="h-4 w-20" />
+          {/* the shape of what is coming */}
+          {wide ? (
+            <div aria-hidden className="max-w-[65ch] space-y-3">
+              <Skeleton className="h-5 w-[94%]" />
+              <Skeleton className="h-5 w-[72%]" />
+              <div className="space-y-3 pt-5">{lines(["92%", "84%", "70%"])}</div>
+              <div className="space-y-3 pt-5">{lines(["88%", "62%"])}</div>
             </div>
-            <div className="mt-5 flex gap-2 overflow-hidden">
-              {[0, 1, 2, 3].map((i) => (
-                <div key={i} className="flex h-[92px] w-44 shrink-0 flex-col gap-2 rounded-lg border border-line bg-surface p-3">
-                  <Skeleton className="h-5 w-6" />
-                  <Skeleton className="h-3 w-[85%]" />
-                  <Skeleton className="mt-auto h-3 w-[55%]" />
-                </div>
-              ))}
+          ) : (
+            <div aria-hidden>
+              <div className="flex gap-6 border-b border-line pb-3">
+                <Skeleton className="h-4 w-16" />
+                <Skeleton className="h-4 w-20" />
+              </div>
+              <div className="mt-5 flex gap-2 overflow-hidden">
+                {[0, 1, 2, 3].map((i) => (
+                  <div key={i} className="flex h-[92px] w-44 shrink-0 flex-col gap-2 rounded-lg border border-line bg-surface p-3">
+                    <Skeleton className="h-5 w-6" />
+                    <Skeleton className="h-3 w-[85%]" />
+                    <Skeleton className="mt-auto h-3 w-[55%]" />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 max-w-[65ch] space-y-3">
+                {lines(["92%", "84%", "70%"])}
+                <div className="space-y-3 pt-3">{lines(["88%", "62%"])}</div>
+              </div>
             </div>
-            <div className="mt-6 max-w-[65ch] space-y-3">
-              <Skeleton className="h-4 w-[92%]" />
-              <Skeleton className="h-4 w-[84%]" />
-              <Skeleton className="h-4 w-[70%]" />
-              <Skeleton className="mt-6 h-4 w-[88%]" />
-              <Skeleton className="h-4 w-[62%]" />
-            </div>
-          </div>
+          )}
         </div>
       ) : null}
 
@@ -283,7 +366,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         </div>
       ) : null}
 
-      {sources.length || answer ? (
+      {!wide && (sources.length || answer) ? (
         <div role="tablist" aria-label="Paparan" className="mb-6 flex gap-6 border-b border-line">
           {(["jawapan", "sumber"] as const).map((t) => (
             <button
@@ -319,8 +402,9 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         </div>
       ) : null}
 
-      <div role="tabpanel" id="panel-jawapan" aria-labelledby="tab-jawapan" hidden={tab !== "jawapan"}>
-        {sources.length ? (
+      <div role={wide ? undefined : "tabpanel"} id="panel-jawapan" aria-labelledby={wide ? undefined : "tab-jawapan"} hidden={!wide && tab !== "jawapan"}>
+        {/* the strip is the phone's glimpse of the sources; side by side, the panel itself is there */}
+        {!wide && sources.length ? (
           <ul aria-label="Sumber" className="-mx-5 -mt-1 mb-5 flex gap-2 overflow-x-auto px-5 py-1 [scrollbar-width:none] sm:-mx-1 sm:px-1 [&::-webkit-scrollbar]:hidden">
             {sources.map((s) => (
               <li key={s.n} className="shrink-0">
@@ -351,7 +435,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
               onCite={onCite}
             />
             {phase === "done" ? (
-              <div className="mt-8 flex items-start gap-4 text-[13px] text-muted-foreground">
+              <div className="mt-10 flex items-start gap-4 border-t border-line pt-4 text-[13px] text-muted-foreground">
                 <div className="flex min-h-9 min-w-0 flex-1 flex-wrap items-center gap-x-4 gap-y-1">
                   <span className="text-foreground tabular">
                     {nSittings ? `Berdasarkan ${nSittings} persidangan` : "Jawapan ini tidak memetik mana-mana sumber"}
@@ -400,29 +484,48 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
         </div>
       ) : null}
 
-
-      {sources.length ? (
+      {!wide && sources.length ? (
         <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"} className="rise">
-          <SourceDates sources={sources} cited={phase === "done" ? cited : new Set()} onCite={onCite} from={status?.from} to={status?.to} />
-          <h2 className={LABEL}>
-            {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
-          </h2>
-          {phase === "done" && answer && !cited.size ? (
-            <p className="mt-2 text-[13px] text-muted-foreground">Petikan terdekat yang ditemui. Jawapan di atas tidak bergantung padanya.</p>
-          ) : null}
-          <ol className="mt-2">{(split ? citedSrc : sources).map(card)}</ol>
-          {split ? (
-            <details className="group">
-              <summary className={`${TEXT_BTN} -mx-2 mt-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden`}>
-                {restSrc.length} petikan lain ditemui, tidak dipetik dalam jawapan
-                <ChevronDown className="size-4 shrink-0 transition-transform group-open:rotate-180" aria-hidden />
-              </summary>
-              <ol className="mt-2">{restSrc.map(card)}</ol>
-            </details>
-          ) : null}
-          {meta ? <p className="mt-10 text-[12px] text-muted-foreground tabular">{meta}</p> : null}
+          {sourceList}
         </section>
       ) : null}
-    </>
+        </div>
+        {composer}
+      </div>
+
+      {showPanel ? (
+        // The evidence, set like a page of the record: the answer is the summary on paper, this is the record itself.
+        <aside
+          aria-label="Sumber"
+          className="sticky top-6 mb-6 max-h-[calc(100dvh-3rem)] self-start overflow-y-auto overscroll-contain rounded-xl border border-line bg-surface px-5 pt-4 pb-5 [scrollbar-width:thin]"
+        >
+          <p className="mb-4 grid grid-cols-[1fr_auto_1fr] items-baseline border-b border-line pb-3 font-serif text-[12px] leading-4 text-muted-foreground tabular">
+            <span>{sources.length ? `${sources.length} petikan` : ""}</span>
+            <span>Penyata Rasmi Dewan Rakyat</span>
+            <span />
+          </p>
+          {sources.length ? (
+            <div className="rise">{sourceList}</div>
+          ) : (
+            <div aria-hidden className="space-y-7 pt-1 pb-2">
+              {[0, 1, 2].map((i) => (
+                <div key={i} className="flex gap-3">
+                  <Skeleton className="h-5 w-6 shrink-0" />
+                  <div className="flex-1 space-y-2.5">
+                    <Skeleton className="h-3.5 w-[70%]" />
+                    <Skeleton className="h-3 w-[45%]" />
+                    <div className="space-y-2 pt-1.5">
+                      <Skeleton className="h-3 w-full" />
+                      <Skeleton className="h-3 w-[90%]" />
+                      <Skeleton className="h-3 w-[60%]" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </aside>
+      ) : null}
+    </div>
   );
 }

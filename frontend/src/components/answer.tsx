@@ -238,7 +238,8 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
       }
       i--;
       out.push(
-        <ul key={`ul${i}`} className="list-disc space-y-4 ps-5 marker:text-muted-foreground">
+        // entries in a record, ruled apart and all set alike (the order is the model's; nothing ranks a member)
+        <ul key={`ul${i}`} className="[&>li]:border-t [&>li]:border-line [&>li]:py-4 [&>li:last-child]:pb-0">
           {items}
         </ul>,
       );
@@ -249,6 +250,8 @@ export function Answer({ text, sources, missing = [], unverified = [], streaming
     <div
       className={cn(
         "max-w-[65ch] space-y-4 text-[16px] leading-[1.7] text-body text-pretty",
+        // the opening paragraph is the standfirst
+        "[&>p:first-child]:text-[18px] [&>p:first-child]:leading-[1.6] [&>p:first-child]:text-foreground",
         streaming &&
           "[&>*:last-child]:after:ml-0.5 [&>*:last-child]:after:inline-block [&>*:last-child]:after:h-[1.05em] [&>*:last-child]:after:w-[7px] [&>*:last-child]:after:translate-y-[3px] [&>*:last-child]:after:animate-pulse [&>*:last-child]:after:rounded-sm [&>*:last-child]:after:bg-foreground [&>*:last-child]:after:content-['']",
       )}
