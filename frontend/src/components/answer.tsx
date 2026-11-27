@@ -42,7 +42,7 @@ export const longQuotes = (text: string): [string, string][] =>
     .filter(([q]) => q.split(/\s+/).length >= QUOTE_MIN_WORDS);
 
 /** A citation number with its source previewed on hover or focus. */
-function SourcePreview({ src, chip }: { src: Source; chip: ReactElement }) {
+export function SourcePreview({ src, chip }: { src: Source; chip: ReactElement }) {
   const [open, setOpen] = useState(false);
   return (
     <HoverCard open={open} onOpenChange={setOpen}>

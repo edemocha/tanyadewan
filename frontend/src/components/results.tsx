@@ -403,7 +403,7 @@ export function Results({ question, filters, status, hasFilters, onRetry, onClea
 
       {sources.length ? (
         <section role="tabpanel" id="panel-sumber" aria-labelledby="tab-sumber" hidden={tab !== "sumber"} className="rise">
-          <SourceDates sources={sources} cited={phase === "done" ? cited : new Set()} onCite={onCite} />
+          <SourceDates sources={sources} cited={phase === "done" ? cited : new Set()} onCite={onCite} from={status?.from} to={status?.to} />
           <h2 className={LABEL}>
             {split ? "Sumber yang dipetik" : "Sumber"} <span className="tabular">({(split ? citedSrc : sources).length})</span>
           </h2>
