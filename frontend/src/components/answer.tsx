@@ -42,13 +42,13 @@ export const longQuotes = (text: string): [string, string][] =>
     .filter(([q]) => q.split(/\s+/).length >= QUOTE_MIN_WORDS);
 
 /** A citation number with its source previewed on hover or focus. */
-export function SourcePreview({ src, chip }: { src: Source; chip: ReactElement }) {
+export function SourcePreview({ src, chip, side }: { src: Source; chip: ReactElement; side?: "top" | "bottom" }) {
   const [open, setOpen] = useState(false);
   return (
     <HoverCard open={open} onOpenChange={setOpen}>
       {/* clicking goes to the full source in the other tab, so the preview must not stay behind */}
       <HoverCardTrigger render={chip} onClick={() => setOpen(false)} />
-      <HoverCardContent>
+      <HoverCardContent side={side}>
         <p className="text-[13px] leading-snug font-medium text-foreground">{src.speaker}</p>
         <p className="mt-0.5 text-[12px] leading-snug text-muted-foreground tabular">
           {src.date_display}

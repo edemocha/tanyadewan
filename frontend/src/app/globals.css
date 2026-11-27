@@ -157,16 +157,18 @@ h1:focus-visible {
   animation: rise 200ms ease-out both;
 }
 
-/* The highlighted line on the landing page's sheet of Hansard: it starts as plain text and takes its highlight
-   a moment after the page arrives. */
-@keyframes sheet-mark { from { background-color: transparent; color: var(--text); } }
+/* The marked line on the landing page's page of Hansard: a moment after the page arrives, a highlighter is
+   drawn across it from the left. The "gradient" is one flat colour: it is only there so the fill can grow. */
+@keyframes sheet-mark {
+  from { background-size: 0% 100%; color: var(--text); }
+}
 .sheet-mark {
   padding: 2px 4px;
-  background-color: var(--accent-fill);
+  background: linear-gradient(var(--accent-fill), var(--accent-fill)) no-repeat left / 100% 100%;
   color: var(--on-accent);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  animation: sheet-mark 300ms ease-out 500ms backwards;
+  animation: sheet-mark 500ms cubic-bezier(0.3, 0, 0.2, 1) 600ms backwards;
 }
 
 /* A source briefly outlined after its citation number is tapped */

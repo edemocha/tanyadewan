@@ -9,11 +9,14 @@ import { cn } from "@/lib/utils";
 
 const DAY = 86_400_000;
 const ms = (iso: string) => Date.parse(`${iso}T00:00:00Z`);
-// Dots closer than this would overlap (a dot is 18px), so the later one moves up a row.
-const MIN_GAP_PX = 21;
+// A dot is drawn at 18px but is a 24px target; dots closer than this move up a row, so no two targets touch.
+const MIN_GAP_PX = 26;
+// room a tick label needs: "Jan 2026" and "Mac"
+const YEAR_LABEL_PX = 52;
+const MONTH_LABEL_PX = 26;
 // the axis width assumed until it has been measured: the narrowest phone column
 const NARROW_PX = 300;
-const ROW_PX = 22;
+const ROW_PX = 26;
 
 type Props = {
   sources: Source[];
@@ -75,8 +78,17 @@ export function SourceDates({ sources, cited, onCite, from, to }: Props) {
     const month = MONTHS_MS[d.getUTCMonth()].slice(0, 3);
     ticks.push({ x: pct(d.getTime()), label: d.getUTCMonth() === 0 || !ticks.length ? `${month} ${d.getUTCFullYear()}` : month });
   }
-  // too many months to label each one: keep every second (or third) label, and always the ones carrying a year
-  const every = Math.ceil(ticks.length / 8);
+  // Label only the ticks whose text fits beside the labels already placed and inside the axis: the ones carrying
+  // a year get first pick, then the plain months fill the gaps.
+  const labelled: number[] = [];
+  const labelPx = (i: number) => (ticks[i].label.length > 3 ? YEAR_LABEL_PX : MONTH_LABEL_PX);
+  const px = (i: number) => (ticks[i].x / 100) * width;
+  const order = [...ticks.keys()].sort((a, b) => labelPx(b) - labelPx(a) || a - b);
+  for (const i of order) {
+    const half = labelPx(i) / 2;
+    const inside = px(i) - half >= -9 && px(i) + half <= width + 9;
+    if (inside && labelled.every((j) => Math.abs(px(i) - px(j)) >= half + labelPx(j) / 2 + 6)) labelled.push(i);
+  }
   const anyCited = dated.some((s) => cited.has(s.n));
 
   return (
@@ -90,13 +102,15 @@ export function SourceDates({ sources, cited, onCite, from, to }: Props) {
             <li key={s.n} className="absolute -translate-x-1/2" style={{ left: `${x}%`, bottom: row * ROW_PX + 6 }}>
               <SourcePreview
                 src={s}
+                // below the axis, so the card never covers the dots stacked above this one
+                side="bottom"
                 chip={
                   <button
                     type="button"
                     onClick={() => onCite(s.n)}
                     aria-label={`Sumber ${s.n}: ${s.speaker}, ${s.date_display}${cited.has(s.n) ? ", dipetik dalam jawapan" : ""}`}
                     className={cn(
-                      "grid size-[18px] place-items-center rounded-full border text-[10px] leading-none font-medium tabular transition-transform duration-150 hover:scale-110",
+                      "relative grid size-[18px] place-items-center rounded-full border text-[10px] leading-none font-medium tabular before:absolute before:-inset-[3px] before:rounded-full before:content-['']",
                       cited.has(s.n) ? "border-foreground bg-foreground text-background" : "border-muted-foreground bg-background text-muted-foreground",
                     )}
                   >
@@ -112,11 +126,7 @@ export function SourceDates({ sources, cited, onCite, from, to }: Props) {
           {ticks.map((t, i) => (
             <div key={t.x} className="absolute top-0 flex -translate-x-1/2 flex-col items-center" style={{ left: `${t.x}%` }}>
               <span className="h-1.5 w-px bg-muted-foreground/60" />
-              {i % every === 0 || t.label.length > 3 ? (
-                <span className={cn("mt-1 text-[10.5px] leading-none whitespace-nowrap text-muted-foreground tabular", i % (every * 2) !== 0 && t.label.length <= 3 && "max-sm:hidden")}>
-                  {t.label}
-                </span>
-              ) : null}
+              {labelled.includes(i) ? <span className="mt-1 text-[10.5px] leading-none whitespace-nowrap text-muted-foreground tabular">{t.label}</span> : null}
             </div>
           ))}
         </div>
